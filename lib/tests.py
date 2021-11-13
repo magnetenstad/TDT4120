@@ -29,7 +29,7 @@ def test_algorithm(algorithm, problem_instances, in_place=False):
                 f"error was {e.args}")
     if correct:
         print(f"{algorithm.__name__} was correct "
-            "for the given problem instances.")
+            f"for the {len(problem_instances)} given problem instances.")
     print(f"Tests took {round(time() - t0, 8)} seconds.\n")
 
 
