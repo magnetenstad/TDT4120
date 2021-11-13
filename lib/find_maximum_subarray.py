@@ -1,5 +1,6 @@
 from math import floor
 
+
 def find_max_crossing_subarray(A, low, mid, high):
     left_sum = -float('inf')
     _sum = 0
@@ -17,7 +18,15 @@ def find_max_crossing_subarray(A, low, mid, high):
             max_right = j
     return max_left, max_right, left_sum + right_sum
 
+
 def find_maximum_subarray(A, low, high):
+    """
+    FIND-MAXIMUM-SUBARRAY
+    Category: Divide and conquer
+
+    Time Complexity: Theta(n lg n)
+    Space Complecity: Theta(1)
+    """
     if high == low:
         return (low, high, A[low])
     else:
@@ -32,6 +41,8 @@ def find_maximum_subarray(A, low, high):
         else:
             return cross_low, cross_high, cross_sum
 
+
 if __name__ == '__main__':
-    A = [13, -3, -25, 20, -3, -16, -23, 18, 20, -7, 12, -5, -22, 15, -4, 7]
-    print(find_maximum_subarray(A, 0, len(A) - 1))
+    from tests import test_algorithm, get_maximum_subarray_problem_instances
+    test_algorithm(find_maximum_subarray, \
+        get_maximum_subarray_problem_instances())
