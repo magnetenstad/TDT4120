@@ -1,5 +1,5 @@
 
-class HashTableOpenAddressing(list):
+class HashTableOpenAddress(list):
     def __init__(self, m, length) -> None:
         self.m = m
         self.extend([None] * m * length)
@@ -44,7 +44,7 @@ def hash_search(T, k):
 
 
 if __name__ == '__main__':
-    T = HashTableOpenAddressing(2, 100)
+    T = HashTableOpenAddress(2, 100)
     hash_insert(T, 5)
     hash_insert(T, 10)
     assert T[hash_search(T, 5)] == 5
