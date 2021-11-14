@@ -1,49 +1,44 @@
 
-# A = usortert liste, d = antall siffer i elemenetene
+def counting_sort(A, B, k, d):
+    """
+    COUNTING-SORT
+
+    Time Complexity: Theta(n + k)
+    Space Complecity: Theta(k)
+
+    In place: False
+    Stable: True
+    """
+    C = [0] * k
+    for v in A:
+        C[ord(v[d])] += 1
+    for i in range(1, k):
+        C[i] += C[i-1]
+    for i in range(len(A) - 1, -1, -1):
+        v = A[i]
+        B[C[ord(v[d])]-1] = v
+        C[ord(v[d])] -= 1
 
 
 def radix_sort(A, d):
-    for i in range(d-1,-1,-1):
-        # Bruker vlagfri stabil sorterings algoritme
-        A = counting_sort(A,9,i)
+    """
+    RADIX-SORT
+    (using COUNTING-SORT)
 
+    Time Complexity: Theta(d(n + k))
+    Space Complecity: Theta(n + k)
+
+    In place: False
+    Stable: True
+    """
+    B = [None] * len(A)
+    k = (ord(max(c for word in A for c in word)) + 1) \
+        if len(A) and d else 0
+    for i in range(d-1,-1,-1):
+        counting_sort(A, B, k, i)
+        A, B = B, A
     return A
 
-
-# Sorterer større tall ved å se på et siffer.
-# k = støste tall (9), i = sifferindeks
-def counting_sort(A,k,d):
-    res = [0]*len(A)
-    count = [0 for _ in range(k+1)]
-
-    for j in range(0,len(A)):
-        element = int(str(A[j])[d])
-        count[element] += 1
-
-    # C[i] inneholder nå antall forekomster av element i
-
-    for i in range(1,k+1):
-        count[i] += count[i-1]
-    # Count er nå kumulativ sum
-    # C[i] inneholder nå antall elementer mindre eller lik i
-
-    # Itererer baklengs gjennom A, for at Counting blir stabil. Trekker fra en på count når vi plasserer et element
-    for j in range(len(A)-1,-1,-1):
-        element = A[j]
-
-        res[count[int(str(element)[d])]-1] = element
-        count[int(str(element)[d])] -= 1
-
-    return res
-
-
-
-
-def main():
-    unsorted_list = [732,552,246,643,929,824,411]; d = 3
-    sorted_list = radix_sort(unsorted_list,d)
-    print(sorted_list)
-
-
-main()
-
+if __name__ == '__main__':
+    from tests import test_algorithm, get_radix_sort_problem_instances
+    test_algorithm(radix_sort, get_radix_sort_problem_instances())

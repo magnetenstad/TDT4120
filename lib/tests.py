@@ -46,7 +46,7 @@ def get_sort_problem_instances():
         [0],
         list(range(10)),
         list(range(10, -1, -1)),
-        list(randint(-100, 100) for _ in range(100))
+        list(randint(-100, 100) for _ in range(100)),
     )]
 
 def get_merge_sort_problem_instances():
@@ -73,3 +73,29 @@ def get_counting_sort_problem_instances():
         for instance, correct_result in get_sort_problem_instances()
         if (min(instance) if instance else 0) >= 0]
 
+def get_radix_sort_problem_instances():
+    return [
+        (([""], 0), [""]),
+        ((["A"], 1), ["A"]),
+        ((["A", "B", "C"], 1), ["A", "B", "C"]),
+        ((["C", "B", "A"], 1), ["A", "B", "C"]),
+        ((["AC", "AB", "AA"], 2), ["AA", "AB", "AC"]),
+        ((["CARL", "PETE", "ADAM"], 4), ["ADAM", "CARL", "PETE"]),
+    ]
+
+def get_bucket_sort_problem_instances():
+    return [(instance, sorted(instance)) for instance in (
+        [],
+        [0],
+        list(x/10 for x in range(10)),
+        list(x/10 for x in range(9, -1, -1)),
+        list(randint(0, 999)/1000 for _ in range(100)),
+    )]
+
+def get_randomized_select_problem_instances():
+    return [
+        (([0], 0, 0, 1), 0),
+        (([0, 1], 0, 1, 1), 0),
+        (([0, 1], 0, 1, 2), 1),
+        (([5, 1, 2, 4, 3], 0, 4, 3), 3),
+    ]
