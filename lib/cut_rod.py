@@ -49,3 +49,31 @@ def bottom_up_cut_rod(p, n):
         r[j] = q
     return r[n]
 
+
+def extended_bottom_up_cut_rod(p, n):
+    """
+    EXTENDED-BOTTOM-UP-CUT-ROD
+
+    Time Complexity: O(n^2)
+    """
+    r = [0] * (n + 1)
+    s = [0] * (n + 1)
+    for j in range(1, n + 1):
+        q = -float('inf')
+        for i in range(1, j + 1):
+            if q < p[i] + r[j - i]:
+                q = p[i] + r[j - i]
+                s[j] = i
+        r[j] = q
+    return r, s
+
+def print_cut_rod_solution(p, n):
+    """
+    PRINT-CUT-ROD-SOLUTION
+
+    Time Complexity: O(n^2)
+    """
+    _, s = extended_bottom_up_cut_rod(p, n)
+    while n > 0:
+        print(s[n])
+        n -= s[n]
