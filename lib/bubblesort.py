@@ -1,7 +1,7 @@
 
-def bubble_sort(A):
+def bubblesort(A):
     """
-    BUBBLE-SORT
+    BUBBLESORT
 
     Time Complexity:
         Worst case: Theta(n^2)
