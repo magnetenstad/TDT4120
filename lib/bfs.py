@@ -1,6 +1,6 @@
 from structures.queue import Queue, enqueue, dequeue
 
-def BFS(G, s):
+def bfs(G, s):
     for u in G.V - set(s):
         u.color = "white"
         u.d = float('inf')
