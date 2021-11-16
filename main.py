@@ -1,9 +1,10 @@
-from lib.tests import get_bucket_sort_problem_instances, test_algorithm, get_sort_problem_instances, \
+from lib.tests import get_bucket_sort_problem_instances, \
+    test_algorithm, get_sort_problem_instances, \
     get_maximum_subarray_problem_instances, get_merge_sort_problem_instances, \
     get_bisect_problem_instances, get_counting_sort_problem_instances, \
     get_radix_sort_problem_instances, get_randomized_select_problem_instances, \
     get_heapsort_problem_instances
-from lib.bubble_sort import bubble_sort
+from lib.bubblesort import bubblesort
 from lib.insertion_sort import insertion_sort
 from lib.find_maximum_subarray import find_maximum_subarray
 from lib.merge_sort import merge_sort
@@ -17,7 +18,7 @@ from lib.heapsort import heapsort
 
 
 def main():
-    test_algorithm(bubble_sort, get_sort_problem_instances(), in_place=True)
+    test_algorithm(bubblesort, get_sort_problem_instances(), in_place=True)
     test_algorithm(insertion_sort, get_sort_problem_instances(), in_place=True)
     test_algorithm(merge_sort, \
         get_merge_sort_problem_instances(), in_place=True)
