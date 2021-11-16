@@ -4,6 +4,14 @@ class Graph:
     V = set()
     E = set()
 
+class Vertex:
+    def __init__(self, key) -> None:
+        self.key = key
+        self.left = None
+        self.right = None
+        self.p = None
+        self.rank = None
+
 def connected_components(G):
     for v in G.V:
         make_set(v)
