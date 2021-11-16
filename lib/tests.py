@@ -99,3 +99,10 @@ def get_randomized_select_problem_instances():
         (([0, 1], 0, 1, 2), 1),
         (([5, 1, 2, 4, 3], 0, 4, 3), 3),
     ]
+
+class Heap(list):
+    heap_size = 0
+
+def get_heapsort_problem_instances():
+    return [(Heap(instance), correct_answer) \
+        for instance, correct_answer in get_sort_problem_instances()]

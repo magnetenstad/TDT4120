@@ -33,6 +33,7 @@ def table_delete(T, x):
         T.table = new_table
         T.size //= 2
 
+
 if __name__ == '__main__':
     T = Table()
     assert len(T.table) == 0
