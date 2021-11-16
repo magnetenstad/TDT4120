@@ -9,6 +9,7 @@ def extend_shortest_paths(L, W):
                 l[i][j] = min(l[i][j], l[i][k] + W[k][j])
     return l
 
+
 def print_all_pairs_shortest_path(Pi, i, j):
     if i == j:
         print(i)
@@ -37,3 +38,27 @@ def faster_all_pairs_shortest_paths(W):
         L[2 * m] = extend_shortest_paths(L[m], L[m])
         m *= 2
     return L[m - 1]
+
+
+def floyd_warshall(W):
+    n = len(W)
+    D = [None] * (n + 1)
+    D[0] = W
+    for k in range(1, n + 1):
+        D[k] = [[None] * n for _ in range(n)]
+        for i in range(n):
+            for j in range(n):
+                D[k][i][j] = min(D[k - 1][i][j], \
+                    D[k - 1][i][k] + D[k - 1][k][j])
+    return D[n]
+
+def floyd_warshall_optimized(W):
+    n = len(W)
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                W[i][j] = min(W[i][j], W[i][k] + W[k][j])
+
+
+def johnson(G, w):
+    pass # TODO: implement johnson
