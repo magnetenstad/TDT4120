@@ -20,7 +20,7 @@ def right(i):
 def max_heapify(A, i):
     """
     MAX-HEAPIFY
-    Time complexity: O(lg n) / O(h)
+    Time complexity: O(lg n)
     """
     l = left(i)
     r = right(i)

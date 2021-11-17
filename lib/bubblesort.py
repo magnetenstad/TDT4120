@@ -20,4 +20,4 @@ def bubblesort(A):
     
 if __name__ == '__main__':
     from tests import test_algorithm, get_sort_problem_instances
-    test_algorithm(bubble_sort, get_sort_problem_instances(), in_place=True)
+    test_algorithm(bubblesort, get_sort_problem_instances(), in_place=True)
