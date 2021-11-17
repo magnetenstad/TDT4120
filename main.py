@@ -27,7 +27,7 @@ def main():
     test_algorithm(bisect, get_bisect_problem_instances())
     test_algorithm(quicksort, get_merge_sort_problem_instances(), in_place=True)
     test_algorithm(counting_sort, get_counting_sort_problem_instances(), \
-        in_place=True, output=1)
+        in_place=True)
     test_algorithm(radix_sort, get_radix_sort_problem_instances())
     test_algorithm(bucket_sort, get_bucket_sort_problem_instances())
     test_algorithm(randomized_select, get_randomized_select_problem_instances())
