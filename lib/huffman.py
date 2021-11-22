@@ -1,13 +1,18 @@
+from lib.structures.binary_heap import build_min_heap, heap_extract_min, \
+    min_heap_insert
+
+
+class Node:
+    freq = 0
+
 
 def huffman(C):
     n = len(C)
-    Q = C
+    Q = build_min_heap(C.copy())
     for i in range(n - 1):
         z = Node()
-        x = extract_min(Q)
-        y = extract_min(Q)
+        x = heap_extract_min(Q)
+        y = heap_extract_min(Q)
         z.freq = x.freq + y.freq
-        insert(Q, z)
-    return extract_min(Q)
-
-# TODO: implement extract_min, insert, Node
+        min_heap_insert(Q, z)
+    return heap_extract_min(Q)

@@ -1,5 +1,5 @@
 from structures.disjunct_set import make_set, find_set, union
-
+from structures.binary_heap import build_min_heap, heap_extract_min 
 
 # GENERIC-MST(G, w)
 # 1 A = Ø
@@ -25,11 +25,10 @@ def mst_prim(G, w, r):
         u.key = float('inf')
         u.pi = None
     r.key = 0
-    Q = G.V
+    Q = build_min_heap(G.V.copy())
     while Q:
-        u = extract_min(Q) # TODO: implement extract_min
+        u = heap_extract_min(Q)
         for v in G.Adj[u]:
             if v in Q and w[u][v] < v.key:
                 v.pi = u
                 v.key = w[u][v]
-

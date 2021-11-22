@@ -1,5 +1,5 @@
 from topological_sort import topological_sort
-
+from structures.binary_heap import build_min_heap, heap_extract_min
 
 def initialize_single_source(G, s):
     for v in G.V:
@@ -37,9 +37,9 @@ def dag_shortest_paths(G, w, s):
 def dijkstra(G, w, s):
     initialize_single_source(G, s)
     S = set()
-    Q = G.V
+    Q = build_min_heap(G.V.copy())
     while Q:
-        u = extract_min(Q) # TODO: implement extract_min
+        u = heap_extract_min(Q)
         S.add(u)
         for v in G.Adj[u]:
             relax(u, v, w)

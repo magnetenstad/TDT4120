@@ -1,7 +1,7 @@
 if __name__ == '__main__':
-    from structures.heap import build_max_heap, max_heapify
+    from structures.binary_heap import build_max_heap, max_heapify
 else:
-    from lib.structures.heap import build_max_heap, max_heapify
+    from lib.structures.binary_heap import build_max_heap, max_heapify
 
 
 def heapsort(A):
