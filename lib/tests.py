@@ -104,3 +104,28 @@ class Heap(list):
 def get_heapsort_problem_instances():
     return [(Heap(instance), correct_answer) \
         for instance, correct_answer in get_sort_problem_instances()]
+
+def get_activity_selector_problem_instances():
+    # start times, finish times, k (time?), activity count
+    return [
+        ((
+            [0, 0],
+            [0, 1],
+            0, 1
+        ), lambda x: x == {1}),
+        ((
+            [0, 1, 0, 2],
+            [0, 2, 3, 3],
+            0, 3
+        ), lambda x: x == {1, 3}),
+        ((
+            [0, 4, 5, 5, 6, 5, 0],
+            [0, 5, 5, 6, 7, 7, 9],
+            0, 6
+        ), lambda x: x == {1, 2, 3, 4}),
+        ((
+            [0, 1, 3, 0, 5, 3, 5,  6,  8,  8,  2, 12],
+            [0, 4, 5, 6, 7, 9, 9, 10, 11, 12, 14, 16],
+            0, 11
+        ), lambda x: x == {1, 4, 8, 11} or x == {2, 4, 9, 11}),
+    ]

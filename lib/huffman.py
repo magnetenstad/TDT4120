@@ -9,7 +9,7 @@ class Node:
 def huffman(C):
     n = len(C)
     Q = build_min_heap(C.copy())
-    for i in range(n - 1):
+    for _ in range(n - 1):
         z = Node()
         x = heap_extract_min(Q)
         y = heap_extract_min(Q)
