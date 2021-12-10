@@ -8,6 +8,8 @@ def randomized_select(A, p, r, i):
     """
     RANDOMIZED-SELECT
 
+    Returns the ith smallest element of the array A[p..r].
+
     Time Complexity:
         Worst case: Theta(n^2)
         Average case: Theta(n)
