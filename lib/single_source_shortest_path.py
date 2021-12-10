@@ -16,7 +16,7 @@ def relax(u, v, w):
 
 def bellman_ford(G, w, s):
     initialize_single_source(G, s)
-    for _ in range(len(G.V)):
+    for _ in range(len(G.V) - 1):
         for u, v in G.E:
             relax(u, v, w)
     for u, v in G.E:

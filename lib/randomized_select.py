@@ -15,6 +15,8 @@ def randomized_select(A, p, r, i):
         Average case: Theta(n)
         Best case: Theta(n)
     Space Complecity: Theta(1)
+
+    In place: True
     """
     if p == r:
         return A[p]
