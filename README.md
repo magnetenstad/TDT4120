@@ -39,28 +39,28 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] [Z10] Kunne angi presist hva output er og hvilke egenskaper det må ha
 
 ### Forelesning 1: Problemer og algoritmer
-- [ ] [A1] [Forstå bokas pseudokode-konvensjoner](#a1-forstå-bokas-pseudokode-konvensjoner)
-- [ ] [A2] [Kjenne egenskapene til random-access machine-modellen (RAM)](#a2-kjenne-egenskapene-til-random-access-machine-modellen-ram)
-- [ ] [A3] [Kunne definere problem, instans og problemstørrelse](#a3-kunne-definere-problem-instans-og-problemstørrelse)
-- [ ] ! [A4] [Kunne definere asymptotisk notasjon, O, Ω, Θ, o og ω](#-a4-kunne-definere-asymptotisk-notasjon-o-ω-θ-o-og-ω)
-- [ ] ! [A5] [Kunne definere best-case, average-case og worst-case](#-a5-kunne-definere-best-case-average-case-og-worst-case)
-- [ ] ! [A6] [Forstå løkkeinvarianter og induksjon](#-a6-forstå-løkkeinvarianter-og-induksjon)
-- [ ] ! [A7] [Forstå rekursiv dekomponering og induksjon over delinstanser](#-a7-forstå-rekursiv-dekomponering-og-induksjon-over-delinstanser)
+- [x] [A1] [Forstå bokas pseudokode-konvensjoner](#a1-forstå-bokas-pseudokode-konvensjoner)
+- [x] [A2] [Kjenne egenskapene til random-access machine-modellen (RAM)](#a2-kjenne-egenskapene-til-random-access-machine-modellen-ram)
+- [x] [A3] [Kunne definere problem, instans og problemstørrelse](#a3-kunne-definere-problem-instans-og-problemstørrelse)
+- [x] ! [A4] [Kunne definere asymptotisk notasjon, O, Ω, Θ, o og ω](#-a4-kunne-definere-asymptotisk-notasjon-o-ω-θ-o-og-ω)
+- [x] ! [A5] [Kunne definere best-case, average-case og worst-case](#-a5-kunne-definere-best-case-average-case-og-worst-case)
+- [x] ! [A6] [Forstå løkkeinvarianter og induksjon](#-a6-forstå-løkkeinvarianter-og-induksjon)
+- [x] ! [A7] [Forstå rekursiv dekomponering og induksjon over delinstanser](#-a7-forstå-rekursiv-dekomponering-og-induksjon-over-delinstanser)
 - [x] [A8] [Forstå Insertion-Sort](#a8-forstå-insertion-sort)
 
 ### Forelesning 2: Datastrukturer
 - [x] [B1] [Forstå hvordan stakker og køer fungerer](#b1-forstå-hvordan-stakker-og-køer-fungerer)
 - [x] [B2] [Forstå hvordan lenkede lister fungerer](#b2-forstå-hvordan-lenkede-lister-fungerer)
-- [ ] [B3] [Forstå hvordan pekere og objekter kan implementeres](#b3-forstå-hvordan-pekere-og-objekter-kan-implementeres)
-- [ ] ! [B4] [Forstå hvordan direkte adressering og hashtabeller fungerer](#-b4-forstå-hvordan-direkte-adressering-og-hashtabeller-fungerer)
+- [x] [B3] [Forstå hvordan pekere og objekter kan implementeres](#b3-forstå-hvordan-pekere-og-objekter-kan-implementeres)
+- [x] ! [B4] [Forstå hvordan direkte adressering og hashtabeller fungerer](#-b4-forstå-hvordan-direkte-adressering-og-hashtabeller-fungerer)
 - [x] [B5] [Forstå konfliktløsing ved kjeding (chaining)](#b5-forstå-konfliktløsing-ved-kjeding-chaining)
 - [ ] [B6] [Kjenne til grunnleggende hashfunksjoner](#b6-kjenne-til-grunnleggende-hashfunksjoner)
-- [ ] [B7] [Vite at man for statiske datasett kan ha worst-case O(1) for søk](#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-søk)
-- [ ] [B8] [Kunne definere amortisert analyse](#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-søk)
+- [x] [B7] [Vite at man for statiske datasett kan ha worst-case O(1) for søk](#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-søk)
+- [x] [B8] [Kunne definere amortisert analyse](#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-søk)
 - [x] [B9] [Forstå hvordan dynamiske tabeller fungerer](#b8-kunne-definere-amortisert-analyse)
 
 ### Forelesning 3: Splitt og hersk
-- [ ] ! [C1] [Forstå designmetoden divide-and-conquer (splitt og hersk)](#-c1-forstå-designmetoden-divide-and-conquer-splitt-og-hersk)
+- [x] ! [C1] [Forstå designmetoden divide-and-conquer (splitt og hersk)](#-c1-forstå-designmetoden-divide-and-conquer-splitt-og-hersk)
 - [x] [C2] [Forstå maximum-subarray-problemet med løsninger](#c2-forstå-maximum-subarray-problemet-med-løsninger)
 - [x] [C3] [Forstå Bisect og Bisect'](#c3-forstå-bisect-og-bisect)
 - [x] [C4] [Forstå Merge-Sort](#c4-forstå-merge-sort)
@@ -190,8 +190,8 @@ Notasjon | Forklaring | Tegn
 $\omega$ | streng nedre grense | $>$
 $\Omega$ | nedre grense | $\geq$
 $\Theta$ | øvre og nedre grense | $=$
-O | øvre grense | $\leq$
-o | streng øvre grense | $<$
+$O$ | øvre grense | $\leq$
+$o$ | streng øvre grense | $<$
 
 #### ! [A5] Kunne definere best-case, average-case og worst-case
 **Best-case** er den minimale kjøretiden, gitt et optimalt input. **Average-case** er den gjennomsnittlige kjøretiden, over alle mulige inputs. **Worst-case** er den maksimale kjøretiden, gitt verst tenkelig input.
@@ -246,14 +246,12 @@ Beskrivelse | Sjekker om stakken er tom
 Input | S: stakk
 Output | True hvis stakken er tom, False ellers
 Kjøretid | $\Theta(1)$
-Minnebruk | $\Theta(1)$
 
 Attributt | Push
 ---|---
 Beskrivelse | Legger til et element på stakken
 Input | S: stakk, x: element
 Kjøretid | $\Theta(1)$
-Minnebruk | $\Theta(1)$
 
 Attributt | Pop
 ---|---
@@ -261,7 +259,6 @@ Beskrivelse | Fjerner og returnerer øverste element av stakken
 Input | S: stakk
 Output | Elementet på toppen av stakken
 Kjøretid | $\Theta(1)$
-Minnebruk | $\Theta(1)$
 
 <details>
     <summary>Kode for stakker</summary>
@@ -290,7 +287,6 @@ Attributt | Enqueue
 Beskrivelse | Legger til et element på halen til køen
 Input | Q: kø
 Kjøretid | $\Theta(1)$
-Minnebruk | $\Theta(1)$
 
 Attributt | Dequeue
 ---|---
@@ -298,7 +294,6 @@ Beskrivelse | Fjerner og returnerer elementet som står først i køen
 Input | Q: kø
 Output | Det første elementet i køen
 Kjøretid | $\Theta(1)$
-Minnebruk | $\Theta(1)$
 
 <details>
     <summary>Kode for køer</summary>
@@ -331,21 +326,18 @@ Beskrivelse | Søker etter et element med en spesifikk nøkkel
 Input | L: lenket liste, k: nøkkel
 Output | Elementet med nøkkelen, eller NIL
 Kjøretid | $\Theta(n)$
-Minnebruk | $\Theta(1)$
 
 Attributt | List-Insert
 ---|---
 Beskrivelse | Legger et element til starten av en lenket liste
 Input | L: lenket liste, x: element
 Kjøretid | $\Theta(1)$
-Minnebruk | $\Theta(1)$
 
 Attributt | List-Delete
 ---|---
 Beskrivelse | Fjernet et element fra en dobbeltlenket liste
 Input | L: dobbeltlenket liste, x: element
 Kjøretid | $\Theta(1)$
-Minnebruk | $\Theta(1)$
 
 <details>
     <summary>Kode for lenkede lister</summary>
@@ -376,11 +368,63 @@ def list_delete(L, x):
 </details>
 
 #### [B3] Forstå hvordan pekere og objekter kan implementeres
+Pekere og objekter kan implementeres ved lister og indekser. Indeksene fungerer som pekere. Det er to måter å gjøre dette på:
+1. Feltene/attributtene i objektet plassereres i separate lister
+2. Én liste holder av en viss lengde til hvert objekt slik at det får plass til attributtene
+
 #### ! [B4] Forstå hvordan direkte adressering og hashtabeller fungerer
 
-##### Direkte adressering TODO
+##### Direkte adressering
+Attributt | Direct-Address-Search
+---|---
+Beskrivelse | Henter et element fra en direct-access-tabell
+Input | T: direct-access-tabell, k: nøkkel
+Output | Elementet i tabellen med den gitt nøkkelen, eller None
+Kjøretid | $\Theta(1)$
+
+Attributt | Direct-Address-Insert
+---|---
+Beskrivelse | Setter et element inn i en direct-access-tabell
+Input | T: direct-access-tabell, x: element
+Kjøretid | $\Theta(1)$
+
+Attributt | Direct-Address-Delete
+---|---
+Beskrivelse | Sletter et element i en direct-access-tabell
+Input | T: direct-access-tabell, x: element
+Kjøretid | $\Theta(1)$
+
 <details>
-    <summary>Kode</summary>
+    <summary>Kode for direct-access-tabeller</summary>
+    
+````python
+def direct_address_search(T, k):
+    return T[k]
+
+def direct_address_insert(T, x):
+    T[x.key] = x
+    
+def direct_address_delete(T, x):
+    T[x.key] = None
+````
+</details>
+
+##### Hashtabeller
+Attributt | Hash-Insert
+---|---
+Beskrivelse | Setter et element inn i en hashtabell
+Input | T: hashtabell, x: element
+Kjøretid | ?
+
+Attributt | Hash-Search
+---|---
+Beskrivelse | Henter et element fra en hashtabell
+Input | T: hashtabell, k: nøkkel
+Output | Elementet i tabellen med den gitt nøkkelen, eller None
+Kjøretid | ?
+
+<details>
+    <summary>Kode for hashtabeller</summary>
     
 ````python
 def hash_insert(T, k):
@@ -410,12 +454,31 @@ def hash_search(T, k):
         i += 1
     return None
 ````
-[Implementasjon av open address hash table](lib/structures/hash_table_open_address.py)
+[Implementasjon av hashtabeller](lib/structures/hash_table_open_address.py)
 </details>
 
 #### [B5] Forstå konfliktløsing ved kjeding (chaining)
+Attributt | Chained-Hash-Insert
+---|---
+Beskrivelse | Setter et element inn i en kjedet hashtabell
+Input | T: kjedet hashtabell, x: element
+Kjøretid | ?
+
+Attributt | Chained-Hash-Search
+---|---
+Beskrivelse | Henter et element fra en kjedet hashtabell
+Input | T: kjedet hashtabell, k: nøkkel
+Output | Elementet i tabellen med den gitt nøkkelen, eller None
+Kjøretid | ?
+
+Attributt | Chained-Hash-Delete
+---|---
+Beskrivelse | Sletter et element i en kjedet hashtabell
+Input | T: kjedet hashtabell, x: element
+Kjøretid | ?
+
 <details>
-    <summary>Kode</summary>
+    <summary>Kode for hashtabeller med kjeding</summary>
     
 ````python
 def chained_hash_insert(T, x):
@@ -434,12 +497,29 @@ def chained_hash_delete(T, x):
 </details>
 
 #### [B6] Kjenne til grunnleggende hashfunksjoner
-#### [B7] Vite at man for statiske datasett kan ha worst-case O(1) for søk
+TODO
+
+#### [B7] Vite at man for statiske datasett kan ha worst-case $O(1)$ for søk
+For statiske datasett kan vi konstruere *perfekte* hashfunksjoner, og dermed oppnå $O(1)$ for søk.
+
 #### [B8] Kunne definere amortisert analyse
 Average case og amortisert kjøretid kan fremstå som litt like til å starte med, siden de begge ser på et gjennomsnitt. Men, mens average case ser på gjennomsnitt på tvers av alle mulige individuelle instanser, så handler amortisert kjøretid om å se på gjennomsnitt på tvers av en rekke av etterfølgende verste-tilfelle invokasjoner. Altså, handler gjennomsnittet i amortisert kjøretid om invokasjoner som ikke utføres uavhengig av hverandre.
 
-Ta for eksempel det typiske eksempelet med en dynamisk tabell. Når vi ser på amortisert kjøretid i dette tilfellet, så ser vi på den gjennomsnittlige kjøretiden for en innsettelse, i verste tilfelle, når vi setter inn nn elementer etter hverandre i samme instans av datastrukturen.
+Ta for eksempel det typiske eksempelet med en dynamisk tabell. Når vi ser på amortisert kjøretid i dette tilfellet, så ser vi på den gjennomsnittlige kjøretiden for en innsettelse, i verste tilfelle, når vi setter inn $n$ elementer etter hverandre i samme instans av datastrukturen.
+
 #### [B9] Forstå hvordan dynamiske tabeller fungerer
+Attributt | Table-Insert
+---|---
+Beskrivelse | Legger til et element i en dynamisk tabell, dobler størrelsen dersom full
+Input | T: dynamisk tabell, x: element
+Kjøretid | $O(1)$, amortisert
+
+Attributt | Table-Delete
+---|---
+Beskrivelse | Fjerner et element fra en dynamisk tabell, halverer størrelsen dersom kun $\frac{1}{4}$ er i bruk
+Input | T: dynamisk tabell, x: element
+Kjøretid | $O(1)$, amortisert
+
 <details>
     <summary>Kode</summary>
     
@@ -474,16 +554,23 @@ def table_delete(T, x):
 </details>
 
 ### Forelesning 3: Splitt og hersk
+
 #### ! [C1] Forstå designmetoden divide-and-conquer (splitt og hersk)
+1. Divide: Dele opp i subproblemer
+2. Conquer: Løse subproblemene
+3. Combine: Kombinere løsningene til en større løsning
+
 #### [C2] Forstå maximum-subarray-problemet med løsninger
+
 ##### Find-Maximum-Subarray
+Attributt | Find-Maximum-Subarray
+---|---
+Beskrivelse | Finner subarrayet i et array med størst sum av elementer
+Input | A: array, low: laveste indeks, high: største indeks
+Kjøretid | $\Theta(n \lg n)$
 
-Category: Divide and conquer
-
-Time Complexity: $\Theta(n\lg{n})$
-Space Complecity: $\Theta(1)$
 <details>
-    <summary>Kode</summary>
+    <summary>Kode for Find-Maximum-Subarray</summary>
     
 ````python
 def find_max_crossing_subarray(A, low, mid, high):
@@ -522,16 +609,17 @@ def find_maximum_subarray(A, low, high):
 </details>
 
 #### [C3] Forstå Bisect og Bisect'
+Attributt | Bisect
+---|---
+Beskrivelse | Binærsøk, søker i en sortert liste
+Input | A: sortert liste, p: minste indeks, r: største indeks, v: verdi som søkes etter
+Output | Indeksen til verdien det søkes etter
+Worst case | $\Theta(\lg n)$
+Average case | $\Theta(\lg n)$
+Best case | $\Theta(1)$ if v is in the middle
 
-##### Bisect
-- Time Complexity:
-  - Worst case: $\Theta(1)$ if v is in the middle
-  - Average case: $\Theta(\lg{n})$
-  - Best case: $\Theta(\lg{n})$
-
-Space Complecity: $\Theta(1)$
 <details>
-    <summary>Kode</summary>
+    <summary>Kode for Bisect</summary>
     
 ````python
 def bisect(A, p, r, v):
@@ -549,9 +637,8 @@ def bisect(A, p, r, v):
 [Implementasjon av Bisect](lib/bisect.py)
 </details>
 
-##### Iterative-Bisect (BINARY-SEARCH)
 <details>
-    <summary>Kode</summary>
+    <summary>Kode for Bisect'</summary>
     
 ````python
 def iterative_bisect(A, p, r, v):
@@ -569,15 +656,30 @@ def iterative_bisect(A, p, r, v):
 </details>
 
 #### [C4] Forstå Merge-Sort
-Time Complexity:
-    Worst case: $\Theta(n \lg n)$
-    Average case: $\Theta(n \lg n)$
-    Best case: $\Theta(n \lg n)$
-Space Complecity: $\Theta(n)$
-In place: False
-Stable: True
+Attributt | Merge-Sort
+---|---
+Beskrivelse | Sorteringsalgoritme
+Input | A: vilkårlig liste av tall, p: minste indeks, r: største indeks
+Output | Sortert liste
+Worst case | $\Theta(n \lg n)$
+Average case | $\Theta(n \lg n)$
+Best case | $\Theta(n \lg n)$
+Minnebruk | $\Theta(n)$
+In place | False
+Stabil | True
+
+Attributt | Merge
+---|---
+Beskrivelse | Setter sammen to sorterte dellister til en sortert liste
+Input | A: liste med to sorterte dellister, p: minste indeks, q: indeksen som splitter listene r: største indeks
+Output | Sortert liste
+Kjøretid | $\Theta(n)$
+Minnebruk | $\Theta(n)$
+In place | False
+Stabil | True
+
 <details>
-    <summary>Kode</summary>
+    <summary>Kode for Merge-Sort og Merge</summary>
     
 ````python
 def merge(A, p, q, r):
@@ -613,16 +715,20 @@ def merge_sort(A, p, r):
 
 #### [C5] Forstå Quicksort og Randomized-Quicksort
 ##### Quicksort
-Time Complexity:
-    Worst case: Theta(n^2) if input is sorted
-    Average case: Theta(n lg n)
-    Best case: Theta(n lg n)
-Space Complecity: Theta(1)
+Attributt | Quicksort
+---|---
+Beskrivelse | Sorteringsalgoritme
+Input | A: vilkårlig liste av tall, p: minste indeks, r: største indeks
+Output | Sortert liste
+Worst case | $\Theta(n^2)$, hvis input er sortert
+Average case | $\Theta(n \lg n)$
+Best case | $\Theta(n \lg n)$
+Minnebruk | $\Theta(1)$
+In place | True
+Stabil | False
 
-In place: True
-Stable: False
 <details>
-    <summary>Kode</summary>
+    <summary>Kode for Quicksort</summary>
     
 ````python
 def partition(A, p, r):
@@ -645,15 +751,20 @@ def quicksort(A, p, r):
 </details>
 
 ##### Randomized-Quicksort
-Time Complexity:
-    Expected worst case: Theta(n lg n)
-    Average case: Theta(n lg n)
-    Best case: Theta(n lg n)
-Space Complecity: Theta(1)
-In place: True
-Stable: False
+Attributt | Quicksort
+---|---
+Beskrivelse | Sorteringsalgoritme
+Input | A: vilkårlig liste av tall, p: minste indeks, r: største indeks
+Output | Sortert liste
+*Forventet* worst case | $\Theta(n \lg n)$ 
+Average case | $\Theta(n \lg n)$
+Best case | $\Theta(n \lg n)$
+Minnebruk | $\Theta(1)$
+In place | True
+Stabil | False
+
 <details>
-    <summary>Kode</summary>
+    <summary>Kode for Randomized-Quicksort</summary>
     
 ````python
 def randomized_partition(A, p, r):
