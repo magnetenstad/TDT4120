@@ -7,8 +7,8 @@
 De overordnede læringsmålene for emnet er som følger.
 
 **Dere skal ha kunnskap om:**
-- [ ] [X1] Et bredt spekter av etablerte algoritmer og datastrukturer
-- [ ] [X2] Klassiske algoritmiske problemer med kjente effektive løsninger
+- [x] [X1] Et bredt spekter av etablerte algoritmer og datastrukturer
+- [x] [X2] Klassiske algoritmiske problemer med kjente effektive løsninger
 - [ ] [X3] Komplekse problemer uten kjente effektive løsninger
 
 **Dere skal kunne:**
@@ -23,20 +23,20 @@ De overordnede læringsmålene for emnet er som følger.
 ### Gjennom semesteret
 
 **Læringsmål for hver algoritme:**
-- [ ] [Z1] Kjenne den formelle definisjonen av det generelle problemet den løser
-- [ ] [Z2] Kjenne til eventuelle tilleggskrav den stiller for å være korrekt
-- [ ] [Z3] Vite hvordan den oppfører seg; kunne utføre algoritmen, trinn for trinn
+- [x] [Z1] Kjenne den formelle definisjonen av det generelle problemet den løser
+- [x] [Z2] Kjenne til eventuelle tilleggskrav den stiller for å være korrekt
+- [x] [Z3] Vite hvordan den oppfører seg; kunne utføre algoritmen, trinn for trinn
 - [ ] ! [Z4] Forstå korrekthetsbeviset; hvordan og hvorfor virker algoritmen egentlig?
 - [ ] [Z5] Kjenne til eventuelle styrker eller svakheter, sammenlignet med andre
-- [ ] [Z6] Kjenne kjøretidene under ulike omstendigheter, og forstå utregningen
+- [x] [Z6] Kjenne kjøretidene under ulike omstendigheter, og forstå utregningen
 
 **Læringsmål for hver datastruktur:**
-- [ ] [Z7] Forstå algoritmene (jf. mål Z01–Z06) for de ulike operasjonene på strukturen
-- [ ] [Z8] Forstå hvordan strukturen representeres i minnet
+- [x] [Z7] Forstå algoritmene (jf. mål Z01–Z06) for de ulike operasjonene på strukturen
+- [x] [Z8] Forstå hvordan strukturen representeres i minnet
 
 **Læringsmål for hvert problem:**
-- [ ] [Z9] Kunne angi presist hva input er
-- [ ] [Z10] Kunne angi presist hva output er og hvilke egenskaper det må ha
+- [x] [Z9] Kunne angi presist hva input er
+- [x] [Z10] Kunne angi presist hva output er og hvilke egenskaper det må ha
 
 ### Forelesning 1: Problemer og algoritmer
 - [x] [A1] [Forstå bokas pseudokode-konvensjoner](#a1-forstå-bokas-pseudokode-konvensjoner)
@@ -218,9 +218,6 @@ In place | True
 Stabil | True
 Løkkeinvariant | For hver iterasjon er delarrayet $A[1 \dots j - 1]$ sortert, og element $j$ plasseres slik at $A[1 \dots j]$ blir sortert.
 
-<details>
-    <summary>Kode for Insertion-Sort</summary>
-
 ````python
 def insertion_sort(A):
     for j in range(1, len(A)):
@@ -233,7 +230,6 @@ def insertion_sort(A):
         A[i + 1] = key
 ````
 [Implementasjon av Insertion-Sort](/lib/insertion_sort.py)
-</details>
 
 ### Forelesning 2: Datastrukturer
 
@@ -260,9 +256,6 @@ Input | S: stakk
 Output | Elementet på toppen av stakken
 Kjøretid | $\Theta(1)$
 
-<details>
-    <summary>Kode for stakker</summary>
-    
 ````python
 def stack_empty(S):
     return S.top == 0
@@ -279,7 +272,6 @@ def pop(S):
         return S[S.top + 1]
 ````
 [Implementasjon av stakker](lib/structures/stack.py)
-</details>
 
 ##### Køer
 Attributt | Enqueue
@@ -295,9 +287,6 @@ Input | Q: kø
 Output | Det første elementet i køen
 Kjøretid | $\Theta(1)$
 
-<details>
-    <summary>Kode for køer</summary>
-    
 ````python
 def enqueue(Q, x):
     Q[Q.tail] = x
@@ -315,7 +304,6 @@ def dequeue(Q):
     return x
 ````
 [Implementasjon av køer](lib/structures/queue.py)
-</details>
 
 #### [B2] Forstå hvordan lenkede lister fungerer
 TODO: List-Delete', List-Search', List-Insert'
@@ -338,9 +326,6 @@ Attributt | List-Delete
 Beskrivelse | Fjernet et element fra en dobbeltlenket liste
 Input | L: dobbeltlenket liste, x: element
 Kjøretid | $\Theta(1)$
-
-<details>
-    <summary>Kode for lenkede lister</summary>
 
 ````python
 def list_search(L, k):
@@ -365,7 +350,6 @@ def list_delete(L, x):
         x.next.prev = x.prev
 ````
 [Implementasjon av lenkede lister](lib/structures/linked_list.py)
-</details>
 
 #### [B3] Forstå hvordan pekere og objekter kan implementeres
 Pekere og objekter kan implementeres ved lister og indekser. Indeksene fungerer som pekere. Det er to måter å gjøre dette på:
@@ -394,9 +378,6 @@ Beskrivelse | Sletter et element i en direct-access-tabell
 Input | T: direct-access-tabell, x: element
 Kjøretid | $\Theta(1)$
 
-<details>
-    <summary>Kode for direct-access-tabeller</summary>
-    
 ````python
 def direct_address_search(T, k):
     return T[k]
@@ -407,7 +388,6 @@ def direct_address_insert(T, x):
 def direct_address_delete(T, x):
     T[x.key] = None
 ````
-</details>
 
 ##### Hashtabeller
 Attributt | Hash-Insert
@@ -423,9 +403,6 @@ Input | T: hashtabell, k: nøkkel
 Output | Elementet i tabellen med den gitt nøkkelen, eller None
 Kjøretid | ?
 
-<details>
-    <summary>Kode for hashtabeller</summary>
-    
 ````python
 def hash_insert(T, k):
     i = 0
@@ -455,7 +432,6 @@ def hash_search(T, k):
     return None
 ````
 [Implementasjon av hashtabeller](lib/structures/hash_table_open_address.py)
-</details>
 
 #### [B5] Forstå konfliktløsing ved kjeding (chaining)
 Attributt | Chained-Hash-Insert
@@ -477,9 +453,6 @@ Beskrivelse | Sletter et element i en kjedet hashtabell
 Input | T: kjedet hashtabell, x: element
 Kjøretid | ?
 
-<details>
-    <summary>Kode for hashtabeller med kjeding</summary>
-    
 ````python
 def chained_hash_insert(T, x):
     T[h(x.key)].append(x)
@@ -494,7 +467,6 @@ def chained_hash_delete(T, x):
     T[h(x.key)].remove(x)
 ````
 [Implementasjon av kjeding](lib/structures/hash_table_chained.py)
-</details>
 
 #### [B6] Kjenne til grunnleggende hashfunksjoner
 TODO
@@ -520,9 +492,6 @@ Beskrivelse | Fjerner et element fra en dynamisk tabell, halverer størrelsen de
 Input | T: dynamisk tabell, x: element
 Kjøretid | $O(1)$, amortisert
 
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def table_insert(T, x):
     if T.size == 0:
@@ -551,7 +520,6 @@ def table_delete(T, x):
         T.size //= 2
 ````
 [Implementasjon av dynamiske tabeller](lib/structures/table.py)
-</details>
 
 ### Forelesning 3: Splitt og hersk
 
@@ -569,9 +537,6 @@ Beskrivelse | Finner subarrayet i et array med størst sum av elementer
 Input | A: array, low: laveste indeks, high: største indeks
 Kjøretid | $\Theta(n \lg n)$
 
-<details>
-    <summary>Kode for Find-Maximum-Subarray</summary>
-    
 ````python
 def find_max_crossing_subarray(A, low, mid, high):
     left_sum = -float('inf')
@@ -606,7 +571,6 @@ def find_maximum_subarray(A, low, high):
             return cross_low, cross_high, cross_sum
 ````
 [Implementasjon maximum-subarray-problemet](lib/find_maximum_subarray.py)
-</details>
 
 #### [C3] Forstå Bisect og Bisect'
 Attributt | Bisect
@@ -618,9 +582,6 @@ Worst case | $\Theta(\lg n)$
 Average case | $\Theta(\lg n)$
 Best case | $\Theta(1)$ if v is in the middle
 
-<details>
-    <summary>Kode for Bisect</summary>
-    
 ````python
 def bisect(A, p, r, v):
     if p <= r:
@@ -633,14 +594,7 @@ def bisect(A, p, r, v):
             return bisect(A, q + 1, r, v)
     else:
         return None
-````
-[Implementasjon av Bisect](lib/bisect.py)
-</details>
 
-<details>
-    <summary>Kode for Bisect'</summary>
-    
-````python
 def iterative_bisect(A, p, r, v):
     while p <= r:
         q = floor((p + r) / 2)
@@ -652,8 +606,7 @@ def iterative_bisect(A, p, r, v):
             p = q + 1
     return None
 ````
-[Implementasjon av Iterative-Bisect](lib/bisect.py)
-</details>
+[Implementasjon av Bisect](lib/bisect.py)
 
 #### [C4] Forstå Merge-Sort
 Attributt | Merge-Sort
@@ -678,9 +631,6 @@ Minnebruk | $\Theta(n)$
 In place | False
 Stabil | True
 
-<details>
-    <summary>Kode for Merge-Sort og Merge</summary>
-    
 ````python
 def merge(A, p, q, r):
     n1 = q - p + 1
@@ -711,7 +661,6 @@ def merge_sort(A, p, r):
         merge(A, p, q, r)
 ````
 [Implementasjon Merge-Sort](lib/merge_sort.py)
-</details>
 
 #### [C5] Forstå Quicksort og Randomized-Quicksort
 ##### Quicksort
@@ -727,9 +676,6 @@ Minnebruk | $\Theta(1)$
 In place | True
 Stabil | False
 
-<details>
-    <summary>Kode for Quicksort</summary>
-    
 ````python
 def partition(A, p, r):
     x = A[r]
@@ -748,7 +694,6 @@ def quicksort(A, p, r):
         quicksort(A, q + 1, r)
 ````
 [Implementasjon av Quicksort](lib/quicksort.py)
-</details>
 
 ##### Randomized-Quicksort
 Attributt | Quicksort
@@ -763,9 +708,6 @@ Minnebruk | $\Theta(1)$
 In place | True
 Stabil | False
 
-<details>
-    <summary>Kode for Randomized-Quicksort</summary>
-    
 ````python
 def randomized_partition(A, p, r):
     i = randint(p, r)
@@ -779,7 +721,6 @@ def randomized_quicksort(A, p, r):
         randomized_quicksort(A, q + 1, r)
 ````
 [Implementasjon av Randomized-Quicksort](lib/randomized_select.py)
-</details>
 
 #### ! [C6] Kunne løse rekurrenser med substitusjon, rekursjonstrær og masterteoremet
 #### ! [C7] Kunne løse rekurrenser med iterasjonsmetoden
@@ -808,9 +749,7 @@ Time Complexity: Theta(n + k)
 Space Complecity: Theta(k)
 In place: False
 Stable: True
-<details>
-    <summary>Kode</summary>
-    
+
 ````python
 def counting_sort(A, B, k):
     C = [0] * k
@@ -824,7 +763,6 @@ def counting_sort(A, B, k):
         C[v] -= 1
 ````
 [Implementasjon av Counting-Sort](lib/counting_sort.py)
-</details>
 
 #### ! [D4] Forstå Radix-Sort, og hvorfor den trenger en stabil subrutine
 (using COUNTING-SORT)
@@ -832,9 +770,7 @@ Time Complexity: Theta(d(n + k))
 Space Complecity: Theta(n + k)
 In place: False
 Stable: True
-<details>
-    <summary>Kode</summary>
-    
+
 ````python
 def counting_sort(A, B, k, d):
     C = [0] * k
@@ -857,7 +793,6 @@ def radix_sort(A, d):
     return A
 ````
 [Implementasjon av Radix-Sort](lib/radix_sort.py)
-</details>
 
 #### [D5] Forstå Bucket-Sort
 Time Complexity:
@@ -868,9 +803,7 @@ Space Complecity: Theta(n)
 
 In place: False
 Stable: True
-<details>
-    <summary>Kode</summary>
-    
+
 ````python
 def bucket_sort(A):
     n = len(A)
@@ -882,7 +815,6 @@ def bucket_sort(A):
     return [value for bucket in B for value in bucket]
 ````
 [Implementasjon av Bucket-Sort](lib/bucket_sort.py)
-</details>
 
 #### [D6] Forstå Randomized-Select
 Returns the $i$th smallest element of the array $A[p \dots r]$.
@@ -893,9 +825,7 @@ Time Complexity:
     Best case: Theta(n)
 Space Complecity: Theta(1)
 In place: True
-<details>
-    <summary>Kode</summary>
-    
+
 ````python
 def randomized_select(A, p, r, i):
     if p == r:
@@ -910,7 +840,6 @@ def randomized_select(A, p, r, i):
         return randomized_select(A, q + 1, r, i - k)
 ````
 [Implementasjon av Randomized-Select](lib/randomized_select.py)
-</details>
 
 #### [D7] Kjenne til Select
 Merk: Det kreves ikke grundig forståelse av virkemåten til Select.
@@ -921,9 +850,7 @@ Merk: Det kreves ikke grundig forståelse av virkemåten til Select.
 Max-Heap-Insert, Heap-Extract-Max, Heap-Increase-Key, Heap-Maximum. Også
 tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)
 ##### Heap
-<details>
-    <summary>Kode</summary>
-    
+
 ````python
 def parent(i):
     return floor(i / 2)
@@ -934,12 +861,8 @@ def left(i):
 def right(i):
     return 2 * i + 2  # 2 * i + 1, if 1-indexed
 ````
-</details>
 
 ##### Max-Heap
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def max_heapify(A, i):
     """
@@ -1000,12 +923,8 @@ def max_heap_insert(A, key):
     A[A.heap_size - 1] = -float('inf')
     heap_increase_key(A, A.heap_size - 1, key)
 ````
-</details>
 
 ##### Min-Heap
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def min_heapify(A, i):
     """
@@ -1067,12 +986,8 @@ def min_heap_insert(A, key):
     heap_decrease_key(A, A.heap_size - 1, key)
 ````
 [Implementasjon av heaps](lib/structures/binary_heap.py)
-</details>
 
 #### [E2] Forstå Heapsort
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def heapsort(A):
     """
@@ -1091,13 +1006,10 @@ def heapsort(A):
         max_heapify(A, 0)
 ````
 [Implementasjon av Heapsort](lib/heapsort.py)
-</details>
 
 #### [E3] Forstå hvordan rotfaste trær kan implementeres
+
 #### ! [E4] Forstå hvordan binære søketrær fungerer
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def inorder_tree_walk(x):
     if x != None:
@@ -1183,7 +1095,6 @@ def tree_delete(T, z):
         y.left.p = y
 ````
 [Implementasjon av binære søketrær](lib/structures/binary_tree.py)
-</details>
 
 #### [E5] Vite at forventet høyde for et tilfeldig binært søketre er Θ(lg n)
 #### [E6] Vite at det finnes søketrær med garantert høyde på Θ(lg n)
@@ -1198,9 +1109,6 @@ def tree_delete(T, z):
 #### [F7] Forstå hva overlappende delinstanser er
 #### [F8] Forstå eksemplene stavkutting og LCS
 ##### Stavkutting
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def cut_rod(p, n):
     """
@@ -1279,12 +1187,8 @@ def print_cut_rod_solution(p, n):
         n -= s[n]
 ````
 [Implementasjon av stavkutting](lib/cut_rod.py)
-</details>
 
 ##### Longest common subsequence (LCS)
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def lcs_length(X, Y):
     """
@@ -1329,12 +1233,8 @@ def print_lcs(b, X, i, j):
         print_lcs(b, X, i, j - 1)
 ````
 [Implementasjon av LCS](lib/longest_common_subsequence.py)
-</details>
 
 #### [F9] Forstå løsningen på det binære ryggsekkproblemet
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def knapsack(n, W, w, v):
     """
@@ -1371,16 +1271,12 @@ def continous_knapsack():
     pass # TODO: implement continous knapsack
 ````
 [Implementasjon av det binære ryggsekkproblemet](lib/knapsack.py)
-</details>
 
 ### Forelesning 7: Grådige algoritmer
 #### ! [G1] Forstå designmetoden grådighet
 #### ! [G2] Forstå grådighetsegenskapen (the greedy-choice property)
 #### [G3] Forstå eksemplene aktivitet-utvelgelse og det kontinuerlige ryggsekkproblemet
 #### [G4] Forstå Huffman og Huffman-koder
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def huffman(C):
     n = len(C)
@@ -1394,14 +1290,10 @@ def huffman(C):
     return heap_extract_min(Q)
 ````
 [Implementasjon av Huffman](lib/huffman.py)
-</details>
 
 ### Forelesning 8: Traversering av grafer
 #### [H1] Forstå hvordan grafer kan implementeres
 #### [H2] Forstå BFS, også for å finne korteste vei uten vekter
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def bfs(G, s):
     for u in G.V - set(s):
@@ -1424,12 +1316,8 @@ def bfs(G, s):
         u.color = "black"
 ````
 [Implementasjon av BFS](lib/bfs.py)
-</details>
 
 #### [H3] Forstå DFS, parentesteoremet og hvit-sti-teoremet
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def dfs(G):
     global time
@@ -1455,13 +1343,9 @@ def dfs_visit(G, u):
     u.f = time
 ````
 [Implementasjon av DFS](lib/dfs.py)
-</details>
 
 #### [H4] Forstå hvordan DFS klassifiserer kanter
 #### [H5] Forstå Topological-Sort
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def topological_sort(G):
     global L
@@ -1494,7 +1378,6 @@ def ts_dfs_visit(G, u):
     list_insert(L, LinkedListElement(u))
 ````
 [Implementasjon av Topological-Sort](lib/topological_sort.py)
-</details>
 
 #### [H6] Forstå hvordan DFS kan implementeres med en stakk
 #### [H7] Forstå hva traverseringstrær (som bredde-først- og dybde-først-trær) er
@@ -1502,9 +1385,6 @@ def ts_dfs_visit(G, u):
 
 ### Forelesning 9: Minimale spenntrær
 #### [I1] Forstå skog-implementasjonen av disjunkte mengder
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def connected_components(G):
     for v in G.V:
@@ -1537,7 +1417,6 @@ def find_set(x):
     return x.p
 ````
 [Implementasjon av disjunkte mengder](lib/structures/disjunct_set.py) 
-</details>
 
 #### [I2] Vite hva spenntrær og minimale spenntrær er
 #### ! [I3] Forstå Generic-MST
@@ -1550,9 +1429,6 @@ def find_set(x):
 
 #### [I4] Forstå hvorfor lette kanter er trygge kanter
 #### [I5] Forstå MST-Kruskal
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def mst_kruskal(G, w):
     A = set()
@@ -1565,12 +1441,8 @@ def mst_kruskal(G, w):
             union(u, v)
 ````
 [Implementasjon av MST-Kruskal](lib/minimal_spanning_tree.py)
-</details>
 
 #### [I6] Forstå MST-Prim
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def mst_prim(G, w, r):
     for u in G.V:
@@ -1586,7 +1458,6 @@ def mst_prim(G, w, r):
                 v.key = w[u][v]
 ````
 [Implementasjon av MST-Prim](lib/minimal_spanning_tree.py)
-</details>
 
 ### Forelesning 10: Korteste vei fra én til alle
 #### [J1] Forstå ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)
@@ -1595,9 +1466,6 @@ def mst_prim(G, w, r):
 #### [J4] Forstå at korteste enkle vei kan løses vha. lengste enkle vei og omvendt
 #### [J5] Forstå hvordan man kan representere et korteste-vei-tre
 #### ! [J6] Forstå kant-slakking (edge relaxation) og Relax
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def relax(u, v, w):
     if v.d > u.d + w[u][v]:
@@ -1605,7 +1473,6 @@ def relax(u, v, w):
         v.pi = u
 ````
 [Implementasjon av Relax](lib/single_source_shortest_path.py)
-</details>
 
 #### [J7] Forstå ulike egenskaper ved korteste veier og slakking
 (Triangle inequality, upper-bound property, no-path property, convergence property,
@@ -1629,9 +1496,6 @@ def bellman_ford(G, w, s):
 </details>
 
 #### [J9] Forstå Dag-Shortest-Paths
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def dag_shortest_paths(G, w, s):
     initialize_single_source(G, s)
@@ -1642,13 +1506,9 @@ def dag_shortest_paths(G, w, s):
         u = u.next
 ````
 [Implementasjon av Dag-Shortest-Paths](lib/single_source_shortest_path.py)
-</details>
 
 #### ! [J10] Forstå kobling mellom Dag-Shortest-Paths og dynamisk programmering
 #### [J11] Forstå Dijkstra
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def dijkstra(G, w, s):
     initialize_single_source(G, s)
@@ -1661,13 +1521,9 @@ def dijkstra(G, w, s):
             relax(u, v, w)
 ````
 [Implementasjon av Dijkstra](lib/single_source_shortest_path.py)
-</details>
 
 ### Forelesning 11: Korteste vei fra alle til alle
 #### [K1] Forstå forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def print_all_pairs_shortest_path(Pi, i, j):
     if i == j:
@@ -1679,12 +1535,8 @@ def print_all_pairs_shortest_path(Pi, i, j):
         print(j)
 ````
 [Implementasjon av Print-All-Pairs-Shortest-Path](lib/all_pairs_shortest_paths.py)
-</details>
 
 #### [K2] Forstå Floyd-Warshall
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def floyd_warshall(W):
     n = len(W)
@@ -1699,12 +1551,8 @@ def floyd_warshall(W):
     return D[n]
 ````
 [Implementasjon av Floyd-Warshall](lib/all_pairs_shortest_paths.py)
-</details>
 
 #### [K3] Forstå Transitive-Closure
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def transitive_closure(G):
     n = len(G.V)
@@ -1739,18 +1587,13 @@ def transitive_closure_optimized(G):
     return T
 ````
 [Implementasjon av Transitive-Closure](lib/transitive_closure.py)
-</details>
 
 #### [K4] Forstå Johnson
-<details>
-    <summary>Kode</summary>
-    
 ````python
 def johnson(G, w):
     pass # TODO: implement johnson
 ````
 [Implementasjon av Johnson](lib/all_pairs_shortest_paths.py)
-</details>
 
 ### Forelesning 12: Maksimal flyt
 #### [L1] Kunne definere flytnett, flyt og maks-flyt-problemet
@@ -1761,9 +1604,6 @@ def johnson(G, w):
 #### [L6] Forstå hva snitt, snitt-kapasitet og minimalt snitt er
 #### ! [L7] Forstå maks-flyt/min-snitt-teoremet
 #### [L8] Forstå Ford-Fulkerson-Method og Ford-Fulkerson
-<details>
-    <summary>Kode</summary>
-    
 ````
 FORD-FULKERSON-METHOD(G, s, t)
     initialize flow f to 0
@@ -1781,17 +1621,12 @@ FORD-FULKERSON(G, s, t)
                 (u, v).f = (u, v).f + cf(p)
             else (u, v).f = (u, v).f - cf(p)
 ````
-</details>
 
 #### [L9] Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen
-<details>
-    <summary>Kode</summary>
-    
 ````python
 # TODO: Implement Edmonds-Karp
 ````
 [Implementasjon av Edmonds-Karp](lib/ford_fulkerson.py)
-</details>
 
 #### [L10] Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching
 #### ! [L11] Forstå heltallsteoremet (integrality theorem)
