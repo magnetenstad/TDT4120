@@ -14,3 +14,5 @@
 # 6         if (u, v) in E
 # 7             (u, v).f = (u, v).f + cf(p)
 # 8         else (u, v).f = (u, v).f - cf(p)
+
+# TODO: Implement Edmonds-Karp
