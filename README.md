@@ -52,7 +52,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [B1] [Forstå hvordan stakker og køer fungerer](#b1-forstå-hvordan-stakker-og-køer-fungerer)
 - [x] [B2] [Forstå hvordan lenkede lister fungerer](#b2-forstå-hvordan-lenkede-lister-fungerer)
 - [ ] [B3] [Forstå hvordan pekere og objekter kan implementeres](#b3-forstå-hvordan-pekere-og-objekter-kan-implementeres)
-- [ ] ! [B4] [Forstå hvordan direkte adressering og hashtabeller fungerer](#-b4-forstå-hvordan-direkte-adressering-og-hashtabeller-fungererx)
+- [ ] ! [B4] [Forstå hvordan direkte adressering og hashtabeller fungerer](#-b4-forstå-hvordan-direkte-adressering-og-hashtabeller-fungerer)
 - [x] [B5] [Forstå konfliktløsing ved kjeding (chaining)](#b5-forstå-konfliktløsing-ved-kjeding-chaining)
 - [ ] [B6] [Kjenne til grunnleggende hashfunksjoner](#b6-kjenne-til-grunnleggende-hashfunksjoner)
 - [ ] [B7] [Vite at man for statiske datasett kan ha worst-case O(1) for søk](#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-søk)
@@ -173,25 +173,50 @@ De overordnede læringsmålene for emnet er som følger.
 
 ### Forelesning 1: Problemer og algoritmer
 #### [A1] Forstå bokas pseudokode-konvensjoner
+Bokas pseudokode-konvensjoner er generelt enkle å forstå. Det er likevel verdt å merke seg at det som regel brukes 1-indeksering, mens koden i dette dokumentet vil bruke 0-indeksering, fordi det her er implementert i Python.
+
 #### [A2] Kjenne egenskapene til random-access machine-modellen (RAM)
+Before we can analyze an algorithm, we must have a model of the implementation technology that we will use. The RAM model contains instructions commonly found in real computers: arithmetic (such as add, subtract, multiply, divide, remainder, floor, ceiling), data movement (load, store, copy), and control (conditional and unconditional branch, subroutine call and return). Each such instruction takes a constant amount of time. What if a RAM had an instruction that sorts? Then we could sort in just one instruction. Such a RAM would be unrealistic, since real computers do not have such instructions.
+
 #### [A3] Kunne definere problem, instans og problemstørrelse
-#### ! [A4] Kunne definere asymptotisk notasjon, O, Ω, Θ, o og ω.
+- Algoritme: Informally, an algorithm is any well-defined computational procedure that takes some value, or set of values, as input and produces some value, or set of values, as output. An algorithm is thus a sequence of computational steps that transform the input into the output.
+- Problem: The statement of the problem specifies in general terms the desired input/output relationship.
+- Probleminstans: In general, an instance of a problem consists of the input (satisfying whatever constraints are imposed in the problem statement) needed to compute a solution to the problem.
+- Problemstørrelse: Størrelse på input tilhørende en probleminstans, f.eks. antall tall som skal sorteres i et sorteringsproblem. 
+
+#### ! [A4] Kunne definere asymptotisk notasjon, O, $\Omega$, $\Theta$, o og $\omega$.
+Notasjon | Forklaring | Tegn
+---|---|---
+$\omega$ | streng nedre grense | $>$
+$\Omega$ | nedre grense | $\geq$
+$\Theta$ | øvre og nedre grense | $=$
+O | øvre grense | $\leq$
+o | streng øvre grense | $<$
+
 #### ! [A5] Kunne definere best-case, average-case og worst-case
+**Best-case** er den minimale kjøretiden, gitt et optimalt input. **Average-case** er den gjennomsnittlige kjøretiden, over alle mulige inputs. **Worst-case** er den maksimale kjøretiden, gitt verst tenkelig input.
+
 #### ! [A6] Forstå løkkeinvarianter og induksjon
+**Løkkeinvariant**: et krav tilfredsstilles etter hver iterasjon, brukes til bevis.
+**Induksjon**: Grunntilfelle + induktivt steg kan gi et bevis for alle n > grunntilfellet.
+
 #### ! [A7] Forstå rekursiv dekomponering og induksjon over delinstanser
+**Rekursiv dekomponering**:  Del instansen i mindre biter, løs problemet rekursivt for disse, og kombinér løsningene.
+
 #### [A8] Forstå Insertion-Sort
-
 ##### Insertion-Sort
-- Time Complexity:
-  - Worst case: $\Theta(n^2)$, if input is in reverse order
-  - Average case: $\Theta(n^2)$
-  - Best case: $\Theta(n)$, if input is already sorted
-- Space Complecity: $\Theta(1)$
-
-In place: True
-Stable: True
-Loop invariant: At the start of each iteration, the subarray $A[1 \dots j - 1]$
-consists of the elements originally in $A[1 \dots j - 1]$, but in sorted order.
+Attributt | Insertion-Sort
+---|---
+Beskrivelse | Sorteringsalgoritme
+Input | A: vilkårlig liste av tall
+Output | Sortert liste (in place)
+Worst case | $\Theta(n^2)$, hvis input er omvendt sortert
+Average case | $\Theta(n^2)$
+Best case | $\Theta(n)$, hvis input allerede er sortert
+Minnebruk | $\Theta(1)$
+In place | True
+Stabil | True
+Løkkeinvariant | For hver iterasjon er delarrayet $A[1 \dots j - 1]$ sortert, og element $j$ plasseres slik at $A[1 \dots j]$ blir sortert.
 
 <details>
     <summary>Kode for Insertion-Sort</summary>
@@ -215,6 +240,28 @@ def insertion_sort(A):
 #### [B1] Forstå hvordan stakker og køer fungerer
 
 ##### Stakker
+Attributt | Stack-Empty
+---|---
+Beskrivelse | Sjekker om stakken er tom
+Input | S: stakk
+Output | True hvis stakken er tom, False ellers
+Kjøretid | $\Theta(1)$
+Minnebruk | $\Theta(1)$
+
+Attributt | Push
+---|---
+Beskrivelse | Legger til et element på stakken
+Input | S: stakk, x: element
+Kjøretid | $\Theta(1)$
+Minnebruk | $\Theta(1)$
+
+Attributt | Pop
+---|---
+Beskrivelse | Fjerner og returnerer øverste element av stakken
+Input | S: stakk
+Output | Elementet på toppen av stakken
+Kjøretid | $\Theta(1)$
+Minnebruk | $\Theta(1)$
 
 <details>
     <summary>Kode for stakker</summary>
@@ -238,6 +285,20 @@ def pop(S):
 </details>
 
 ##### Køer
+Attributt | Enqueue
+---|---
+Beskrivelse | Legger til et element på halen til køen
+Input | Q: kø
+Kjøretid | $\Theta(1)$
+Minnebruk | $\Theta(1)$
+
+Attributt | Dequeue
+---|---
+Beskrivelse | Fjerner og returnerer elementet som står først i køen
+Input | Q: kø
+Output | Det første elementet i køen
+Kjøretid | $\Theta(1)$
+Minnebruk | $\Theta(1)$
 
 <details>
     <summary>Kode for køer</summary>
@@ -262,8 +323,29 @@ def dequeue(Q):
 </details>
 
 #### [B2] Forstå hvordan lenkede lister fungerer
-(List-Search, List-Insert, List-Delete, List-Delete', List-Search',
-List-Insert')
+TODO: List-Delete', List-Search', List-Insert'
+
+Attributt | List-Search
+---|---
+Beskrivelse | Søker etter et element med en spesifikk nøkkel
+Input | L: lenket liste, k: nøkkel
+Output | Elementet med nøkkelen, eller NIL
+Kjøretid | $\Theta(n)$
+Minnebruk | $\Theta(1)$
+
+Attributt | List-Insert
+---|---
+Beskrivelse | Legger et element til starten av en lenket liste
+Input | L: lenket liste, x: element
+Kjøretid | $\Theta(1)$
+Minnebruk | $\Theta(1)$
+
+Attributt | List-Delete
+---|---
+Beskrivelse | Fjernet et element fra en dobbeltlenket liste
+Input | L: dobbeltlenket liste, x: element
+Kjøretid | $\Theta(1)$
+Minnebruk | $\Theta(1)$
 
 <details>
     <summary>Kode for lenkede lister</summary>
@@ -296,7 +378,7 @@ def list_delete(L, x):
 #### [B3] Forstå hvordan pekere og objekter kan implementeres
 #### ! [B4] Forstå hvordan direkte adressering og hashtabeller fungerer
 
-##### Direkte adressering (er dette samme som open address?)
+##### Direkte adressering TODO
 <details>
     <summary>Kode</summary>
     
@@ -354,6 +436,9 @@ def chained_hash_delete(T, x):
 #### [B6] Kjenne til grunnleggende hashfunksjoner
 #### [B7] Vite at man for statiske datasett kan ha worst-case O(1) for søk
 #### [B8] Kunne definere amortisert analyse
+Average case og amortisert kjøretid kan fremstå som litt like til å starte med, siden de begge ser på et gjennomsnitt. Men, mens average case ser på gjennomsnitt på tvers av alle mulige individuelle instanser, så handler amortisert kjøretid om å se på gjennomsnitt på tvers av en rekke av etterfølgende verste-tilfelle invokasjoner. Altså, handler gjennomsnittet i amortisert kjøretid om invokasjoner som ikke utføres uavhengig av hverandre.
+
+Ta for eksempel det typiske eksempelet med en dynamisk tabell. Når vi ser på amortisert kjøretid i dette tilfellet, så ser vi på den gjennomsnittlige kjøretiden for en innsettelse, i verste tilfelle, når vi setter inn nn elementer etter hverandre i samme instans av datastrukturen.
 #### [B9] Forstå hvordan dynamiske tabeller fungerer
 <details>
     <summary>Kode</summary>
@@ -591,7 +676,22 @@ def randomized_quicksort(A, p, r):
 
 ### Forelesning 4: Rangering i lineær tid
 #### ! [D1] Forstå hvorfor sammenligningsbasert sortering har en worst-case på Ω(n lg n)
+Theorem 8.1
+Any comparison sort algorithm requires .n lg n/ comparisons in the worst case.
+Proof From the preceding discussion, it suffices to determine the height of a
+decision tree in which each permutation appears as a reachable leaf. Consider a
+decision tree of height h with l reachable leaves corresponding to a comparison
+sort on n elements. Because each of the nŠ permutations of the input appears as
+some leaf, we have nŠ  l. Since a binary tree of height h has no more than 2h
+leaves, we have
+nŠ  l  2h ;
+which, by taking logarithms, implies
+h  lg.nŠ/ (since the lg function is monotonically increasing)
+D .n lg n/ (by equation (3.19)) 
+
 #### [D2] Vite hva en stabil sorteringsalgoritme er
+
+
 #### [D3] Forstå Counting-Sort, og hvorfor den er stabil
 Time Complexity: Theta(n + k)
 Space Complecity: Theta(k)
@@ -602,7 +702,6 @@ Stable: True
     
 ````python
 def counting_sort(A, B, k):
-    
     C = [0] * k
     for i in A:
         C[i] += 1
@@ -665,13 +764,10 @@ Stable: True
 def bucket_sort(A):
     n = len(A)
     B = [[] for _ in range(n)]
-
     for i in range(n):
         B[floor(n * A[i])].append(A[i])
-
     for j in range(n):
         insertion_sort(B[j])
-
     return [value for bucket in B for value in bucket]
 ````
 [Implementasjon av Bucket-Sort](lib/bucket_sort.py)
