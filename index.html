@@ -497,7 +497,10 @@ pre[data-line] .line-highlight[data-end]:after {
 </ul>
 <p>In place: True<br>
 Stable: True<br>
-Loop invariant: At the start of each iteration, the subarray <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false">[</mo><mn>1</mn><mo>&#x2026;</mo><mi>j</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">A[1 \dots j - 1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mopen">[</span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">&#x2212;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span> consists of the elements originally in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false">[</mo><mn>1</mn><mo>&#x2026;</mo><mi>j</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">A[1 \dots j - 1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mopen">[</span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">&#x2212;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span>, but in sorted order.</p>
+Loop invariant: At the start of each iteration, the subarray <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false">[</mo><mn>1</mn><mo>&#x2026;</mo><mi>j</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">A[1 \dots j - 1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mopen">[</span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">&#x2212;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span><br>
+consists of the elements originally in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false">[</mo><mn>1</mn><mo>&#x2026;</mo><mi>j</mi><mo>&#x2212;</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">A[1 \dots j - 1]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mopen">[</span><span class="mord">1</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.05724em;">j</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">&#x2212;</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span>, but in sorted order.</p>
+<details>
+    <summary>Kode for Insertion-Sort</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">insertion_sort</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-for">for</span> j <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
         key <span class="token operator">=</span> A<span class="token punctuation">[</span>j<span class="token punctuation">]</span>
@@ -508,12 +511,15 @@ Loop invariant: At the start of each iteration, the subarray <span class="katex"
             i <span class="token operator">-=</span> <span class="token number">1</span>
         A<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> key
 </pre><p><a href="lib\insertion_sort.py">Implementasjon av Insertion-Sort</a></p>
+</details>
 <h3 class="mume-header" id="forelesning-2-datastrukturer-1">Forelesning 2: Datastrukturer</h3>
 
 <h4 class="mume-header" id="b1-forst%C3%A5-hvordan-stakker-og-k%C3%B8er-fungerer">[B1] Forst&#xE5; hvordan stakker og k&#xF8;er fungerer</h4>
 
 <h5 class="mume-header" id="stakker">Stakker</h5>
 
+<details>
+    <summary>Kode for stakker</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">stack_empty</span><span class="token punctuation">(</span>S<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-return">return</span> S<span class="token punctuation">.</span>top <span class="token operator">==</span> <span class="token number">0</span>
 
@@ -528,8 +534,11 @@ Loop invariant: At the start of each iteration, the subarray <span class="katex"
         S<span class="token punctuation">.</span>top <span class="token operator">-=</span> <span class="token number">1</span>
         <span class="token keyword keyword-return">return</span> S<span class="token punctuation">[</span>S<span class="token punctuation">.</span>top <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span>
 </pre><p><a href="lib/structures/stack.py">Implementasjon av stakker</a></p>
+</details>
 <h5 class="mume-header" id="k%C3%B8er">K&#xF8;er</h5>
 
+<details>
+    <summary>Kode for k&#xF8;er</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">enqueue</span><span class="token punctuation">(</span>Q<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
     Q<span class="token punctuation">[</span>Q<span class="token punctuation">.</span>tail<span class="token punctuation">]</span> <span class="token operator">=</span> x
     <span class="token keyword keyword-if">if</span> Q<span class="token punctuation">.</span>tail <span class="token operator">==</span> Q<span class="token punctuation">.</span>length<span class="token punctuation">:</span>
@@ -545,10 +554,13 @@ Loop invariant: At the start of each iteration, the subarray <span class="katex"
         Q<span class="token punctuation">.</span>head <span class="token operator">+=</span> <span class="token number">1</span>
     <span class="token keyword keyword-return">return</span> x
 </pre><p><a href="lib/structures/queue.py">Implementasjon av k&#xF8;er</a></p>
+</details>
 <h4 class="mume-header" id="b2-forst%C3%A5-hvordan-lenkede-lister-fungerer">[B2] Forst&#xE5; hvordan lenkede lister fungerer</h4>
 
 <p>(List-Search, List-Insert, List-Delete, List-Delete&apos;, List-Search&apos;,<br>
 List-Insert&apos;)</p>
+<details>
+    <summary>Kode for lenkede lister</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">list_search</span><span class="token punctuation">(</span>L<span class="token punctuation">,</span> k<span class="token punctuation">)</span><span class="token punctuation">:</span>
     x <span class="token operator">=</span> L<span class="token punctuation">.</span>head
     <span class="token keyword keyword-while">while</span> x <span class="token operator">!=</span> <span class="token boolean">None</span> <span class="token keyword keyword-and">and</span> x<span class="token punctuation">.</span>key <span class="token operator">!=</span> k<span class="token punctuation">:</span>
@@ -570,12 +582,15 @@ List-Insert&apos;)</p>
     <span class="token keyword keyword-if">if</span> x<span class="token punctuation">.</span><span class="token builtin">next</span> <span class="token operator">!=</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
         x<span class="token punctuation">.</span><span class="token builtin">next</span><span class="token punctuation">.</span>prev <span class="token operator">=</span> x<span class="token punctuation">.</span>prev
 </pre><p><a href="lib/structures/linked_list.py">Implementasjon av lenkede lister</a></p>
+</details>
 <h4 class="mume-header" id="b3-forst%C3%A5-hvordan-pekere-og-objekter-kan-implementeres">[B3] Forst&#xE5; hvordan pekere og objekter kan implementeres</h4>
 
 <h4 class="mume-header" id="b4-forst%C3%A5-hvordan-direkte-adressering-og-hashtabeller-fungerer">! [B4] Forst&#xE5; hvordan direkte adressering og hashtabeller fungerer</h4>
 
 <h5 class="mume-header" id="direkte-adressering-er-dette-samme-som-open-address">Direkte adressering (er dette samme som open address?)</h5>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">hash_insert</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> k<span class="token punctuation">)</span><span class="token punctuation">:</span>
     i <span class="token operator">=</span> <span class="token number">0</span>
     j <span class="token operator">=</span> h<span class="token punctuation">(</span>k<span class="token punctuation">,</span> i<span class="token punctuation">)</span>
@@ -603,8 +618,11 @@ List-Insert&apos;)</p>
         i <span class="token operator">+=</span> <span class="token number">1</span>
     <span class="token keyword keyword-return">return</span> <span class="token boolean">None</span>
 </pre><p><a href="lib/structures/hash_table_open_address.py">Implementasjon av open address hash table</a></p>
+</details>
 <h4 class="mume-header" id="b5-forst%C3%A5-konfliktl%C3%B8sing-ved-kjeding-chaining">[B5] Forst&#xE5; konfliktl&#xF8;sing ved kjeding (chaining)</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">chained_hash_insert</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
     T<span class="token punctuation">[</span>h<span class="token punctuation">(</span>x<span class="token punctuation">.</span>key<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
 
@@ -617,6 +635,7 @@ List-Insert&apos;)</p>
 <span class="token keyword keyword-def">def</span> <span class="token function">chained_hash_delete</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
     T<span class="token punctuation">[</span>h<span class="token punctuation">(</span>x<span class="token punctuation">.</span>key<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">.</span>remove<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
 </pre><p><a href="lib/structures/hash_table_chained.py">Implementasjon av kjeding</a></p>
+</details>
 <h4 class="mume-header" id="b6-kjenne-til-grunnleggende-hashfunksjoner">[B6] Kjenne til grunnleggende hashfunksjoner</h4>
 
 <h4 class="mume-header" id="b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-s%C3%B8k">[B7] Vite at man for statiske datasett kan ha worst-case O(1) for s&#xF8;k</h4>
@@ -625,6 +644,8 @@ List-Insert&apos;)</p>
 
 <h4 class="mume-header" id="b9-forst%C3%A5-hvordan-dynamiske-tabeller-fungerer">[B9] Forst&#xE5; hvordan dynamiske tabeller fungerer</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">table_insert</span><span class="token punctuation">(</span>T<span class="token punctuation">,</span> x<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-if">if</span> T<span class="token punctuation">.</span>size <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
         T<span class="token punctuation">.</span>table <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">]</span>
@@ -651,6 +672,7 @@ List-Insert&apos;)</p>
         T<span class="token punctuation">.</span>table <span class="token operator">=</span> new_table
         T<span class="token punctuation">.</span>size <span class="token operator">//=</span> <span class="token number">2</span>
 </pre><p><a href="lib/structures/table.py">Implementasjon av dynamiske tabeller</a></p>
+</details>
 <h3 class="mume-header" id="forelesning-3-splitt-og-hersk-1">Forelesning 3: Splitt og hersk</h3>
 
 <h4 class="mume-header" id="c1-forst%C3%A5-designmetoden-divide-and-conquer-splitt-og-hersk">! [C1] Forst&#xE5; designmetoden divide-and-conquer (splitt og hersk)</h4>
@@ -662,6 +684,8 @@ List-Insert&apos;)</p>
 <p>Category: Divide and conquer</p>
 <p>Time Complexity: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mi>n</mi><mi>lg</mi><mo>&#x2061;</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(n\lg{n})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathnormal">n</span></span><span class="mclose">)</span></span></span></span><br>
 Space Complecity: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">find_max_crossing_subarray</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> low<span class="token punctuation">,</span> mid<span class="token punctuation">,</span> high<span class="token punctuation">)</span><span class="token punctuation">:</span>
     left_sum <span class="token operator">=</span> <span class="token operator">-</span><span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">&apos;inf&apos;</span><span class="token punctuation">)</span>
     _sum <span class="token operator">=</span> <span class="token number">0</span>
@@ -694,6 +718,7 @@ Space Complecity: <span class="katex"><span class="katex-mathml"><math xmlns="ht
         <span class="token keyword keyword-else">else</span><span class="token punctuation">:</span>
             <span class="token keyword keyword-return">return</span> cross_low<span class="token punctuation">,</span> cross_high<span class="token punctuation">,</span> cross_sum
 </pre><p><a href="lib/find_maximum_subarray.py">Implementasjon maximum-subarray-problemet</a></p>
+</details>
 <h4 class="mume-header" id="c3-forst%C3%A5-bisect-og-bisect">[C3] Forst&#xE5; Bisect og Bisect&apos;</h4>
 
 <h5 class="mume-header" id="bisect">Bisect</h5>
@@ -708,6 +733,8 @@ Space Complecity: <span class="katex"><span class="katex-mathml"><math xmlns="ht
 </li>
 </ul>
 <p>Space Complecity: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">bisect</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> r<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-if">if</span> p <span class="token operator">&lt;=</span> r<span class="token punctuation">:</span>
         q <span class="token operator">=</span> floor<span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
@@ -720,8 +747,11 @@ Space Complecity: <span class="katex"><span class="katex-mathml"><math xmlns="ht
     <span class="token keyword keyword-else">else</span><span class="token punctuation">:</span>
         <span class="token keyword keyword-return">return</span> <span class="token boolean">None</span>
 </pre><p><a href="lib/bisect.py">Implementasjon av Bisect</a></p>
+</details>
 <h5 class="mume-header" id="iterative-bisect-binary-search">Iterative-Bisect (BINARY-SEARCH)</h5>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">iterative_bisect</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> r<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-while">while</span> p <span class="token operator">&lt;=</span> r<span class="token punctuation">:</span>
         q <span class="token operator">=</span> floor<span class="token punctuation">(</span><span class="token punctuation">(</span>p <span class="token operator">+</span> r<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
@@ -733,6 +763,7 @@ Space Complecity: <span class="katex"><span class="katex-mathml"><math xmlns="ht
             p <span class="token operator">=</span> q <span class="token operator">+</span> <span class="token number">1</span>
     <span class="token keyword keyword-return">return</span> <span class="token boolean">None</span>
 </pre><p><a href="lib/bisect.py">Implementasjon av Iterative-Bisect</a></p>
+</details>
 <h4 class="mume-header" id="c4-forst%C3%A5-merge-sort">[C4] Forst&#xE5; Merge-Sort</h4>
 
 <p>Time Complexity:<br>
@@ -742,6 +773,8 @@ Best case: <span class="katex"><span class="katex-mathml"><math xmlns="http://ww
 Space Complecity: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span><br>
 In place: False<br>
 Stable: True</p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">merge</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">:</span>
     n1 <span class="token operator">=</span> q <span class="token operator">-</span> p <span class="token operator">+</span> <span class="token number">1</span>
     n2 <span class="token operator">=</span> r <span class="token operator">-</span> q
@@ -770,6 +803,7 @@ Stable: True</p>
         merge_sort<span class="token punctuation">(</span>A<span class="token punctuation">,</span> q <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">)</span>
         merge<span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q<span class="token punctuation">,</span> r<span class="token punctuation">)</span>
 </pre><p><a href="lib/merge_sort.py">Implementasjon Merge-Sort</a></p>
+</details>
 <h4 class="mume-header" id="c5-forst%C3%A5-quicksort-og-randomized-quicksort">[C5] Forst&#xE5; Quicksort og Randomized-Quicksort</h4>
 
 <h5 class="mume-header" id="quicksort">Quicksort</h5>
@@ -781,6 +815,8 @@ Best case: Theta(n lg n)<br>
 Space Complecity: Theta(1)</p>
 <p>In place: True<br>
 Stable: False</p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">partition</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">:</span>
     x <span class="token operator">=</span> A<span class="token punctuation">[</span>r<span class="token punctuation">]</span>
     i <span class="token operator">=</span> p <span class="token operator">-</span> <span class="token number">1</span>
@@ -797,6 +833,7 @@ Stable: False</p>
         quicksort<span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
         quicksort<span class="token punctuation">(</span>A<span class="token punctuation">,</span> q <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">)</span>
 </pre><p><a href="lib/quicksort.py">Implementasjon av Quicksort</a></p>
+</details>
 <h5 class="mume-header" id="randomized-quicksort">Randomized-Quicksort</h5>
 
 <p>Time Complexity:<br>
@@ -806,6 +843,8 @@ Best case: Theta(n lg n)<br>
 Space Complecity: Theta(1)<br>
 In place: True<br>
 Stable: False</p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">randomized_partition</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">:</span>
     i <span class="token operator">=</span> randint<span class="token punctuation">(</span>p<span class="token punctuation">,</span> r<span class="token punctuation">)</span>
     A<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> A<span class="token punctuation">[</span>r<span class="token punctuation">]</span> <span class="token operator">=</span> A<span class="token punctuation">[</span>r<span class="token punctuation">]</span><span class="token punctuation">,</span> A<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
@@ -817,6 +856,7 @@ Stable: False</p>
         randomized_quicksort<span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> q <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
         randomized_quicksort<span class="token punctuation">(</span>A<span class="token punctuation">,</span> q <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">)</span>
 </pre><p><a href="lib/randomized_select.py">Implementasjon av Randomized-Quicksort</a></p>
+</details>
 <h4 class="mume-header" id="c6-kunne-l%C3%B8se-rekurrenser-med-substitusjon-rekursjonstr%C3%A6r-og-masterteoremet">! [C6] Kunne l&#xF8;se rekurrenser med substitusjon, rekursjonstr&#xE6;r og masterteoremet</h4>
 
 <h4 class="mume-header" id="c7-kunne-l%C3%B8se-rekurrenser-med-iterasjonsmetoden">! [C7] Kunne l&#xF8;se rekurrenser med iterasjonsmetoden</h4>
@@ -835,6 +875,8 @@ Stable: False</p>
 Space Complecity: Theta(k)<br>
 In place: False<br>
 Stable: True</p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">counting_sort</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> B<span class="token punctuation">,</span> k<span class="token punctuation">)</span><span class="token punctuation">:</span>
     
     C <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> k
@@ -847,6 +889,7 @@ Stable: True</p>
         B<span class="token punctuation">[</span>C<span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> v
         C<span class="token punctuation">[</span>v<span class="token punctuation">]</span> <span class="token operator">-=</span> <span class="token number">1</span>
 </pre><p><a href="lib/counting_sort.py">Implementasjon av Counting-Sort</a></p>
+</details>
 <h4 class="mume-header" id="d4-forst%C3%A5-radix-sort-og-hvorfor-den-trenger-en-stabil-subrutine">! [D4] Forst&#xE5; Radix-Sort, og hvorfor den trenger en stabil subrutine</h4>
 
 <p>(using COUNTING-SORT)<br>
@@ -854,6 +897,8 @@ Time Complexity: Theta(d(n + k))<br>
 Space Complecity: Theta(n + k)<br>
 In place: False<br>
 Stable: True</p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">counting_sort</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> B<span class="token punctuation">,</span> k<span class="token punctuation">,</span> d<span class="token punctuation">)</span><span class="token punctuation">:</span>
     C <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">*</span> k
     <span class="token keyword keyword-for">for</span> v <span class="token keyword keyword-in">in</span> A<span class="token punctuation">:</span>
@@ -874,6 +919,7 @@ Stable: True</p>
         A<span class="token punctuation">,</span> B <span class="token operator">=</span> B<span class="token punctuation">,</span> A
     <span class="token keyword keyword-return">return</span> A
 </pre><p><a href="lib/radix_sort.py">Implementasjon av Radix-Sort</a></p>
+</details>
 <h4 class="mume-header" id="d5-forst%C3%A5-bucket-sort">[D5] Forst&#xE5; Bucket-Sort</h4>
 
 <p>Time Complexity:<br>
@@ -883,6 +929,8 @@ Best case: Theta(n)<br>
 Space Complecity: Theta(n)</p>
 <p>In place: False<br>
 Stable: True</p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">bucket_sort</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>
     n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span>
     B <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token keyword keyword-for">for</span> _ <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">]</span>
@@ -895,6 +943,7 @@ Stable: True</p>
 
     <span class="token keyword keyword-return">return</span> <span class="token punctuation">[</span>value <span class="token keyword keyword-for">for</span> bucket <span class="token keyword keyword-in">in</span> B <span class="token keyword keyword-for">for</span> value <span class="token keyword keyword-in">in</span> bucket<span class="token punctuation">]</span>
 </pre><p><a href="lib/bucket_sort.py">Implementasjon av Bucket-Sort</a></p>
+</details>
 <h4 class="mume-header" id="d6-forst%C3%A5-randomized-select">[D6] Forst&#xE5; Randomized-Select</h4>
 
 <p>Returns the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathnormal">i</span></span></span></span>th smallest element of the array <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo stretchy="false">[</mo><mi>p</mi><mo>&#x2026;</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">A[p \dots r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mopen">[</span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner">&#x2026;</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span>.</p>
@@ -904,6 +953,8 @@ Average case: Theta(n)<br>
 Best case: Theta(n)<br>
 Space Complecity: Theta(1)<br>
 In place: True</p>
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">randomized_select</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> p<span class="token punctuation">,</span> r<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-if">if</span> p <span class="token operator">==</span> r<span class="token punctuation">:</span>
         <span class="token keyword keyword-return">return</span> A<span class="token punctuation">[</span>p<span class="token punctuation">]</span>
@@ -916,6 +967,7 @@ In place: True</p>
     <span class="token keyword keyword-else">else</span><span class="token punctuation">:</span>
         <span class="token keyword keyword-return">return</span> randomized_select<span class="token punctuation">(</span>A<span class="token punctuation">,</span> q <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">,</span> r<span class="token punctuation">,</span> i <span class="token operator">-</span> k<span class="token punctuation">)</span>
 </pre><p><a href="lib/randomized_select.py">Implementasjon av Randomized-Select</a></p>
+</details>
 <h4 class="mume-header" id="d7-kjenne-til-select">[D7] Kjenne til Select</h4>
 
 <p>Merk: Det kreves ikke grundig forst&#xE5;else av virkem&#xE5;ten til Select.</p>
@@ -928,6 +980,8 @@ Max-Heap-Insert, Heap-Extract-Max, Heap-Increase-Key, Heap-Maximum. Ogs&#xE5;<br
 tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
 <h5 class="mume-header" id="heap">Heap</h5>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">parent</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-return">return</span> floor<span class="token punctuation">(</span>i <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
 
@@ -936,8 +990,11 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
 
 <span class="token keyword keyword-def">def</span> <span class="token function">right</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-return">return</span> <span class="token number">2</span> <span class="token operator">*</span> i <span class="token operator">+</span> <span class="token number">2</span>  <span class="token comment"># 2 * i + 1, if 1-indexed</span>
-</pre><h5 class="mume-header" id="max-heap">Max-Heap</h5>
+</pre></details>
+<h5 class="mume-header" id="max-heap">Max-Heap</h5>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">max_heapify</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
     MAX-HEAPIFY
@@ -996,8 +1053,11 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
     A<span class="token punctuation">.</span>heap_size <span class="token operator">+=</span> <span class="token number">1</span>
     A<span class="token punctuation">[</span>A<span class="token punctuation">.</span>heap_size <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">&apos;inf&apos;</span><span class="token punctuation">)</span>
     heap_increase_key<span class="token punctuation">(</span>A<span class="token punctuation">,</span> A<span class="token punctuation">.</span>heap_size <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> key<span class="token punctuation">)</span>
-</pre><h5 class="mume-header" id="min-heap">Min-Heap</h5>
+</pre></details>
+<h5 class="mume-header" id="min-heap">Min-Heap</h5>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">min_heapify</span><span class="token punctuation">(</span>A<span class="token punctuation">,</span> i<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
     MIN-HEAPIFY
@@ -1057,8 +1117,11 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
     A<span class="token punctuation">[</span>A<span class="token punctuation">.</span>heap_size <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">&apos;inf&apos;</span><span class="token punctuation">)</span>
     heap_decrease_key<span class="token punctuation">(</span>A<span class="token punctuation">,</span> A<span class="token punctuation">.</span>heap_size <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> key<span class="token punctuation">)</span>
 </pre><p><a href="lib/structures/binary_heap.py">Implementasjon av heaps</a></p>
+</details>
 <h4 class="mume-header" id="e2-forst%C3%A5-heapsort">[E2] Forst&#xE5; Heapsort</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">heapsort</span><span class="token punctuation">(</span>A<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
     HEAPSORT
@@ -1075,10 +1138,13 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
         A<span class="token punctuation">.</span>heap_size <span class="token operator">-=</span> <span class="token number">1</span>
         max_heapify<span class="token punctuation">(</span>A<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span>
 </pre><p><a href="lib/heapsort.py">Implementasjon av Heapsort</a></p>
+</details>
 <h4 class="mume-header" id="e3-forst%C3%A5-hvordan-rotfaste-tr%C3%A6r-kan-implementeres">[E3] Forst&#xE5; hvordan rotfaste tr&#xE6;r kan implementeres</h4>
 
 <h4 class="mume-header" id="e4-forst%C3%A5-hvordan-bin%C3%A6re-s%C3%B8ketr%C3%A6r-fungerer">! [E4] Forst&#xE5; hvordan bin&#xE6;re s&#xF8;ketr&#xE6;r fungerer</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">inorder_tree_walk</span><span class="token punctuation">(</span>x<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-if">if</span> x <span class="token operator">!=</span> <span class="token boolean">None</span><span class="token punctuation">:</span>
         inorder_tree_walk<span class="token punctuation">(</span>x<span class="token punctuation">.</span>left<span class="token punctuation">)</span>
@@ -1162,6 +1228,7 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
         y<span class="token punctuation">.</span>left <span class="token operator">=</span> z<span class="token punctuation">.</span>left
         y<span class="token punctuation">.</span>left<span class="token punctuation">.</span>p <span class="token operator">=</span> y
 </pre><p><a href="lib/structures/binary_tree.py">Implementasjon av bin&#xE6;re s&#xF8;ketr&#xE6;r</a></p>
+</details>
 <h4 class="mume-header" id="e5-vite-at-forventet-h%C3%B8yde-for-et-tilfeldig-bin%C3%A6rt-s%C3%B8ketre-er-%CE%B8lg-n">[E5] Vite at forventet h&#xF8;yde for et tilfeldig bin&#xE6;rt s&#xF8;ketre er &#x398;(lg n)</h4>
 
 <h4 class="mume-header" id="e6-vite-at-det-finnes-s%C3%B8ketr%C3%A6r-med-garantert-h%C3%B8yde-p%C3%A5-%CE%B8lg-n">[E6] Vite at det finnes s&#xF8;ketr&#xE6;r med garantert h&#xF8;yde p&#xE5; &#x398;(lg n)</h4>
@@ -1186,6 +1253,8 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
 
 <h5 class="mume-header" id="stavkutting">Stavkutting</h5>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">cut_rod</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
     CUT-ROD
@@ -1198,7 +1267,6 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
     <span class="token keyword keyword-for">for</span> i <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
         q <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>q<span class="token punctuation">,</span> p<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> cut_rod<span class="token punctuation">(</span>p<span class="token punctuation">,</span> n <span class="token operator">-</span> i<span class="token punctuation">)</span><span class="token punctuation">)</span>
     <span class="token keyword keyword-return">return</span> q
-
 
 <span class="token keyword keyword-def">def</span> <span class="token function">memoized_cut_rod</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
@@ -1221,7 +1289,6 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
     r<span class="token punctuation">[</span>n<span class="token punctuation">]</span> <span class="token operator">=</span> q
     <span class="token keyword keyword-return">return</span> q
 
-
 <span class="token keyword keyword-def">def</span> <span class="token function">bottom_up_cut_rod</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
     BOTTOM-UP-CUT-ROD
@@ -1235,7 +1302,6 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
             q <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>q<span class="token punctuation">,</span> p<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+</span> r<span class="token punctuation">[</span>j <span class="token operator">-</span> i<span class="token punctuation">]</span><span class="token punctuation">)</span>
         r<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> q
     <span class="token keyword keyword-return">return</span> r<span class="token punctuation">[</span>n<span class="token punctuation">]</span>
-
 
 <span class="token keyword keyword-def">def</span> <span class="token function">extended_bottom_up_cut_rod</span><span class="token punctuation">(</span>p<span class="token punctuation">,</span> n<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
@@ -1265,8 +1331,11 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
         <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>n<span class="token punctuation">]</span><span class="token punctuation">)</span>
         n <span class="token operator">-=</span> s<span class="token punctuation">[</span>n<span class="token punctuation">]</span>
 </pre><p><a href="lib/cut_rod.py">Implementasjon av stavkutting</a></p>
+</details>
 <h5 class="mume-header" id="longest-common-subsequence-lcs">Longest common subsequence (LCS)</h5>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">lcs_length</span><span class="token punctuation">(</span>X<span class="token punctuation">,</span> Y<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
     LCS-LENGTH
@@ -1309,8 +1378,11 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
     <span class="token keyword keyword-else">else</span><span class="token punctuation">:</span>
         print_lcs<span class="token punctuation">(</span>b<span class="token punctuation">,</span> X<span class="token punctuation">,</span> i<span class="token punctuation">,</span> j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>
 </pre><p><a href="lib/longest_common_subsequence.py">Implementasjon av LCS</a></p>
+</details>
 <h4 class="mume-header" id="f9-forst%C3%A5-l%C3%B8sningen-p%C3%A5-det-bin%C3%A6re-ryggsekkproblemet">[F9] Forst&#xE5; l&#xF8;sningen p&#xE5; det bin&#xE6;re ryggsekkproblemet</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">knapsack</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> W<span class="token punctuation">,</span> w<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token triple-quoted-string string">&quot;&quot;&quot;
     KNAPSACK
@@ -1345,6 +1417,7 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
 <span class="token keyword keyword-def">def</span> <span class="token function">continous_knapsack</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-pass">pass</span> <span class="token comment"># TODO: implement continous knapsack</span>
 </pre><p><a href="lib/knapsack.py">Implementasjon av det bin&#xE6;re ryggsekkproblemet</a></p>
+</details>
 <h3 class="mume-header" id="forelesning-7-gr%C3%A5dige-algoritmer-1">Forelesning 7: Gr&#xE5;dige algoritmer</h3>
 
 <h4 class="mume-header" id="g1-forst%C3%A5-designmetoden-gr%C3%A5dighet">! [G1] Forst&#xE5; designmetoden gr&#xE5;dighet</h4>
@@ -1355,6 +1428,8 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
 
 <h4 class="mume-header" id="g4-forst%C3%A5-huffman-og-huffman-koder">[G4] Forst&#xE5; Huffman og Huffman-koder</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">huffman</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span><span class="token punctuation">:</span>
     n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span>
     Q <span class="token operator">=</span> build_min_heap<span class="token punctuation">(</span>C<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
@@ -1366,12 +1441,15 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
         min_heap_insert<span class="token punctuation">(</span>Q<span class="token punctuation">,</span> z<span class="token punctuation">)</span>
     <span class="token keyword keyword-return">return</span> heap_extract_min<span class="token punctuation">(</span>Q<span class="token punctuation">)</span>
 </pre><p><a href="lib/huffman.py">Implementasjon av Huffman</a></p>
+</details>
 <h3 class="mume-header" id="forelesning-8-traversering-av-grafer-1">Forelesning 8: Traversering av grafer</h3>
 
 <h4 class="mume-header" id="h1-forst%C3%A5-hvordan-grafer-kan-implementeres">[H1] Forst&#xE5; hvordan grafer kan implementeres</h4>
 
 <h4 class="mume-header" id="h2-forst%C3%A5-bfs-ogs%C3%A5-for-%C3%A5-finne-korteste-vei-uten-vekter">[H2] Forst&#xE5; BFS, ogs&#xE5; for &#xE5; finne korteste vei uten vekter</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">bfs</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-for">for</span> u <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V <span class="token operator">-</span> <span class="token builtin">set</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span>
         u<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">&quot;white&quot;</span>
@@ -1392,8 +1470,11 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
                 enqueue<span class="token punctuation">(</span>Q<span class="token punctuation">,</span> v<span class="token punctuation">)</span>
         u<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">&quot;black&quot;</span>
 </pre><p><a href="lib/bfs.py">Implementasjon av BFS</a></p>
+</details>
 <h4 class="mume-header" id="h3-forst%C3%A5-dfs-parentesteoremet-og-hvit-sti-teoremet">[H3] Forst&#xE5; DFS, parentesteoremet og hvit-sti-teoremet</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">dfs</span><span class="token punctuation">(</span>G<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-global">global</span> time
     <span class="token keyword keyword-for">for</span> u <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V<span class="token punctuation">:</span>
@@ -1417,10 +1498,13 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
     time <span class="token operator">+=</span> <span class="token number">1</span>
     u<span class="token punctuation">.</span>f <span class="token operator">=</span> time
 </pre><p><a href="lib/dfs.py">Implementasjon av DFS</a></p>
+</details>
 <h4 class="mume-header" id="h4-forst%C3%A5-hvordan-dfs-klassifiserer-kanter">[H4] Forst&#xE5; hvordan DFS klassifiserer kanter</h4>
 
 <h4 class="mume-header" id="h5-forst%C3%A5-topological-sort">[H5] Forst&#xE5; Topological-Sort</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">topological_sort</span><span class="token punctuation">(</span>G<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-global">global</span> L
     L <span class="token operator">=</span> LinkedList<span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -1451,6 +1535,7 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
     u<span class="token punctuation">.</span>f <span class="token operator">=</span> time
     list_insert<span class="token punctuation">(</span>L<span class="token punctuation">,</span> LinkedListElement<span class="token punctuation">(</span>u<span class="token punctuation">)</span><span class="token punctuation">)</span>
 </pre><p><a href="lib/topological_sort.py">Implementasjon av Topological-Sort</a></p>
+</details>
 <h4 class="mume-header" id="h6-forst%C3%A5-hvordan-dfs-kan-implementeres-med-en-stakk">[H6] Forst&#xE5; hvordan DFS kan implementeres med en stakk</h4>
 
 <h4 class="mume-header" id="h7-forst%C3%A5-hva-traverseringstr%C3%A6r-som-bredde-f%C3%B8rst-og-dybde-f%C3%B8rst-tr%C3%A6r-er">[H7] Forst&#xE5; hva traverseringstr&#xE6;r (som bredde-f&#xF8;rst- og dybde-f&#xF8;rst-tr&#xE6;r) er</h4>
@@ -1461,6 +1546,8 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
 
 <h4 class="mume-header" id="i1-forst%C3%A5-skog-implementasjonen-av-disjunkte-mengder">[I1] Forst&#xE5; skog-implementasjonen av disjunkte mengder</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">connected_components</span><span class="token punctuation">(</span>G<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-for">for</span> v <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V<span class="token punctuation">:</span>
         make_set<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
@@ -1491,6 +1578,7 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
         x<span class="token punctuation">.</span>p <span class="token operator">=</span> find_set<span class="token punctuation">(</span>x<span class="token punctuation">.</span>p<span class="token punctuation">)</span>
     <span class="token keyword keyword-return">return</span> x<span class="token punctuation">.</span>p
 </pre><p><a href="lib/structures/disjunct_set.py">Implementasjon av disjunkte mengder</a></p>
+</details>
 <h4 class="mume-header" id="i2-vite-hva-spenntr%C3%A6r-og-minimale-spenntr%C3%A6r-er">[I2] Vite hva spenntr&#xE6;r og minimale spenntr&#xE6;r er</h4>
 
 <h4 class="mume-header" id="i3-forst%C3%A5-generic-mst">! [I3] Forst&#xE5; Generic-MST</h4>
@@ -1506,6 +1594,8 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
 
 <h4 class="mume-header" id="i5-forst%C3%A5-mst-kruskal">[I5] Forst&#xE5; MST-Kruskal</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">mst_kruskal</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">)</span><span class="token punctuation">:</span>
     A <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token keyword keyword-for">for</span> v <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V<span class="token punctuation">:</span>
@@ -1516,8 +1606,11 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
             A<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">)</span>
             union<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span>
 </pre><p><a href="lib/minimal_spanning_tree.py">Implementasjon av MST-Kruskal</a></p>
+</details>
 <h4 class="mume-header" id="i6-forst%C3%A5-mst-prim">[I6] Forst&#xE5; MST-Prim</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">mst_prim</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-for">for</span> u <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V<span class="token punctuation">:</span>
         u<span class="token punctuation">.</span>key <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">&apos;inf&apos;</span><span class="token punctuation">)</span>
@@ -1531,6 +1624,7 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
                 v<span class="token punctuation">.</span>pi <span class="token operator">=</span> u
                 v<span class="token punctuation">.</span>key <span class="token operator">=</span> w<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">[</span>v<span class="token punctuation">]</span>
 </pre><p><a href="lib/minimal_spanning_tree.py">Implementasjon av MST-Prim</a></p>
+</details>
 <h3 class="mume-header" id="forelesning-10-korteste-vei-fra-%C3%A9n-til-alle-1">Forelesning 10: Korteste vei fra &#xE9;n til alle</h3>
 
 <h4 class="mume-header" id="j1-forst%C3%A5-ulike-varianter-av-korteste-vei-eller-korteste-sti-problemet-single-source-single-destination-single-pair-all-pairs">[J1] Forst&#xE5; ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)</h4>
@@ -1545,17 +1639,22 @@ tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
 
 <h4 class="mume-header" id="j6-forst%C3%A5-kant-slakking-edge-relaxation-og-relax">! [J6] Forst&#xE5; kant-slakking (edge relaxation) og Relax</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">relax</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> w<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-if">if</span> v<span class="token punctuation">.</span>d <span class="token operator">&gt;</span> u<span class="token punctuation">.</span>d <span class="token operator">+</span> w<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">:</span>
         v<span class="token punctuation">.</span>d <span class="token operator">=</span> u<span class="token punctuation">.</span>d <span class="token operator">+</span> w<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">[</span>v<span class="token punctuation">]</span>
         v<span class="token punctuation">.</span>pi <span class="token operator">=</span> u
 </pre><p><a href="lib/single_source_shortest_path.py">Implementasjon av Relax</a></p>
+</details>
 <h4 class="mume-header" id="j7-forst%C3%A5-ulike-egenskaper-ved-korteste-veier-og-slakking">[J7] Forst&#xE5; ulike egenskaper ved korteste veier og slakking</h4>
 
 <p>(Triangle inequality, upper-bound property, no-path property, convergence property,<br>
 path-relaxation property, predecessor-subgraph property)</p>
 <h4 class="mume-header" id="j8-forst%C3%A5-bellman-ford">[J8] Forst&#xE5; Bellman-Ford</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">bellman_ford</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     initialize_single_source<span class="token punctuation">(</span>G<span class="token punctuation">,</span> s<span class="token punctuation">)</span>
     <span class="token keyword keyword-for">for</span> _ <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>G<span class="token punctuation">.</span>V<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -1566,8 +1665,11 @@ path-relaxation property, predecessor-subgraph property)</p>
             <span class="token keyword keyword-return">return</span> <span class="token boolean">False</span>
     <span class="token keyword keyword-return">return</span> <span class="token boolean">True</span>
 </pre><p><a href="lib/single_source_shortest_path.py">Implementasjon av Bellman-Ford</a></p>
+</details>
 <h4 class="mume-header" id="j9-forst%C3%A5-dag-shortest-paths">[J9] Forst&#xE5; Dag-Shortest-Paths</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">dag_shortest_paths</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     initialize_single_source<span class="token punctuation">(</span>G<span class="token punctuation">,</span> s<span class="token punctuation">)</span>
     u <span class="token operator">=</span> topological_sort<span class="token punctuation">(</span>G<span class="token punctuation">)</span>
@@ -1576,10 +1678,13 @@ path-relaxation property, predecessor-subgraph property)</p>
             relax<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> w<span class="token punctuation">)</span>
         u <span class="token operator">=</span> u<span class="token punctuation">.</span><span class="token builtin">next</span>
 </pre><p><a href="lib/single_source_shortest_path.py">Implementasjon av Dag-Shortest-Paths</a></p>
+</details>
 <h4 class="mume-header" id="j10-forst%C3%A5-kobling-mellom-dag-shortest-paths-og-dynamisk-programmering">! [J10] Forst&#xE5; kobling mellom Dag-Shortest-Paths og dynamisk programmering</h4>
 
 <h4 class="mume-header" id="j11-forst%C3%A5-dijkstra">[J11] Forst&#xE5; Dijkstra</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">dijkstra</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     initialize_single_source<span class="token punctuation">(</span>G<span class="token punctuation">,</span> s<span class="token punctuation">)</span>
     S <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -1590,10 +1695,13 @@ path-relaxation property, predecessor-subgraph property)</p>
         <span class="token keyword keyword-for">for</span> v <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>Adj<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">:</span>
             relax<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> w<span class="token punctuation">)</span>
 </pre><p><a href="lib/single_source_shortest_path.py">Implementasjon av Dijkstra</a></p>
+</details>
 <h3 class="mume-header" id="forelesning-11-korteste-vei-fra-alle-til-alle-1">Forelesning 11: Korteste vei fra alle til alle</h3>
 
 <h4 class="mume-header" id="k1-forst%C3%A5-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet">[K1] Forst&#xE5; forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">print_all_pairs_shortest_path</span><span class="token punctuation">(</span>Pi<span class="token punctuation">,</span> i<span class="token punctuation">,</span> j<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-if">if</span> i <span class="token operator">==</span> j<span class="token punctuation">:</span>
         <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
@@ -1603,8 +1711,11 @@ path-relaxation property, predecessor-subgraph property)</p>
         print_all_pairs_shortest_path<span class="token punctuation">(</span>Pi<span class="token punctuation">,</span> i<span class="token punctuation">,</span> Pi<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
         <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span>j<span class="token punctuation">)</span>
 </pre><p><a href="lib/all_pairs_shortest_paths.py">Implementasjon av Print-All-Pairs-Shortest-Path</a></p>
+</details>
 <h4 class="mume-header" id="k2-forst%C3%A5-floyd-warshall">[K2] Forst&#xE5; Floyd-Warshall</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">floyd_warshall</span><span class="token punctuation">(</span>W<span class="token punctuation">)</span><span class="token punctuation">:</span>
     n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>W<span class="token punctuation">)</span>
     D <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
@@ -1617,8 +1728,11 @@ path-relaxation property, predecessor-subgraph property)</p>
                     D<span class="token punctuation">[</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token operator">+</span> D<span class="token punctuation">[</span>k <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">)</span>
     <span class="token keyword keyword-return">return</span> D<span class="token punctuation">[</span>n<span class="token punctuation">]</span>
 </pre><p><a href="lib/all_pairs_shortest_paths.py">Implementasjon av Floyd-Warshall</a></p>
+</details>
 <h4 class="mume-header" id="k3-forst%C3%A5-transitive-closure">[K3] Forst&#xE5; Transitive-Closure</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">transitive_closure</span><span class="token punctuation">(</span>G<span class="token punctuation">)</span><span class="token punctuation">:</span>
     n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>G<span class="token punctuation">.</span>V<span class="token punctuation">)</span>
     T <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
@@ -1651,11 +1765,15 @@ path-relaxation property, predecessor-subgraph property)</p>
                 T<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> T<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token keyword keyword-or">or</span> T<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>k<span class="token punctuation">]</span> <span class="token keyword keyword-and">and</span> T<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span>
     <span class="token keyword keyword-return">return</span> T
 </pre><p><a href="lib/transitive_closure.py">Implementasjon av Transitive-Closure</a></p>
+</details>
 <h4 class="mume-header" id="k4-forst%C3%A5-johnson">[K4] Forst&#xE5; Johnson</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">johnson</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-pass">pass</span> <span class="token comment"># TODO: implement johnson</span>
 </pre><p><a href="lib/all_pairs_shortest_paths.py">Implementasjon av Johnson</a></p>
+</details>
 <h3 class="mume-header" id="forelesning-12-maksimal-flyt-1">Forelesning 12: Maksimal flyt</h3>
 
 <h4 class="mume-header" id="l1-kunne-definere-flytnett-flyt-og-maks-flyt-problemet">[L1] Kunne definere flytnett, flyt og maks-flyt-problemet</h4>
@@ -1674,6 +1792,8 @@ path-relaxation property, predecessor-subgraph property)</p>
 
 <h4 class="mume-header" id="l8-forst%C3%A5-ford-fulkerson-method-og-ford-fulkerson">[L8] Forst&#xE5; Ford-Fulkerson-Method og Ford-Fulkerson</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info class="language-"><code>FORD-FULKERSON-METHOD(G, s, t)
     initialize flow f to 0
     while there exists an augmenting path p in the residual network Gf
@@ -1689,10 +1809,14 @@ FORD-FULKERSON(G, s, t)
             if (u, v) in E
                 (u, v).f = (u, v).f + cf(p)
             else (u, v).f = (u, v).f - cf(p)
-</code></pre><h4 class="mume-header" id="l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen">[L9] Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen</h4>
+</code></pre></details>
+<h4 class="mume-header" id="l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen">[L9] Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen</h4>
 
+<details>
+    <summary>Kode</summary>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token comment"># TODO: Implement Edmonds-Karp</span>
 </pre><p><a href="lib/ford_fulkerson.py">Implementasjon av Edmonds-Karp</a></p>
+</details>
 <h4 class="mume-header" id="l10-forst%C3%A5-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching">[L10] Forst&#xE5; hvordan maks-flyt kan finne en maksimum bipartitt matching</h4>
 
 <h4 class="mume-header" id="l11-forst%C3%A5-heltallsteoremet-integrality-theorem">! [L11] Forst&#xE5; heltallsteoremet (integrality theorem)</h4>
