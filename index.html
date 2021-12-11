@@ -1,0 +1,485 @@
+<!DOCTYPE html><html><head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.18/dist/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}
+
+/* highlight */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+pre[data-line] .line-highlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+}
+
+pre[data-line] .line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: hsla(24, 20%, 50%,.08);
+  background: linear-gradient(to right, hsla(24, 20%, 50%,.1) 70%, hsla(24, 20%, 50%,0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+pre[data-line] .line-highlight:before, 
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: hsla(24, 20%, 50%,.4);
+  color: hsl(24, 20%, 95%);
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+pre[data-line] .line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview  ">
+      <div><h1 class="mume-header" id="pensumhefte-2021-realisert">Pensumhefte, 2021, realisert.</h1>
+
+<h2 class="mume-header" id="overordnede-l%C3%A6ringsm%C3%A5l">Overordnede l&#xE6;ringsm&#xE5;l</h2>
+
+<p>De overordnede l&#xE6;ringsm&#xE5;lene for emnet er som f&#xF8;lger.</p>
+<p><strong>Dere skal ha kunnskap om:</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [X1] Et bredt spekter av etablerte algoritmer og datastrukturer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [X2] Klassiske algoritmiske problemer med kjente effektive l&#xF8;sninger</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [X3] Komplekse problemer uten kjente effektive l&#xF8;sninger</li>
+</ul>
+<p><strong>Dere skal kunne:</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [X4] Analysere algoritmers korrekthet og effektivitet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [X5] Formulere problemer s&#xE5; de kan l&#xF8;ses av algoritmer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [X6] Konstruere nye effektive algoritmer</li>
+</ul>
+<p><strong>Dere skal v&#xE6;re i stand til:</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [X7] &#xC5; bruke eksisterende algoritmer og programvare p&#xE5; nye problemer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [X8] &#xC5; utvikle nye l&#xF8;sninger p&#xE5; praktiske algoritmiske problemstillinger</li>
+</ul>
+<h2 class="mume-header" id="gjennom-semesteret">Gjennom semesteret</h2>
+
+<p><strong>L&#xE6;ringsm&#xE5;l for hver algoritme:</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z1] Kjenne den formelle definisjonen av det generelle problemet den l&#xF8;ser</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z2] Kjenne til eventuelle tilleggskrav den stiller for &#xE5; v&#xE6;re korrekt</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z3] Vite hvordan den oppf&#xF8;rer seg; kunne utf&#xF8;re algoritmen, trinn for trinn</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [Z4] Forst&#xE5; korrekthetsbeviset; hvordan og hvorfor virker algoritmen egentlig?</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z5] Kjenne til eventuelle styrker eller svakheter, sammenlignet med andre</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z6] Kjenne kj&#xF8;retidene under ulike omstendigheter, og forst&#xE5; utregningen</li>
+</ul>
+<p><strong>L&#xE6;ringsm&#xE5;l for hver datastruktur:</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z7] Forst&#xE5; algoritmene (jf. m&#xE5;l Z01&#x2013;Z06) for de ulike operasjonene p&#xE5; strukturen</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z8] Forst&#xE5; hvordan strukturen representeres i minnet</li>
+</ul>
+<p><strong>L&#xE6;ringsm&#xE5;l for hvert problem:</strong></p>
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z9] Kunne angi presist hva input er</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [Z10] Kunne angi presist hva output er og hvilke egenskaper det m&#xE5; ha</li>
+</ul>
+<h2 class="mume-header" id="forelesning-1-problemer-og-algoritmer">Forelesning 1: Problemer og algoritmer</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [A1] Forst&#xE5; bokas pseudokode-konvensjoner</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [A2] Kjenne egenskapene til random-access machine-modellen (RAM)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [A3] Kunne definere problem, instans og problemst&#xF8;rrelse</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [A4] Kunne definere asymptotisk notasjon, O, &#x2126;, &#x398;, o og &#x3C9;.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [A5] Kunne definere best-case, average-case og worst-case</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [A6] Forst&#xE5; l&#xF8;kkeinvarianter og induksjon</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [A7] Forst&#xE5; rekursiv dekomponering og induksjon over delinstanser</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [A8] Forst&#xE5; <a href="lib\insertion_sort.py">Insertion-Sort</a></li>
+</ul>
+<h2 class="mume-header" id="forelesning-2-datastrukturer">Forelesning 2: Datastrukturer</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B1] Forst&#xE5; hvordan <a href="lib/structures/stack.py">stakker</a> og <a href="lib/structures/queue.py">k&#xF8;er</a> fungerer (Stack-Empty, Push, Pop, Enqueue, Dequeue)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B2] Forst&#xE5; hvordan <a href="lib/structures/linked_list.py">lenkede lister</a> fungerer (List-Search, List-Insert, List-Delete, List-Delete&apos;, List-Search&apos;, List-Insert&apos;)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B3] Forst&#xE5; hvordan pekere og objekter kan implementeres</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [B4] Forst&#xE5; hvordan direkte adressering og hashtabeller fungerer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B5] Forst&#xE5; konfliktl&#xF8;sing ved <a href="lib/structures/hash_table_chained.py">kjeding</a> (chaining) (Chained-Hash-Insert, Chained-Hash-Search, Chained-Hash-Delete)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B6] Kjenne til grunnleggende hashfunksjoner</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B7] Vite at man for statiske datasett kan ha worst-case O(1) for s&#xF8;k</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B8] Kunne definere amortisert analyse</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B9] Forst&#xE5; hvordan <a href="lib/structures/table.py">dynamiske tabeller</a> fungerer (Table-Insert)</li>
+</ul>
+<h2 class="mume-header" id="forelesning-3-splitt-og-hersk">Forelesning 3: Splitt og hersk</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C1] Forst&#xE5; designmetoden divide-and-conquer (splitt og hersk)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C2] Forst&#xE5; <a href="lib/find_maximum_subarray.py">maximum-subarray-problemet</a> med l&#xF8;sninger</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C3] Forst&#xE5; <a href="lib/bisect.py">Bisect og Bisect&apos;</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C4] Forst&#xE5; <a href="lib/merge_sort.py">Merge-Sort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C5] Forst&#xE5; <a href="lib/quicksort.py">Quicksort</a> og <a href="lib/randomized_select.py">Randomized-Quicksort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C6] Kunne l&#xF8;se rekurrenser med substitusjon, rekursjonstr&#xE6;r og masterteoremet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C7] Kunne l&#xF8;se rekurrenser med iterasjonsmetoden</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [C8] Forst&#xE5; hvordan variabelskifte fungerer</li>
+</ul>
+<h2 class="mume-header" id="forelesning-4-rangering-i-line%C3%A6r-tid">Forelesning 4: Rangering i line&#xE6;r tid</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [D1] Forst&#xE5; hvorfor sammenligningsbasert sortering har en worst-case p&#xE5; &#x2126;(n lg n)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [D2] Vite hva en stabil sorteringsalgoritme er</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D3] Forst&#xE5; <a href="lib/counting_sort.py">Counting-Sort</a>, og hvorfor den er stabil</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [D4] Forst&#xE5; <a href="lib/radix_sort.py">Radix-Sort</a>, og hvorfor den trenger en stabil subrutine</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D5] Forst&#xE5; <a href="lib/bucket_sort.py">Bucket-Sort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D6] Forst&#xE5; <a href="lib/randomized_select.py">Randomized-Select</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [D7] Kjenne til Select<br>
+Merk: Det kreves ikke grundig forst&#xE5;else av virkem&#xE5;ten til Select.</li>
+</ul>
+<h2 class="mume-header" id="forelesning-5-rotfaste-trestrukturer">Forelesning 5: Rotfaste trestrukturer</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [E1] Forst&#xE5; hvordan <a href="lib/structures/binary_heap.py">heaps</a> fungerer, og hvordan de kan brukes som<br>
+prioritetsk&#xF8;er (Parent, Left, Right, Max-Heapify, Build-Max-Heap, Heapsort,<br>
+Max-Heap-Insert, Heap-Extract-Max, Heap-Increase-Key, Heap-Maximum. Ogs&#xE5;<br>
+tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [E2] Forst&#xE5; <a href="lib/heapsort.py">Heapsort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E3] Forst&#xE5; hvordan rotfaste tr&#xE6;r kan implementeres</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [E4] Forst&#xE5; hvordan <a href="lib/structures/binary_tree.py">bin&#xE6;re s&#xF8;ketr&#xE6;r</a> fungerer (Inorder-Tree-Walk, Tree-Search, Iterative-Tree-Search, Tree-Minimum, Tree-Maximum, Tree-Successor, Tree-Predecessor, Tree-Insert, Transplant, Tree-Delete)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E5] Vite at forventet h&#xF8;yde for et tilfeldig bin&#xE6;rt s&#xF8;ketre er &#x398;(lg n)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E6] Vite at det finnes s&#xF8;ketr&#xE6;r med garantert h&#xF8;yde p&#xE5; &#x398;(lg n)<br>
+Merk: Det kreves ikke grundig forst&#xE5;else av Transplant og Tree-Delete.</li>
+</ul>
+<h2 class="mume-header" id="forelesning-6-dynamisk-programmering">Forelesning 6: Dynamisk programmering</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F1] Forst&#xE5; ideen om en delinstansgraf</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F2] Forst&#xE5; designmetoden dynamisk programmering</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F3] Forst&#xE5; l&#xF8;sning ved memoisering (top-down)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F4] Forst&#xE5; l&#xF8;sning ved iterasjon (bottom-up)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F5] Forst&#xE5; hvordan man rekonstruerer en l&#xF8;sning fra lagrede beslutninger</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F6] Forst&#xE5; hva optimal delstruktur er</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F7] Forst&#xE5; hva overlappende delinstanser er</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [F8] Forst&#xE5; eksemplene <a href="lib/cut_rod.py">stavkutting</a> og <a href="lib/longest_common_subsequence.py">LCS</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [F9] Forst&#xE5; l&#xF8;sningen p&#xE5; <a href="lib/knapsack.py">det bin&#xE6;re ryggsekkproblemet</a> (Knapsack, Knapsack&apos;)</li>
+</ul>
+<h2 class="mume-header" id="forelesning-7-gr%C3%A5dige-algoritmer">Forelesning 7: Gr&#xE5;dige algoritmer</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [G1] Forst&#xE5; designmetoden gr&#xE5;dighet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [G2] Forst&#xE5; gr&#xE5;dighetsegenskapen (the greedy-choice property)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [G3] Forst&#xE5; eksemplene aktivitet-utvelgelse og det kontinuerlige<br>
+ryggsekkproblemet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [G4] Forst&#xE5; <a href="lib/huffman.py">Huffman</a> og Huffman-koder</li>
+</ul>
+<h2 class="mume-header" id="forelesning-8-traversering-av-grafer">Forelesning 8: Traversering av grafer</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H1] Forst&#xE5; hvordan grafer kan implementeres</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H2] Forst&#xE5; <a href="lib/bfs.py">BFS</a>, ogs&#xE5; for &#xE5; finne korteste vei uten vekter</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H3] Forst&#xE5; <a href="lib/dfs.py">DFS</a>, parentesteoremet og hvit-sti-teoremet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H4] Forst&#xE5; hvordan DFS klassifiserer kanter</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H5] Forst&#xE5; <a href="lib/topological_sort.py">Topological-Sort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H6] Forst&#xE5; hvordan DFS kan implementeres med en stakk</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H7] Forst&#xE5; hva traverseringstr&#xE6;r (som bredde-f&#xF8;rst- og dybde-f&#xF8;rst-tr&#xE6;r) er</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [H8] Forst&#xE5; traversering med vilk&#xE5;rlig prioritetsk&#xF8;</li>
+</ul>
+<h2 class="mume-header" id="forelesning-9-minimale-spenntr%C3%A6r">Forelesning 9: Minimale spenntr&#xE6;r</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I1] Forst&#xE5; skog-implementasjonen av <a href="lib/structures/disjunct_set.py">disjunkte mengder</a> (Connected-Components, Same-Component, Make-Set, Union, Link, Find-Set)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [I2] Vite hva spenntr&#xE6;r og minimale spenntr&#xE6;r er</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [I3] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">Generic-MST</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [I4] Forst&#xE5; hvorfor lette kanter er trygge kanter</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I5] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">MST-Kruskal</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I6] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">MST-Prim</a></li>
+</ul>
+<h2 class="mume-header" id="forelesning-10-korteste-vei-fra-%C3%A9n-til-alle">Forelesning 10: Korteste vei fra &#xE9;n til alle</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J1] Forst&#xE5; ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J2] Forst&#xE5; strukturen til korteste-vei-problemet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J3] Forst&#xE5; at negative sykler gir mening for korteste enkle vei (simple path)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J4] Forst&#xE5; at korteste enkle vei kan l&#xF8;ses vha. lengste enkle vei og omvendt</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J5] Forst&#xE5; hvordan man kan representere et korteste-vei-tre</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [J6] Forst&#xE5; kant-slakking (edge relaxation) og <a href="lib/single_source_shortest_path.py">Relax</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J7] Forst&#xE5; ulike egenskaper ved korteste veier og slakking (Triangle<br>
+inequality, upper-bound property, no-path property, convergence property,<br>
+path-relaxation property, predecessor-subgraph property)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J8] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Bellman-Ford</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J9] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Dag-Shortest-Paths</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [J10] Forst&#xE5; kobling mellom Dag-Shortest-Paths og dynamisk programmering</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J11] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Dijkstra</a></li>
+</ul>
+<h2 class="mume-header" id="forelesning-11-korteste-vei-fra-alle-til-alle">Forelesning 11: Korteste vei fra alle til alle</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [K1] Forst&#xE5; forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet (<a href="lib/all_pairs_shortest_paths.py">Print-All-Pairs-Shortest-Path</a>)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K2] Forst&#xE5; <a href="lib/all_pairs_shortest_paths.py">Floyd-Warshall</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K3] Forst&#xE5; <a href="lib/transitive_closure.py">Transitive-Closure</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [K4] Forst&#xE5; <a href="lib/all_pairs_shortest_paths.py">Johnson</a></li>
+</ul>
+<h2 class="mume-header" id="forelesning-12-maksimal-flyt">Forelesning 12: Maksimal flyt</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L1] Kunne definere flytnett, flyt og maks-flyt-problemet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L2] Kunne h&#xE5;ndtere antiparallelle kanter og flere kilder og sluk</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L3] Kunne definere restnettet til et flytnett med en gitt flyt</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L4] Forst&#xE5; hvordan man kan oppheve (cancel) flyt</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L5] Forst&#xE5; hva en for&#xF8;kende sti (augmenting path) er</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L6] Forst&#xE5; hva snitt, snitt-kapasitet og minimalt snitt er</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L7] Forst&#xE5; maks-flyt/min-snitt-teoremet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [L8] Forst&#xE5; Ford-Fulkerson-Method og <a href="lib/ford_fulkerson.py">Ford-Fulkerson</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L9] Vite at Ford-Fulkerson med BFS kalles <a href="lib/ford_fulkerson.py">Edmonds-Karp-algoritmen</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L10] Forst&#xE5; hvordan maks-flyt kan finne en maksimum bipartitt matching</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L11] Forst&#xE5; heltallsteoremet (integrality theorem)</li>
+</ul>
+<h2 class="mume-header" id="forelesning-13-np-kompletthet">Forelesning 13: NP-kompletthet</h2>
+
+<ul>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M1] Forst&#xE5; sammenhengen mellom optimerings- og beslutnings-problemer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M2] Forst&#xE5; koding (encoding) av en instans</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M3] Forst&#xE5; hvorfor l&#xF8;sningen p&#xE5; det bin&#xE6;re ryggsekkproblemet ikke er polynomisk</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M4] Forst&#xE5; forskjellen p&#xE5; konkrete og abstrakte problemer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M5] Forst&#xE5; representasjonen av beslutningsproblemer som formelle spr&#xE5;k</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M6] Forst&#xE5; definisjonen av klassene P, NP og co-NP</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M7] Forst&#xE5; redusibilitets-relasjonen <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&#x2264;</mo><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\leq_p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.922078em;vertical-align:-0.286108em;"></span><span class="mrel"><span class="mrel">&#x2264;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M8] Forst&#xE5; definisjonen av NP-hardhet og NP-kompletthet</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M9] Forst&#xE5; den konvensjonelle hypotesen om forholdet mellom P, NP og NPC</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M10] Forst&#xE5; hvordan NP-kompletthet kan bevises ved &#xE9;n reduksjon</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M11] Kjenne de NP-komplette problemene CIRCUIT-SAT, SAT, 3-CNF-SAT, CLIQUE, VERTEX-COVER, HAM-CYCLE, TSP og SUBSET-SUM</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M12] Forst&#xE5; at det bin&#xE6;re ryggsekkproblemet er NP-hardt</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M13] Forst&#xE5; at lengste enkle-vei-problemet er NP-hardt</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M14] V&#xE6;re i stand til &#xE5; konstruere enkle NP-kompletthetsbevis</li>
+</ul>
+</div>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
