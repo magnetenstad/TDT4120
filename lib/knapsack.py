@@ -30,7 +30,3 @@ def bottom_up_knapsack(n, W, w, v):
             else:
                 y = K[i - 1][j - w[i]] + v[i]
                 K[i][j] = max(x, y)
-
-
-def continous_knapsack():
-    pass # TODO: implement continous knapsack

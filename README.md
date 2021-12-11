@@ -1,6 +1,11 @@
 
 # Pensumhefte, 2021, realisert.
 
+Dette dokumentet ligger ute på https://magne.dev/TDT4120/.
+Dersom du ønsker å kjøre algoritmene, kan du klone prosjektet fra https://github.com/magnetenstad/TDT4120.
+
+
+
 ## Læringsmål
 
 ### Overordnede læringsmål
@@ -20,6 +25,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] [X7] Å bruke eksisterende algoritmer og programvare på nye problemer
 - [ ] [X8] Å utvikle nye løsninger på praktiske algoritmiske problemstillinger
 
+
 ### Gjennom semesteret
 
 **Læringsmål for hver algoritme:**
@@ -38,15 +44,17 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [Z9] Kunne angi presist hva input er
 - [x] [Z10] Kunne angi presist hva output er og hvilke egenskaper det må ha
 
+
 ### Forelesning 1: Problemer og algoritmer
 - [x] [A1] [Forstå bokas pseudokode-konvensjoner](#a1-forstå-bokas-pseudokode-konvensjoner)
 - [x] [A2] [Kjenne egenskapene til random-access machine-modellen (RAM)](#a2-kjenne-egenskapene-til-random-access-machine-modellen-ram)
 - [x] [A3] [Kunne definere problem, instans og problemstørrelse](#a3-kunne-definere-problem-instans-og-problemstørrelse)
-- [x] ! [A4] [Kunne definere asymptotisk notasjon, O, Ω, Θ, o og ω](#-a4-kunne-definere-asymptotisk-notasjon-o-ω-θ-o-og-ω)
+- [x] ! [A4] [Kunne definere asymptotisk notasjon, $O$, $\Omega$, $\Theta$, $o$ og $\omega$](#-a4-kunne-definere-asymptotisk-notasjon-o-omega-theta-o-og-omega)
 - [x] ! [A5] [Kunne definere best-case, average-case og worst-case](#-a5-kunne-definere-best-case-average-case-og-worst-case)
 - [x] ! [A6] [Forstå løkkeinvarianter og induksjon](#-a6-forstå-løkkeinvarianter-og-induksjon)
 - [x] ! [A7] [Forstå rekursiv dekomponering og induksjon over delinstanser](#-a7-forstå-rekursiv-dekomponering-og-induksjon-over-delinstanser)
 - [x] [A8] [Forstå Insertion-Sort](#a8-forstå-insertion-sort)
+
 
 ### Forelesning 2: Datastrukturer
 - [x] [B1] [Forstå hvordan stakker og køer fungerer](#b1-forstå-hvordan-stakker-og-køer-fungerer)
@@ -56,8 +64,9 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [B5] [Forstå konfliktløsing ved kjeding (chaining)](#b5-forstå-konfliktløsing-ved-kjeding-chaining)
 - [ ] [B6] [Kjenne til grunnleggende hashfunksjoner](#b6-kjenne-til-grunnleggende-hashfunksjoner)
 - [x] [B7] [Vite at man for statiske datasett kan ha worst-case O(1) for søk](#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-søk)
-- [x] [B8] [Kunne definere amortisert analyse](#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-søk)
+- [x] [B8] [Kunne definere amortisert analyse](#b8-kunne-definere-amortisert-analyse)
 - [x] [B9] [Forstå hvordan dynamiske tabeller fungerer](#b8-kunne-definere-amortisert-analyse)
+
 
 ### Forelesning 3: Splitt og hersk
 - [x] ! [C1] [Forstå designmetoden divide-and-conquer (splitt og hersk)](#-c1-forstå-designmetoden-divide-and-conquer-splitt-og-hersk)
@@ -69,22 +78,25 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] ! [C7] [Kunne løse rekurrenser med iterasjonsmetoden](#-c7-kunne-løse-rekurrenser-med-iterasjonsmetoden)
 - [ ] [C8] [Forstå hvordan variabelskifte fungerer](#c8-forstå-hvordan-variabelskifte-fungerer)
 
+
 ### Forelesning 4: Rangering i lineær tid
-- [ ] ! [D1] [Forstå hvorfor sammenligningsbasert sortering har en worst-case på Ω(n lg n)](#-d1-forstå-hvorfor-sammenligningsbasert-sortering-har-en-worst-case-på-ωn-lg-n)
-- [ ] [D2] [Vite hva en stabil sorteringsalgoritme er](#d2-vite-hva-en-stabil-sorteringsalgoritme-er)
+- [x] ! [D1] [Forstå hvorfor sammenligningsbasert sortering har en worst-case på $\Omega(n \lg n)$](#-d1-forstå-hvorfor-sammenligningsbasert-sortering-har-en-worst-case-på-omegan-lg-n)
+- [x] [D2] [Vite hva en stabil sorteringsalgoritme er](#d2-vite-hva-en-stabil-sorteringsalgoritme-er)
 - [x] [D3] [Forstå Counting-Sort, og hvorfor den er stabil](#d3-forstå-counting-sort-og-hvorfor-den-er-stabil)
 - [x] ! [D4] [Forstå Radix-Sort, og hvorfor den trenger en stabil subrutine](#-d4-forstå-radix-sort-og-hvorfor-den-trenger-en-stabil-subrutine)
 - [x] [D5] [Forstå Bucket-Sort](#d5-forstå-bucket-sort)
 - [x] [D6] [Forstå Randomized-Select](#d6-forstå-randomized-select)
 - [ ] [D7] [Kjenne til Select](#d7-kjenne-til-select)
 
+
 ### Forelesning 5: Rotfaste trestrukturer
 - [x] ! [E1] [Forstå hvordan heaps fungerer, og hvordan de kan brukes som prioritetskøer](#-e1-forstå-hvordan-heaps-fungerer-og-hvordan-de-kan-brukes-som-prioritetskøer)
 - [x] [E2] [Forstå Heapsort](#e2-forstå-heapsort)
-- [ ] [E3] [Forstå hvordan rotfaste trær kan implementeres](#e3-forstå-hvordan-rotfaste-trær-kan-implementeres)
+- [x] [E3] [Forstå hvordan rotfaste trær kan implementeres](#e3-forstå-hvordan-rotfaste-trær-kan-implementeres)
 - [x] ! [E4] [Forstå hvordan binære søketrær fungerer](#-e4-forstå-hvordan-binære-søketrær-fungerer)
-- [ ] [E5] [Vite at forventet høyde for et tilfeldig binært søketre er Θ(lg n)](#e5-vite-at-forventet-høyde-for-et-tilfeldig-binært-søketre-er-θlg-n)
-- [ ] [E6] [Vite at det finnes søketrær med garantert høyde på Θ(lg n)](#e6-vite-at-det-finnes-søketrær-med-garantert-høyde-på-θlg-n)
+- [x] [E5] [Vite at forventet høyde for et tilfeldig binært søketre er $\Theta(\lg n)$](#e5-vite-at-forventet-høyde-for-et-tilfeldig-binært-søketre-er-thetalg-n)
+- [x] [E6] [Vite at det finnes søketrær med garantert høyde på $\Theta(\lg n)$](#e6-vite-at-det-finnes-søketrær-med-garantert-høyde-på-thetalg-n)
+
 
 ### Forelesning 6: Dynamisk programmering
 - [ ] ! [F1] [Forstå ideen om en delinstansgraf](#-f1-forstå-ideen-om-en-delinstansgraf)
@@ -97,11 +109,13 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [F8] [Forstå eksemplene stavkutting og LCS](#f8-forstå-eksemplene-stavkutting-og-lcs)
 - [x] [F9] [Forstå løsningen på det binære ryggsekkproblemet](#f9-forstå-løsningen-på-det-binære-ryggsekkproblemet)
 
+
 ### Forelesning 7: Grådige algoritmer
 - [ ] ! [G1] [Forstå designmetoden grådighet](#-g1-forstå-designmetoden-grådighet)
 - [ ] ! [G2] [Forstå grådighetsegenskapen (the greedy-choice property)](#-g2-forstå-grådighetsegenskapen-the-greedy-choice-property)
 - [ ] [G3] [Forstå eksemplene aktivitet-utvelgelse og det kontinuerlige ryggsekkproblemet](#g3-forstå-eksemplene-aktivitet-utvelgelse-og-det-kontinuerlige-ryggsekkproblemet)
 - [x] [G4] [Forstå Huffman og Huffman-koder](#g4-forstå-huffman-og-huffman-koder)
+
 
 ### Forelesning 8: Traversering av grafer
 - [ ] [H1] [Forstå hvordan grafer kan implementeres](#h1-forstå-hvordan-grafer-kan-implementeres)
@@ -113,6 +127,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] [H7] [Forstå hva traverseringstrær (som bredde-først- og dybde-først-trær) er](#h7-forstå-hva-traverseringstrær-som-bredde-først--og-dybde-først-trær-er)
 - [ ] ! [H8] [Forstå traversering med vilkårlig prioritetskø](#-h8-forstå-traversering-med-vilkårlig-prioritetskø)
 
+
 ### Forelesning 9: Minimale spenntrær
 - [x] [I1] [Forstå skog-implementasjonen av disjunkte mengder](#i1-forstå-skog-implementasjonen-av-disjunkte-mengder)
 - [ ] [I2] [Vite hva spenntrær og minimale spenntrær er](#i2-vite-hva-spenntrær-og-minimale-spenntrær-er)
@@ -120,6 +135,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] [I4] [Forstå hvorfor lette kanter er trygge kanter](#i4-forstå-hvorfor-lette-kanter-er-trygge-kanter)
 - [x] [I5] [Forstå MST-Kruskal](#i5-forstå-mst-kruskal)
 - [x] [I6] [Forstå MST-Prim](#i6-forstå-mst-prim)
+
 
 ### Forelesning 10: Korteste vei fra én til alle
 - [ ] [J1] [Forstå ulike varianter av korteste-vei- eller korteste-sti-problemet](#j1-forstå-ulike-varianter-av-korteste-vei--eller-korteste-sti-problemet-single-source-single-destination-single-pair-all-pairs)
@@ -134,11 +150,13 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] ! [J10] [Forstå kobling mellom Dag-Shortest-Paths og dynamisk programmering](#-j10-forstå-kobling-mellom-dag-shortest-paths-og-dynamisk-programmering)
 - [x] [J11] [Forstå Dijkstra](#j11-forstå-dijkstra)
 
+
 ### Forelesning 11: Korteste vei fra alle til alle
 - [ ] [K1] [Forstå forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet](#k1-forstå-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet-print-all-pairs-shortest-path)
 - [x] [K2] [Forstå Floyd-Warshall](#k2-forstå-floyd-warshall)
 - [x] [K3] [Forstå Transitive-Closure](#k3-forstå-transitive-closure)
 - [ ] [K4] [Forstå Johnson](#k4-forstå-johnson)
+
 
 ### Forelesning 12: Maksimal flyt
 - [ ] [L1] [Kunne definere flytnett, flyt og maks-flyt-problemet](#l1-kunne-definere-flytnett-flyt-og-maks-flyt-problemet)
@@ -153,21 +171,25 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] [L10] [Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching](#l10-forstå-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching)
 - [ ] ! [L11] [Forstå heltallsteoremet (integrality theorem)](#-l11-forstå-heltallsteoremet-integrality-theorem)
 
+
 ### Forelesning 13: NP-kompletthet
-- [ ] [M1] [Forstå sammenhengen mellom optimerings- og beslutnings-problemer](#m1-forstå-sammenhengen-mellom-optimerings--og-beslutnings-problemer)
+- [x] [M1] [Forstå sammenhengen mellom optimerings- og beslutnings-problemer](#m1-forstå-sammenhengen-mellom-optimerings--og-beslutnings-problemer)
 - [ ] [M2] [Forstå koding (encoding) av en instans](#m2-forstå-koding-encoding-av-en-instans)
 - [ ] [M3] [Forstå hvorfor løsningen på det binære ryggsekkproblemet ikke er polynomisk](#m3-forstå-hvorfor-løsningen-på-det-binære-ryggsekkproblemet-ikke-er-polynomisk)
 - [ ] [M4] [Forstå forskjellen på konkrete og abstrakte problemer](#m4-forstå-forskjellen-på-konkrete-og-abstrakte-problemer)
 - [ ] [M5] [Forstå representasjonen av beslutningsproblemer som formelle språk](#m5-forstå-representasjonen-av-beslutningsproblemer-som-formelle-språk)
-- [ ] [M6] [Forstå definisjonen av klassene P, NP og co-NP](#m6-forstå-definisjonen-av-klassene-p-np-og-co-np)
-- [ ] [M7] [Forstå redusibilitets-relasjonen $\leq_p$](#m7-forstå-redusibilitets-relasjonen-leq_p)
-- [ ] ! [M8] [Forstå definisjonen av NP-hardhet og NP-kompletthet](#-m8-forstå-definisjonen-av-np-hardhet-og-np-kompletthet)
-- [ ] [M9] [Forstå den konvensjonelle hypotesen om forholdet mellom P, NP og NPC](#m9-forstå-den-konvensjonelle-hypotesen-om-forholdet-mellom-p-np-og-npc)
-- [ ] ! [M10] [Forstå hvordan NP-kompletthet kan bevises ved én reduksjon](#-m10-forstå-hvordan-np-kompletthet-kan-bevises-ved-én-reduksjon)
+- [x] [M6] [Forstå definisjonen av klassene P, NP og co-NP](#m6-forstå-definisjonen-av-klassene-p-np-og-co-np)
+- [x] [M7] [Forstå redusibilitets-relasjonen $\leq_p$](#m7-forstå-redusibilitets-relasjonen-leq_p)
+- [x] ! [M8] [Forstå definisjonen av NP-hardhet og NP-kompletthet](#-m8-forstå-definisjonen-av-np-hardhet-og-np-kompletthet)
+- [x] [M9] [Forstå den konvensjonelle hypotesen om forholdet mellom P, NP og NPC](#m9-forstå-den-konvensjonelle-hypotesen-om-forholdet-mellom-p-np-og-npc)
+- [x] ! [M10] [Forstå hvordan NP-kompletthet kan bevises ved én reduksjon](#-m10-forstå-hvordan-np-kompletthet-kan-bevises-ved-én-reduksjon)
 - [ ] ! [M11] [Kjenne de NP-komplette problemene CIRCUIT-SAT, SAT, 3-CNF-SAT, CLIQUE, VERTEX-COVER, HAM-CYCLE, TSP og SUBSET-SUM](#-m11-kjenne-de-np-komplette-problemene-circuit-sat-sat-3-cnf-sat-clique-vertex-cover-ham-cycle-tsp-og-subset-sum)
 - [ ] [M12] [Forstå at det binære ryggsekkproblemet er NP-hardt](#m12-forstå-at-det-binære-ryggsekkproblemet-er-np-hardt)
-- [ ] [M13] [Forstå at lengste enkle-vei-problemet er NP-hardt](#m13-forstå-at-lengste-enkle-vei-problemet-er-np-hardt)
-- [ ] [M14] [Være i stand til å konstruere enkle NP-kompletthetsbevis](#m14-være-i-stand-til-å-konstruere-enkle-np-kompletthetsbevis)
+- [x] [M13] [Forstå at lengste enkle-vei-problemet er NP-hardt](#m13-forstå-at-lengste-enkle-vei-problemet-er-np-hardt)
+- [x] [M14] [Være i stand til å konstruere enkle NP-kompletthetsbevis](#m14-være-i-stand-til-å-konstruere-enkle-np-kompletthetsbevis)
+
+
+
 
 ## Realisert
 
@@ -184,7 +206,7 @@ Before we can analyze an algorithm, we must have a model of the implementation t
 - Probleminstans: In general, an instance of a problem consists of the input (satisfying whatever constraints are imposed in the problem statement) needed to compute a solution to the problem.
 - Problemstørrelse: Størrelse på input tilhørende en probleminstans, f.eks. antall tall som skal sorteres i et sorteringsproblem. 
 
-#### ! [A4] Kunne definere asymptotisk notasjon, O, $\Omega$, $\Theta$, o og $\omega$.
+#### ! [A4] Kunne definere asymptotisk notasjon, $O$, $\Omega$, $\Theta$, $o$ og $\omega$
 Notasjon | Forklaring | Tegn
 ---|---|---
 $\omega$ | streng nedre grense | $>$
@@ -204,7 +226,6 @@ $o$ | streng øvre grense | $<$
 **Rekursiv dekomponering**:  Del instansen i mindre biter, løs problemet rekursivt for disse, og kombinér løsningene.
 
 #### [A8] Forstå Insertion-Sort
-##### Insertion-Sort
 Attributt | Insertion-Sort
 ---|---
 Beskrivelse | Sorteringsalgoritme
@@ -230,6 +251,8 @@ def insertion_sort(A):
         A[i + 1] = key
 ````
 [Implementasjon av Insertion-Sort](/lib/insertion_sort.py)
+
+
 
 ### Forelesning 2: Datastrukturer
 
@@ -521,6 +544,8 @@ def table_delete(T, x):
 ````
 [Implementasjon av dynamiske tabeller](lib/structures/table.py)
 
+
+
 ### Forelesning 3: Splitt og hersk
 
 #### ! [C1] Forstå designmetoden divide-and-conquer (splitt og hersk)
@@ -663,6 +688,7 @@ def merge_sort(A, p, r):
 [Implementasjon Merge-Sort](lib/merge_sort.py)
 
 #### [C5] Forstå Quicksort og Randomized-Quicksort
+
 ##### Quicksort
 Attributt | Quicksort
 ---|---
@@ -723,32 +749,31 @@ def randomized_quicksort(A, p, r):
 [Implementasjon av Randomized-Quicksort](lib/randomized_select.py)
 
 #### ! [C6] Kunne løse rekurrenser med substitusjon, rekursjonstrær og masterteoremet
+
 #### ! [C7] Kunne løse rekurrenser med iterasjonsmetoden
+
 #### [C8] Forstå hvordan variabelskifte fungerer
 
+
+
 ### Forelesning 4: Rangering i lineær tid
-#### ! [D1] Forstå hvorfor sammenligningsbasert sortering har en worst-case på Ω(n lg n)
-Theorem 8.1
-Any comparison sort algorithm requires .n lg n/ comparisons in the worst case.
-Proof From the preceding discussion, it suffices to determine the height of a
-decision tree in which each permutation appears as a reachable leaf. Consider a
-decision tree of height h with l reachable leaves corresponding to a comparison
-sort on n elements. Because each of the nŠ permutations of the input appears as
-some leaf, we have nŠ  l. Since a binary tree of height h has no more than 2h
-leaves, we have
-nŠ  l  2h ;
-which, by taking logarithms, implies
-h  lg.nŠ/ (since the lg function is monotonically increasing)
-D .n lg n/ (by equation (3.19)) 
+
+#### ! [D1] Forstå hvorfor sammenligningsbasert sortering har en worst-case på $\Omega(n \lg n)$
+En liste med $n$ elementer har $n!$ permutasjoner, som vi ved å sortere skal finne én bestemt av. Vi kan modellere problemet som et binært beslutningstre, med $n!$ løvnoder. Høyden på treet blir antall beslutninger vi må gjøre, altså antall sammenligninger, for å komme til en løsning. Det totale antall noder i et komplett binærtre med $n!$ løvnoder er $2n!-1$. Det maksimale antall løvnoder i et binærtre er $2^h$. Vi har da $2^h \geq n! \implies h \geq \lg{n!} \implies h = \Omega(n \lg n)$
 
 #### [D2] Vite hva en stabil sorteringsalgoritme er
-
+En sorteringsalgoritme sies å være stabil dersom rekkefølgen av like elementer i listen som sorteres blir bevart.
 
 #### [D3] Forstå Counting-Sort, og hvorfor den er stabil
-Time Complexity: Theta(n + k)
-Space Complecity: Theta(k)
-In place: False
-Stable: True
+Attributt | Counting-Sort
+---|---
+Beskrivelse | Sorteringsalgoritme for heltall mellom $0$ og $k$
+Input | A: liste av heltall mellom 0 og k, B: liste for resultatet, k: det høyeste tallet
+Output | Sortert liste
+Kjøretid | $\Theta(n + k)$ 
+Minnebruk | $\Theta(k)$
+In place | False
+Stabil | True
 
 ````python
 def counting_sort(A, B, k):
@@ -765,12 +790,17 @@ def counting_sort(A, B, k):
 [Implementasjon av Counting-Sort](lib/counting_sort.py)
 
 #### ! [D4] Forstå Radix-Sort, og hvorfor den trenger en stabil subrutine
-(using COUNTING-SORT)
-Time Complexity: Theta(d(n + k))
-Space Complecity: Theta(n + k)
-In place: False
-Stable: True
+Attributt | Radix-Sort (using Counting-Sort)
+---|---
+Beskrivelse | Sorteringsalgoritme for elementer med $d$ siffer, der hvert siffer er mellom $0$ og $k$
+Input | A: liste som skal sorteres, B: liste for resultatet, k: det høyeste sifferet, d: antall siffer i hvert element
+Output | Sortert liste
+Kjøretid | $\Theta(d(n + k))$ 
+Minnebruk | $\Theta(n + k)$
+In place | False
+Stabil | True
 
+Merk: følgende implementasjon sorterer strenger. 
 ````python
 def counting_sort(A, B, k, d):
     C = [0] * k
@@ -795,14 +825,17 @@ def radix_sort(A, d):
 [Implementasjon av Radix-Sort](lib/radix_sort.py)
 
 #### [D5] Forstå Bucket-Sort
-Time Complexity:
-    Worst case: Theta(n^2) if many elements are placed in the same bucket
-    Average case: Theta(n)
-    Best case: Theta(n)
-Space Complecity: Theta(n)
-
-In place: False
-Stable: True
+Attributt | Bucket-Sort
+---|---
+Beskrivelse | Sorteringsalgoritme for tall mellom 0 og 1
+Input | A: liste av tall mellom 0 og 1
+Output | Sortert liste
+Worst case | $\Theta(n^2)$, hvis mange elementer havner i samme bøtte
+Average case | $\Theta(n)$
+Best case | $\Theta(n)$
+Minnebruk | $\Theta(n)$
+In place | False
+Stabil | True
 
 ````python
 def bucket_sort(A):
@@ -817,14 +850,15 @@ def bucket_sort(A):
 [Implementasjon av Bucket-Sort](lib/bucket_sort.py)
 
 #### [D6] Forstå Randomized-Select
-Returns the $i$th smallest element of the array $A[p \dots r]$.
-
-Time Complexity:
-    Worst case: Theta(n^2)
-    Average case: Theta(n)
-    Best case: Theta(n)
-Space Complecity: Theta(1)
-In place: True
+Attributt | Randomized-Select
+---|---
+Beskrivelse | Finner det $i$-te minste elementet i arrayet $A[p \dots r]$
+Input | A: liste av tall, p: minste indeks, r: største indeks, i: ordningstallet
+Output | Det $i$-te minste elementet
+Worst case | $\Theta(n^2)$
+Average case | $\Theta(n)$
+Best case | $\Theta(n)$
+In place | True
 
 ````python
 def randomized_select(A, p, r, i):
@@ -844,11 +878,34 @@ def randomized_select(A, p, r, i):
 #### [D7] Kjenne til Select
 Merk: Det kreves ikke grundig forståelse av virkemåten til Select.
 
+
+
 ### Forelesning 5: Rotfaste trestrukturer
+
 #### ! [E1] Forstå hvordan heaps fungerer, og hvordan de kan brukes som prioritetskøer
-(Parent, Left, Right, Max-Heapify, Build-Max-Heap, Heapsort,
-Max-Heap-Insert, Heap-Extract-Max, Heap-Increase-Key, Heap-Maximum. Også
-tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)
+Max-Heap kan brukes som en prioritetskø som prioriterer de største elementene, Min-Heap kan brukes som en prioritetskø som prioriterer de minste elementene.
+
+Attributt | Parent
+---|---
+Beskrivelse | Finner indeksen til forelderen til en node i en binærhaug
+Input | i: indeksen til en node
+Output | Indeksen til forelderen
+Kjøretid | $\Theta(1)$
+
+Attributt | Left
+---|---
+Beskrivelse | Finner det venstre barnet til en node i en binærhaug
+Input | i: indeksen til en node
+Output | Indeksen til det venstre barnet
+Kjøretid | $\Theta(1)$
+
+Attributt | Right
+---|---
+Beskrivelse | Finner det høyre barnet til en node i en binærhaug
+Input | i: indeksen til en node
+Output | Indeksen til det høyre barnet
+Kjøretid | $\Theta(1)$
+
 ##### Heap
 
 ````python
@@ -863,12 +920,46 @@ def right(i):
 ````
 
 ##### Max-Heap
+Attributt | Max-Heapify
+---|---
+Beskrivelse | Realiserer maks-haug-egenskapen for en gitt node i en maks-haug
+Input | A: maks-haug i: indeksen til en node
+Kjøretid | $O(\lg n)$
+
+Attributt | Build-Max-Heap
+---|---
+Beskrivelse | Bygger en maks-haug
+Input | A: array
+Kjøretid | $O(n)$
+
+Attributt | Heap-Maximum
+---|---
+Beskrivelse | Returnerer det maksimale elementet i en maks-haug
+Input | A: maks-haug
+Output | Det maksimale elementet
+Kjøretid | $\Theta(1)$
+
+Attributt | Heap-Extract-Maximum
+---|---
+Beskrivelse | Fjerner og returnerer det maksimale elementet i en maks-haug
+Input | A: maks-haug
+Output | Det maksimale elementet
+Kjøretid | $O(\lg n)$
+
+Attributt | Heap-Increase-Key
+---|---
+Beskrivelse | Setter nøkkelen til en node til en ny (høyere) verdi
+Input | A: maks-haug, i: indeks, key: den nye nøkkelen
+Kjøretid | $O(\lg n)$
+
+Attributt | Max-Heap-Insert
+---|---
+Beskrivelse | Setter inn et nytt element i en maks-haug
+Input | A: maks-haug, x: element
+Kjøretid | $O(\lg n)$
+
 ````python
 def max_heapify(A, i):
-    """
-    MAX-HEAPIFY
-    Time complexity: O(lg n)
-    """
     l = left(i)
     r = right(i)
     if l < A.heap_size and A[l] > A[i]:
@@ -882,10 +973,6 @@ def max_heapify(A, i):
         max_heapify(A, largest)
 
 def build_max_heap(A):
-    """
-    BUILD-MAX-HEAP
-    Time complexity: O(n)
-    """
     A.heap_size = len(A)
     for i in range(floor(len(A) / 2), -1, -1):
         max_heapify(A, i)
@@ -894,10 +981,6 @@ def heap_maximum(A):
     return A[0]
 
 def heap_extract_max(A):
-    """
-    HEAP-EXTRACT-MAX
-    Time complexity: O(lg n)
-    """
     if A.heap_size < 0:
         print("ERROR: heap underflow")
     max_ = A[0]
@@ -907,10 +990,6 @@ def heap_extract_max(A):
     return max_
 
 def heap_increase_key(A, i, key):
-    """
-    HEAP-INCREASE-KEY
-    Time complexity: O(lg n)
-    """
     if key < A[i]:
         print("ERROR: new key is smaller than current key")
     A[i] = key
@@ -925,12 +1004,46 @@ def max_heap_insert(A, key):
 ````
 
 ##### Min-Heap
+Attributt | Min-Heapify
+---|---
+Beskrivelse | Realiserer min-haug-egenskapen for en gitt node i en min-haug
+Input | A: min-haug i: indeksen til en node
+Kjøretid | $O(\lg n)$
+
+Attributt | Build-Min-Heap
+---|---
+Beskrivelse | Bygger en min-haug
+Input | A: array
+Kjøretid | $O(n)$
+
+Attributt | Heap-Minimum
+---|---
+Beskrivelse | Returnerer det minimale elementet i en min-haug
+Input | A: min-haug
+Output | Det minimale elementet
+Kjøretid | $\Theta(1)$
+
+Attributt | Heap-Extract-Minimum
+---|---
+Beskrivelse | Fjerner og returnerer det minimale elementet i en min-haug
+Input | A: min-haug
+Output | Det minimale elementet
+Kjøretid | $O(\lg n)$
+
+Attributt | Heap-Increase-Key
+---|---
+Beskrivelse | Setter nøkkelen til en node til en ny (høyere) verdi
+Input | A: min-haug, i: indeks, key: den nye nøkkelen
+Kjøretid | $O(\lg n)$
+
+Attributt | Min-Heap-Insert
+---|---
+Beskrivelse | Setter inn et nytt element i en min-haug
+Input | A: min-haug, x: element
+Kjøretid | $O(\lg n)$
+
 ````python
 def min_heapify(A, i):
-    """
-    MIN-HEAPIFY
-    Time complexity: O(lg n)
-    """
     l = left(i)
     r = right(i)
     if l < A.heap_size and A[l] < A[i]:
@@ -944,10 +1057,6 @@ def min_heapify(A, i):
         min_heapify(A, smallest)
 
 def build_min_heap(A):
-    """
-    BUILD-MIN-HEAP
-    Time complexity: O(n lg n)
-    """
     A.heap_size = len(A)
     for i in range(floor(len(A) / 2), -1, -1):
         min_heapify(A, i)
@@ -956,10 +1065,6 @@ def heap_minimum(A):
     return A[0]
 
 def heap_extract_min(A):
-    """
-    HEAP-EXTRACT-MIN
-    Time complexity: O(lg n)
-    """
     if A.heap_size < 0:
         print("ERROR: heap underflow")
     min_ = A[0]
@@ -969,10 +1074,6 @@ def heap_extract_min(A):
     return min_
 
 def heap_decrease_key(A, i, key):
-    """
-    HEAP-DECREASE-KEY
-    Time complexity: O(lg n)
-    """
     if A[i] < key:
         print("ERROR: new key is larger than current key")
     A[i] = key
@@ -988,17 +1089,18 @@ def min_heap_insert(A, key):
 [Implementasjon av heaps](lib/structures/binary_heap.py)
 
 #### [E2] Forstå Heapsort
+Attributt | Heapsort
+---|---
+Beskrivelse | Sorteringsalgoritme
+Input | A: vilkårlig liste av tall
+Output | Sortert liste (in place)
+Kjøretid| $O(n \lg n)$
+Minnebruk | $\Theta(1)$
+In place | True
+Stabil | False
+
 ````python
 def heapsort(A):
-    """
-    HEAPSORT
-
-    Time Complexity: O(n lg n)
-    Space Complecity: Theta(1)
-
-    In place: True
-    Stable: False
-    """
     build_max_heap(A)
     for i in range(len(A) - 1, 0, -1):
         A[0], A[i] = A[i], A[0]
@@ -1008,8 +1110,64 @@ def heapsort(A):
 [Implementasjon av Heapsort](lib/heapsort.py)
 
 #### [E3] Forstå hvordan rotfaste trær kan implementeres
+Binærtrær kan representeres ved at hver node har tre pekere: p (parent), left og right.
+For trær hvor node kan ha flere barn, kan man også representere det ved tre pekere: p, left-child og right-sibling.
 
 #### ! [E4] Forstå hvordan binære søketrær fungerer
+Attributt | Inorder-Tree-Walk
+---|---
+Beskrivelse | Printer et binærsøketre *inorder*
+Input | x: noden å begynne på (gjerne rotnoden)
+Output | Utskrift av nodene i rekkefølge
+Kjøretid | $\Theta(n)$
+
+Attributt | Tree-Search
+---|---
+Beskrivelse | Søker etter et node med en gitt nøkkel
+Input | x: noden å begynne på (gjerne rotnoden), k: nøkkelen det søkes etter
+Output | Noden med nøkkelen, eller NIL
+Kjøretid | $O(\lg n)$
+
+Attributt | Tree-Minimum
+---|---
+Beskrivelse | Returnerer den minste noden i binærsøketreet
+Input | x: noden å begynne på (gjerne rotnoden)
+Output | Den minste noden
+Kjøretid | $O(\lg n)$
+
+Attributt | Tree-Maximum
+---|---
+Beskrivelse | Returnerer den største noden i binærsøketreet
+Input | x: noden å begynne på (gjerne rotnoden)
+Output | Den største noden
+Kjøretid | $O(\lg n)$
+
+Attributt | Tree-Successor
+---|---
+Beskrivelse | Returnerer noden som er etter den gitt noden, når de er i *inorder* rekkefølge
+Input | x: en node
+Output | *Successor*-en til den gitte noden
+Kjøretid | $O(\lg n)$
+
+Attributt | Tree-Insert
+---|---
+Beskrivelse | Legger til en node til treet, på en gyldig plass
+Input | T: treet (rotnoden), z: noden som legges til
+Kjøretid | $O(\lg n)$
+
+Attributt | Transplant
+---|---
+Beskrivelse | Erstatter en node i treet med en annen
+Input | T: treet (rotnoden), u: noden som skal erstattes, v: noden som erstatter
+Kjøretid | $\Theta(1)$
+
+Attributt | Tree-Delete
+---|---
+Beskrivelse | Sletter den gitte noden fra treet
+Input | x: en node
+Kjøretid | $O(\lg n)$
+
+
 ````python
 def inorder_tree_walk(x):
     if x != None:
@@ -1096,8 +1254,12 @@ def tree_delete(T, z):
 ````
 [Implementasjon av binære søketrær](lib/structures/binary_tree.py)
 
-#### [E5] Vite at forventet høyde for et tilfeldig binært søketre er Θ(lg n)
-#### [E6] Vite at det finnes søketrær med garantert høyde på Θ(lg n)
+#### [E5] Vite at forventet høyde for et tilfeldig binært søketre er $\Theta(\lg n)$
+Dette er bevist i boka på side 300, men det er ikke nødvendig å forstå beviset.
+
+#### [E6] Vite at det finnes søketrær med garantert høyde på $\Theta(\lg n)$
+Trivielt?
+
 
 ### Forelesning 6: Dynamisk programmering
 #### ! [F1] Forstå ideen om en delinstansgraf
@@ -1266,16 +1428,23 @@ def bottom_up_knapsack(n, W, w, v):
             else:
                 y = K[i - 1][j - w[i]] + v[i]
                 K[i][j] = max(x, y)
-
-def continous_knapsack():
-    pass # TODO: implement continous knapsack
 ````
 [Implementasjon av det binære ryggsekkproblemet](lib/knapsack.py)
 
+
+
 ### Forelesning 7: Grådige algoritmer
+
 #### ! [G1] Forstå designmetoden grådighet
+
 #### ! [G2] Forstå grådighetsegenskapen (the greedy-choice property)
+
 #### [G3] Forstå eksemplene aktivitet-utvelgelse og det kontinuerlige ryggsekkproblemet
+
+##### Aktivitet-utvelgelse
+
+##### Det kontinuerlige ryggsekkproblemet
+
 #### [G4] Forstå Huffman og Huffman-koder
 ````python
 def huffman(C):
@@ -1291,8 +1460,13 @@ def huffman(C):
 ````
 [Implementasjon av Huffman](lib/huffman.py)
 
+
+
 ### Forelesning 8: Traversering av grafer
+
 #### [H1] Forstå hvordan grafer kan implementeres
+To vanlige implementasjoner av grafer er å bruke nabolister, eller en nabomatrise. Nabolister er effektive for grafer med få kanter, mens nabomatriser er effektive for grafer med mange kanter.
+
 #### [H2] Forstå BFS, også for å finne korteste vei uten vekter
 ````python
 def bfs(G, s):
@@ -1345,6 +1519,7 @@ def dfs_visit(G, u):
 [Implementasjon av DFS](lib/dfs.py)
 
 #### [H4] Forstå hvordan DFS klassifiserer kanter
+
 #### [H5] Forstå Topological-Sort
 ````python
 def topological_sort(G):
@@ -1380,10 +1555,15 @@ def ts_dfs_visit(G, u):
 [Implementasjon av Topological-Sort](lib/topological_sort.py)
 
 #### [H6] Forstå hvordan DFS kan implementeres med en stakk
+
 #### [H7] Forstå hva traverseringstrær (som bredde-først- og dybde-først-trær) er
+
 #### ! [H8] Forstå traversering med vilkårlig prioritetskø
 
+
+
 ### Forelesning 9: Minimale spenntrær
+
 #### [I1] Forstå skog-implementasjonen av disjunkte mengder
 ````python
 def connected_components(G):
@@ -1419,15 +1599,19 @@ def find_set(x):
 [Implementasjon av disjunkte mengder](lib/structures/disjunct_set.py) 
 
 #### [I2] Vite hva spenntrær og minimale spenntrær er
+
 #### ! [I3] Forstå Generic-MST
-    GENERIC-MST(G, w):
-        A = Ø
-        while A does not form a spanning tree
-            find an edge (u, v) that is safe for A
-            A = A U {(u, v)}
-        return A
+````
+GENERIC-MST(G, w):
+    A = Ø
+    while A does not form a spanning tree
+        find an edge (u, v) that is safe for A
+        A = A U {(u, v)}
+    return A
+````
 
 #### [I4] Forstå hvorfor lette kanter er trygge kanter
+
 #### [I5] Forstå MST-Kruskal
 ````python
 def mst_kruskal(G, w):
@@ -1459,12 +1643,20 @@ def mst_prim(G, w, r):
 ````
 [Implementasjon av MST-Prim](lib/minimal_spanning_tree.py)
 
+
+
 ### Forelesning 10: Korteste vei fra én til alle
+
 #### [J1] Forstå ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)
+
 #### [J2] Forstå strukturen til korteste-vei-problemet
+
 #### [J3] Forstå at negative sykler gir mening for korteste enkle vei (simple path)
+
 #### [J4] Forstå at korteste enkle vei kan løses vha. lengste enkle vei og omvendt
+
 #### [J5] Forstå hvordan man kan representere et korteste-vei-tre
+
 #### ! [J6] Forstå kant-slakking (edge relaxation) og Relax
 ````python
 def relax(u, v, w):
@@ -1477,6 +1669,7 @@ def relax(u, v, w):
 #### [J7] Forstå ulike egenskaper ved korteste veier og slakking
 (Triangle inequality, upper-bound property, no-path property, convergence property,
 path-relaxation property, predecessor-subgraph property)
+
 #### [J8] Forstå Bellman-Ford
 <details>
     <summary>Kode</summary>
@@ -1508,6 +1701,7 @@ def dag_shortest_paths(G, w, s):
 [Implementasjon av Dag-Shortest-Paths](lib/single_source_shortest_path.py)
 
 #### ! [J10] Forstå kobling mellom Dag-Shortest-Paths og dynamisk programmering
+
 #### [J11] Forstå Dijkstra
 ````python
 def dijkstra(G, w, s):
@@ -1522,7 +1716,10 @@ def dijkstra(G, w, s):
 ````
 [Implementasjon av Dijkstra](lib/single_source_shortest_path.py)
 
+
+
 ### Forelesning 11: Korteste vei fra alle til alle
+
 #### [K1] Forstå forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet
 ````python
 def print_all_pairs_shortest_path(Pi, i, j):
@@ -1595,14 +1792,24 @@ def johnson(G, w):
 ````
 [Implementasjon av Johnson](lib/all_pairs_shortest_paths.py)
 
+
+
 ### Forelesning 12: Maksimal flyt
+
 #### [L1] Kunne definere flytnett, flyt og maks-flyt-problemet
+
 #### [L2] Kunne håndtere antiparallelle kanter og flere kilder og sluk
+
 #### ! [L3] Kunne definere restnettet til et flytnett med en gitt flyt
+
 #### [L4] Forstå hvordan man kan oppheve (cancel) flyt
+
 #### [L5] Forstå hva en forøkende sti (augmenting path) er
+
 #### [L6] Forstå hva snitt, snitt-kapasitet og minimalt snitt er
+
 #### ! [L7] Forstå maks-flyt/min-snitt-teoremet
+
 #### [L8] Forstå Ford-Fulkerson-Method og Ford-Fulkerson
 ````
 FORD-FULKERSON-METHOD(G, s, t)
@@ -1629,20 +1836,48 @@ FORD-FULKERSON(G, s, t)
 [Implementasjon av Edmonds-Karp](lib/ford_fulkerson.py)
 
 #### [L10] Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching
+
 #### ! [L11] Forstå heltallsteoremet (integrality theorem)
 
+
+
 ### Forelesning 13: NP-kompletthet
+
 #### [M1] Forstå sammenhengen mellom optimerings- og beslutnings-problemer
+Optimeringsproblemer har gjerne tilhørende beslutningsproblemer og omvendt. For eksempel kan optimeringsproblemet *å finne korteste vei* knyttes til beslutningsproblemet *finnes det en vei med avstand $\leq k$?*.
+
 #### [M2] Forstå koding (encoding) av en instans
+
 #### [M3] Forstå hvorfor løsningen på det binære ryggsekkproblemet ikke er polynomisk
+
 #### [M4] Forstå forskjellen på konkrete og abstrakte problemer
+
 #### [M5] Forstå representasjonen av beslutningsproblemer som formelle språk
+
 #### [M6] Forstå definisjonen av klassene P, NP og co-NP
+NP er beslutningsproblemer der ja-svar kan verifiseres i polynomisk tid. co-NP er beslutninger der nei-svar kan verifiseres i polynomisk tid. P er problemene i NP som kan løses i polynomisk tid. 
+
 #### [M7] Forstå redusibilitets-relasjonen $\leq_p$
+Dersom vi reduserer $A$ til $B$ skriver vi $A \leq_p B$. Det vil si at $B$ er minst like vanskelig som $A$.
+
 #### ! [M8] Forstå definisjonen av NP-hardhet og NP-kompletthet
+At et problem er NP-hardt vil si at det er minst like vanskelig som de vanskeligste problemene i NP. Hvis et problem er i NP og er NP-hardt, så er det NP-komplett.
+
 #### [M9] Forstå den konvensjonelle hypotesen om forholdet mellom P, NP og NPC
+Den konvensjonelle hypotesen går ut på at
+- P $\subset$ NP
+- P $\neq$ NP
+- P $\cap$ NPC $= \emptyset$
+
 #### ! [M10] Forstå hvordan NP-kompletthet kan bevises ved én reduksjon
+Dersom vi reduserer et problem som er bevist NP-komplett $A$, til et problem $B$ i NP, $A \leq_p B$, vet vi at $B$ er minst like vanskelig som $A$ og derfor også NP-komplett. 
+
 #### ! [M11] Kjenne de NP-komplette problemene CIRCUIT-SAT, SAT, 3-CNF-SAT, CLIQUE, VERTEX-COVER, HAM-CYCLE, TSP og SUBSET-SUM
+
 #### [M12] Forstå at det binære ryggsekkproblemet er NP-hardt
+
 #### [M13] Forstå at lengste enkle-vei-problemet er NP-hardt
+Hamiltonvei-problemet kan reduseres til lengste enkle-vei-problemet, derfor er lengste enkle-vei-problemet NP-hardt.
+
 #### [M14] Være i stand til å konstruere enkle NP-kompletthetsbevis
+Ved reduksjon fra NP-komplette problemer.
