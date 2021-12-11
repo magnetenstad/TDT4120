@@ -39,7 +39,7 @@ def merge_sort(A, p, r):
         Best case: Theta(n lg n)
     Space Complecity: Theta(n)
 
-    In place: True
+    In place: False
     Stable: True
     """
     if p < r:

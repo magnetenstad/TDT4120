@@ -37,7 +37,7 @@ def max_heapify(A, i):
 def build_max_heap(A):
     """
     BUILD-MAX-HEAP
-    Time complexity: O(n lg n)
+    Time complexity: O(n)
     """
     A.heap_size = len(A)
     for i in range(floor(len(A) / 2), -1, -1):
