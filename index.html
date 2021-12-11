@@ -321,155 +321,147 @@ pre[data-line] .line-highlight[data-end]:after {
 <h3 class="mume-header" id="forelesning-2-datastrukturer">Forelesning 2: Datastrukturer</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B1] Forst&#xE5; hvordan <a href="lib/structures/stack.py">stakker</a> og <a href="lib/structures/queue.py">k&#xF8;er</a> fungerer (Stack-Empty, Push, Pop, Enqueue, Dequeue)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B2] Forst&#xE5; hvordan <a href="lib/structures/linked_list.py">lenkede lister</a> fungerer (List-Search, List-Insert, List-Delete, List-Delete&apos;, List-Search&apos;, List-Insert&apos;)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B3] Forst&#xE5; hvordan pekere og objekter kan implementeres</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [B4] Forst&#xE5; hvordan direkte adressering og hashtabeller fungerer</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B5] Forst&#xE5; konfliktl&#xF8;sing ved <a href="lib/structures/hash_table_chained.py">kjeding</a> (chaining) (Chained-Hash-Insert, Chained-Hash-Search, Chained-Hash-Delete)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B6] Kjenne til grunnleggende hashfunksjoner</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B7] Vite at man for statiske datasett kan ha worst-case O(1) for s&#xF8;k</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B8] Kunne definere amortisert analyse</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B9] Forst&#xE5; hvordan <a href="lib/structures/table.py">dynamiske tabeller</a> fungerer (Table-Insert)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B1] <a href="#b1-forst%C3%A5-hvordan-stakker-og-k%C3%B8er-fungerer">Forst&#xE5; hvordan stakker og k&#xF8;er fungerer</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B2] <a href="#b2-forst%C3%A5-hvordan-lenkede-lister-fungerer">Forst&#xE5; hvordan lenkede lister fungerer</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B3] <a href="#b3-forst%C3%A5-hvordan-pekere-og-objekter-kan-implementeres">Forst&#xE5; hvordan pekere og objekter kan implementeres</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [B4] <a href="#-b4-forst%C3%A5-hvordan-direkte-adressering-og-hashtabeller-fungererx">Forst&#xE5; hvordan direkte adressering og hashtabeller fungerer</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B5] <a href="#b5-forst%C3%A5-konfliktl%C3%B8sing-ved-kjeding-chaining">Forst&#xE5; konfliktl&#xF8;sing ved kjeding (chaining)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B6] <a href="#b6-kjenne-til-grunnleggende-hashfunksjoner">Kjenne til grunnleggende hashfunksjoner</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B7] <a href="#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-s%C3%B8k">Vite at man for statiske datasett kan ha worst-case O(1) for s&#xF8;k</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B8] <a href="#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-s%C3%B8k">Kunne definere amortisert analyse</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B9] <a href="#b8-kunne-definere-amortisert-analyse">Forst&#xE5; hvordan dynamiske tabeller fungerer</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-3-splitt-og-hersk">Forelesning 3: Splitt og hersk</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C1] Forst&#xE5; designmetoden divide-and-conquer (splitt og hersk)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C2] Forst&#xE5; <a href="lib/find_maximum_subarray.py">maximum-subarray-problemet</a> med l&#xF8;sninger</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C3] Forst&#xE5; <a href="lib/bisect.py">Bisect og Bisect&apos;</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C4] Forst&#xE5; <a href="lib/merge_sort.py">Merge-Sort</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C5] Forst&#xE5; <a href="lib/quicksort.py">Quicksort</a> og <a href="lib/randomized_select.py">Randomized-Quicksort</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C6] Kunne l&#xF8;se rekurrenser med substitusjon, rekursjonstr&#xE6;r og masterteoremet</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C7] Kunne l&#xF8;se rekurrenser med iterasjonsmetoden</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [C8] Forst&#xE5; hvordan variabelskifte fungerer</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C1] <a href="#-c1-forst%C3%A5-designmetoden-divide-and-conquer-splitt-og-hersk">Forst&#xE5; designmetoden divide-and-conquer (splitt og hersk)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C2] <a href="#c2-forst%C3%A5-maximum-subarray-problemet-med-l%C3%B8sninger">Forst&#xE5; maximum-subarray-problemet med l&#xF8;sninger</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C3] <a href="#c3-forst%C3%A5-bisect-og-bisect">Forst&#xE5; Bisect og Bisect&apos;</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C4] <a href="#c4-forst%C3%A5-merge-sort">Forst&#xE5; Merge-Sort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [C5] <a href="#c5-forst%C3%A5-quicksort-og-randomized-quicksort">Forst&#xE5; Quicksortog Randomized-Quicksort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C6] <a href="#-c6-kunne-l%C3%B8se-rekurrenser-med-substitusjon-rekursjonstr%C3%A6r-og-masterteoremet">Kunne l&#xF8;se rekurrenser med substitusjon, rekursjonstr&#xE6;r og masterteoremet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [C7] <a href="#-c7-kunne-l%C3%B8se-rekurrenser-med-iterasjonsmetoden">Kunne l&#xF8;se rekurrenser med iterasjonsmetoden</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [C8] <a href="#c8-forst%C3%A5-hvordan-variabelskifte-fungerer">Forst&#xE5; hvordan variabelskifte fungerer</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-4-rangering-i-line%C3%A6r-tid">Forelesning 4: Rangering i line&#xE6;r tid</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [D1] Forst&#xE5; hvorfor sammenligningsbasert sortering har en worst-case p&#xE5; &#x2126;(n lg n)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [D2] Vite hva en stabil sorteringsalgoritme er</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D3] Forst&#xE5; <a href="lib/counting_sort.py">Counting-Sort</a>, og hvorfor den er stabil</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [D4] Forst&#xE5; <a href="lib/radix_sort.py">Radix-Sort</a>, og hvorfor den trenger en stabil subrutine</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D5] Forst&#xE5; <a href="lib/bucket_sort.py">Bucket-Sort</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D6] Forst&#xE5; <a href="lib/randomized_select.py">Randomized-Select</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [D7] Kjenne til Select<br>
-Merk: Det kreves ikke grundig forst&#xE5;else av virkem&#xE5;ten til Select.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [D1] <a href="#-d1-forst%C3%A5-hvorfor-sammenligningsbasert-sortering-har-en-worst-case-p%C3%A5-%CF%89n-lg-n">Forst&#xE5; hvorfor sammenligningsbasert sortering har en worst-case p&#xE5; &#x2126;(n lg n)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [D2] <a href="#d2-vite-hva-en-stabil-sorteringsalgoritme-er">Vite hva en stabil sorteringsalgoritme er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D3] <a href="#d3-forst%C3%A5-counting-sort-og-hvorfor-den-er-stabil">Forst&#xE5; Counting-Sort, og hvorfor den er stabil</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [D4] <a href="#-d4-forst%C3%A5-radix-sort-og-hvorfor-den-trenger-en-stabil-subrutine">Forst&#xE5; Radix-Sort, og hvorfor den trenger en stabil subrutine</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D5] <a href="#d5-forst%C3%A5-bucket-sort">Forst&#xE5; Bucket-Sort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D6] <a href="#d6-forst%C3%A5-randomized-select">Forst&#xE5; Randomized-Select</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [D7] <a href="#d7-kjenne-til-select">Kjenne til Select</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-5-rotfaste-trestrukturer">Forelesning 5: Rotfaste trestrukturer</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [E1] Forst&#xE5; hvordan <a href="lib/structures/binary_heap.py">heaps</a> fungerer, og hvordan de kan brukes som<br>
-prioritetsk&#xF8;er (Parent, Left, Right, Max-Heapify, Build-Max-Heap, Heapsort,<br>
-Max-Heap-Insert, Heap-Extract-Max, Heap-Increase-Key, Heap-Maximum. Ogs&#xE5;<br>
-tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [E2] Forst&#xE5; <a href="lib/heapsort.py">Heapsort</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E3] Forst&#xE5; hvordan rotfaste tr&#xE6;r kan implementeres</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [E4] Forst&#xE5; hvordan <a href="lib/structures/binary_tree.py">bin&#xE6;re s&#xF8;ketr&#xE6;r</a> fungerer (Inorder-Tree-Walk, Tree-Search, Iterative-Tree-Search, Tree-Minimum, Tree-Maximum, Tree-Successor, Tree-Predecessor, Tree-Insert, Transplant, Tree-Delete)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E5] Vite at forventet h&#xF8;yde for et tilfeldig bin&#xE6;rt s&#xF8;ketre er &#x398;(lg n)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E6] Vite at det finnes s&#xF8;ketr&#xE6;r med garantert h&#xF8;yde p&#xE5; &#x398;(lg n)<br>
-Merk: Det kreves ikke grundig forst&#xE5;else av Transplant og Tree-Delete.</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [E1] <a href="#-e1-forst%C3%A5-hvordan-heaps-fungerer-og-hvordan-de-kan-brukes-som-prioritetsk%C3%B8er">Forst&#xE5; hvordan heaps fungerer, og hvordan de kan brukes som prioritetsk&#xF8;er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [E2] <a href="#e2-forst%C3%A5-heapsort">Forst&#xE5; Heapsort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E3] <a href="#e3-forst%C3%A5-hvordan-rotfaste-tr%C3%A6r-kan-implementeres">Forst&#xE5; hvordan rotfaste tr&#xE6;r kan implementeres</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [E4] <a href="#-e4-forst%C3%A5-hvordan-bin%C3%A6re-s%C3%B8ketr%C3%A6r-fungerer">Forst&#xE5; hvordan bin&#xE6;re s&#xF8;ketr&#xE6;r fungerer</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E5] <a href="#e5-vite-at-forventet-h%C3%B8yde-for-et-tilfeldig-bin%C3%A6rt-s%C3%B8ketre-er-%CE%B8lg-n">Vite at forventet h&#xF8;yde for et tilfeldig bin&#xE6;rt s&#xF8;ketre er &#x398;(lg n)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [E6] <a href="#e6-vite-at-det-finnes-s%C3%B8ketr%C3%A6r-med-garantert-h%C3%B8yde-p%C3%A5-%CE%B8lg-n">Vite at det finnes s&#xF8;ketr&#xE6;r med garantert h&#xF8;yde p&#xE5; &#x398;(lg n)</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-6-dynamisk-programmering">Forelesning 6: Dynamisk programmering</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F1] Forst&#xE5; ideen om en delinstansgraf</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F2] Forst&#xE5; designmetoden dynamisk programmering</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F3] Forst&#xE5; l&#xF8;sning ved memoisering (top-down)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F4] Forst&#xE5; l&#xF8;sning ved iterasjon (bottom-up)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F5] Forst&#xE5; hvordan man rekonstruerer en l&#xF8;sning fra lagrede beslutninger</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F6] Forst&#xE5; hva optimal delstruktur er</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F7] Forst&#xE5; hva overlappende delinstanser er</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [F8] Forst&#xE5; eksemplene <a href="lib/cut_rod.py">stavkutting</a> og <a href="lib/longest_common_subsequence.py">LCS</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [F9] Forst&#xE5; l&#xF8;sningen p&#xE5; <a href="lib/knapsack.py">det bin&#xE6;re ryggsekkproblemet</a> (Knapsack, Knapsack&apos;)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F1] <a href="#-f1-forst%C3%A5-ideen-om-en-delinstansgraf">Forst&#xE5; ideen om en delinstansgraf</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F2] <a href="#-f2-forst%C3%A5-designmetoden-dynamisk-programmering">Forst&#xE5; designmetoden dynamisk programmering</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [F3] <a href="#-f3-forst%C3%A5-l%C3%B8sning-ved-memoisering-top-down">Forst&#xE5; l&#xF8;sning ved memoisering (top-down)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F4] <a href="#f4-forst%C3%A5-l%C3%B8sning-ved-iterasjon-bottom-up">Forst&#xE5; l&#xF8;sning ved iterasjon (bottom-up)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F5] <a href="#f5-forst%C3%A5-hvordan-man-rekonstruerer-en-l%C3%B8sning-fra-lagrede-beslutninger">Forst&#xE5; hvordan man rekonstruerer en l&#xF8;sning fra lagrede beslutninger</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F6] <a href="#f6-forst%C3%A5-hva-optimal-delstruktur-er">Forst&#xE5; hva optimal delstruktur er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [F7] <a href="#f7-forst%C3%A5-hva-overlappende-delinstanser-er">Forst&#xE5; hva overlappende delinstanser er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [F8] <a href="#f8-forst%C3%A5-eksemplene-stavkutting-og-lcs">Forst&#xE5; eksemplene stavkutting og LCS</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [F9] <a href="#f9-forst%C3%A5-l%C3%B8sningen-p%C3%A5-det-bin%C3%A6re-ryggsekkproblemet-knapsack-knapsack">Forst&#xE5; l&#xF8;sningen p&#xE5; det bin&#xE6;re ryggsekkproblemet</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-7-gr%C3%A5dige-algoritmer">Forelesning 7: Gr&#xE5;dige algoritmer</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [G1] Forst&#xE5; designmetoden gr&#xE5;dighet</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [G2] Forst&#xE5; gr&#xE5;dighetsegenskapen (the greedy-choice property)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [G3] Forst&#xE5; eksemplene aktivitet-utvelgelse og det kontinuerlige<br>
-ryggsekkproblemet</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [G4] Forst&#xE5; <a href="lib/huffman.py">Huffman</a> og Huffman-koder</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [G1] <a href="#-g1-forst%C3%A5-designmetoden-gr%C3%A5dighet">Forst&#xE5; designmetoden gr&#xE5;dighet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [G2] <a href="#-g2-forst%C3%A5-gr%C3%A5dighetsegenskapen-the-greedy-choice-property">Forst&#xE5; gr&#xE5;dighetsegenskapen (the greedy-choice property)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [G3] <a href="#g3-forst%C3%A5-eksemplene-aktivitet-utvelgelse-og-det-kontinuerlige-ryggsekkproblemet">Forst&#xE5; eksemplene aktivitet-utvelgelse og det kontinuerlige ryggsekkproblemet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [G4] <a href="#g4-forst%C3%A5-huffman-og-huffman-koder">Forst&#xE5; Huffman og Huffman-koder</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-8-traversering-av-grafer">Forelesning 8: Traversering av grafer</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H1] Forst&#xE5; hvordan grafer kan implementeres</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H2] Forst&#xE5; <a href="lib/bfs.py">BFS</a>, ogs&#xE5; for &#xE5; finne korteste vei uten vekter</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H3] Forst&#xE5; <a href="lib/dfs.py">DFS</a>, parentesteoremet og hvit-sti-teoremet</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H4] Forst&#xE5; hvordan DFS klassifiserer kanter</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H5] Forst&#xE5; <a href="lib/topological_sort.py">Topological-Sort</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H6] Forst&#xE5; hvordan DFS kan implementeres med en stakk</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H7] Forst&#xE5; hva traverseringstr&#xE6;r (som bredde-f&#xF8;rst- og dybde-f&#xF8;rst-tr&#xE6;r) er</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [H8] Forst&#xE5; traversering med vilk&#xE5;rlig prioritetsk&#xF8;</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H1] <a href="#h1-forst%C3%A5-hvordan-grafer-kan-implementeres">Forst&#xE5; hvordan grafer kan implementeres</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H2] <a href="#h2-forst%C3%A5-bfs-ogs%C3%A5-for-%C3%A5-finne-korteste-vei-uten-vekter">Forst&#xE5; BFS, ogs&#xE5; for &#xE5; finne korteste vei uten vekter</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H3] <a href="#h3-forst%C3%A5-dfs-parentesteoremet-og-hvit-sti-teoremet">Forst&#xE5; DFS, parentesteoremet og hvit-sti-teoremet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H4] <a href="#h4-forst%C3%A5-hvordan-dfs-klassifiserer-kanter">Forst&#xE5; hvordan DFS klassifiserer kanter</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H5] <a href="#h5-forst%C3%A5-topological-sort">Forst&#xE5; Topological-Sort</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H6] <a href="#h6-forst%C3%A5-hvordan-dfs-kan-implementeres-med-en-stakk">Forst&#xE5; hvordan DFS kan implementeres med en stakk</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H7] <a href="#h7-forst%C3%A5-hva-traverseringstr%C3%A6r-som-bredde-f%C3%B8rst--og-dybde-f%C3%B8rst-tr%C3%A6r-er">Forst&#xE5; hva traverseringstr&#xE6;r (som bredde-f&#xF8;rst- og dybde-f&#xF8;rst-tr&#xE6;r) er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [H8] <a href="#-h8-forst%C3%A5-traversering-med-vilk%C3%A5rlig-prioritetsk%C3%B8">Forst&#xE5; traversering med vilk&#xE5;rlig prioritetsk&#xF8;</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-9-minimale-spenntr%C3%A6r">Forelesning 9: Minimale spenntr&#xE6;r</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I1] Forst&#xE5; skog-implementasjonen av <a href="lib/structures/disjunct_set.py">disjunkte mengder</a> (Connected-Components, Same-Component, Make-Set, Union, Link, Find-Set)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [I2] Vite hva spenntr&#xE6;r og minimale spenntr&#xE6;r er</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [I3] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">Generic-MST</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [I4] Forst&#xE5; hvorfor lette kanter er trygge kanter</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I5] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">MST-Kruskal</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I6] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">MST-Prim</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I1] <a href="#i1-forst%C3%A5-skog-implementasjonen-av-disjunkte-mengder">Forst&#xE5; skog-implementasjonen av disjunkte mengder</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [I2] <a href="#i2-vite-hva-spenntr%C3%A6r-og-minimale-spenntr%C3%A6r-er">Vite hva spenntr&#xE6;r og minimale spenntr&#xE6;r er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [I3] <a href="#-i3-forst%C3%A5-generic-mst">Forst&#xE5; Generic-MST</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [I4] <a href="#i4-forst%C3%A5-hvorfor-lette-kanter-er-trygge-kanter">Forst&#xE5; hvorfor lette kanter er trygge kanter</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I5] <a href="#i5-forst%C3%A5-mst-kruskal">Forst&#xE5; MST-Kruskal</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I6] <a href="#i6-forst%C3%A5-mst-prim">Forst&#xE5; MST-Prim</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-10-korteste-vei-fra-%C3%A9n-til-alle">Forelesning 10: Korteste vei fra &#xE9;n til alle</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J1] Forst&#xE5; ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J2] Forst&#xE5; strukturen til korteste-vei-problemet</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J3] Forst&#xE5; at negative sykler gir mening for korteste enkle vei (simple path)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J4] Forst&#xE5; at korteste enkle vei kan l&#xF8;ses vha. lengste enkle vei og omvendt</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J5] Forst&#xE5; hvordan man kan representere et korteste-vei-tre</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [J6] Forst&#xE5; kant-slakking (edge relaxation) og <a href="lib/single_source_shortest_path.py">Relax</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J7] Forst&#xE5; ulike egenskaper ved korteste veier og slakking (Triangle<br>
-inequality, upper-bound property, no-path property, convergence property,<br>
-path-relaxation property, predecessor-subgraph property)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J8] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Bellman-Ford</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J9] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Dag-Shortest-Paths</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [J10] Forst&#xE5; kobling mellom Dag-Shortest-Paths og dynamisk programmering</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J11] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Dijkstra</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J1] <a href="#j1-forst%C3%A5-ulike-varianter-av-korteste-vei--eller-korteste-sti-problemet-single-source-single-destination-single-pair-all-pairs">Forst&#xE5; ulike varianter av korteste-vei- eller korteste-sti-problemet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J2] <a href="#j2-forst%C3%A5-strukturen-til-korteste-vei-problemet">Forst&#xE5; strukturen til korteste-vei-problemet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J3] <a href="#j3-forst%C3%A5-at-negative-sykler-gir-mening-for-korteste-enkle-vei-simple-path">Forst&#xE5; at negative sykler gir mening for korteste enkle vei (simple path)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J4] <a href="#j4-forst%C3%A5-at-korteste-enkle-vei-kan-l%C3%B8ses-vha-lengste-enkle-vei-og-omvendt">Forst&#xE5; at korteste enkle vei kan l&#xF8;ses vha. lengste enkle vei og omvendt</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J5] <a href="#j5-forst%C3%A5-hvordan-man-kan-representere-et-korteste-vei-tre">Forst&#xE5; hvordan man kan representere et korteste-vei-tre</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [J6] <a href="#-j6-forst%C3%A5-kant-slakking-edge-relaxation-og-relax">Forst&#xE5; kant-slakking (edge relaxation) og Relax</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J7] <a href="#j7-forst%C3%A5-ulike-egenskaper-ved-korteste-veier-og-slakking">Forst&#xE5; ulike egenskaper ved korteste veier og slakking</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J8] <a href="#j8-forst%C3%A5-bellman-ford">Forst&#xE5; Bellman-Ford</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J9] <a href="#j9-forst%C3%A5-dag-shortest-paths">Forst&#xE5; Dag-Shortest-Paths</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [J10] <a href="#-j10-forst%C3%A5-kobling-mellom-dag-shortest-paths-og-dynamisk-programmering">Forst&#xE5; kobling mellom Dag-Shortest-Paths og dynamisk programmering</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J11] <a href="#j11-forst%C3%A5-dijkstra">Forst&#xE5; Dijkstra</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-11-korteste-vei-fra-alle-til-alle">Forelesning 11: Korteste vei fra alle til alle</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [K1] Forst&#xE5; forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet (<a href="lib/all_pairs_shortest_paths.py">Print-All-Pairs-Shortest-Path</a>)</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K2] Forst&#xE5; <a href="lib/all_pairs_shortest_paths.py">Floyd-Warshall</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K3] Forst&#xE5; <a href="lib/transitive_closure.py">Transitive-Closure</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [K4] Forst&#xE5; <a href="lib/all_pairs_shortest_paths.py">Johnson</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [K1] <a href="#k1-forst%C3%A5-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet-print-all-pairs-shortest-path">Forst&#xE5; forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K2] <a href="#k2-forst%C3%A5-floyd-warshall">Forst&#xE5; Floyd-Warshall</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K3] <a href="#k3-forst%C3%A5-transitive-closure">Forst&#xE5; Transitive-Closure</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [K4] <a href="#k4-forst%C3%A5-johnson">Forst&#xE5; Johnson</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-12-maksimal-flyt">Forelesning 12: Maksimal flyt</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L1] Kunne definere flytnett, flyt og maks-flyt-problemet</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L2] Kunne h&#xE5;ndtere antiparallelle kanter og flere kilder og sluk</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L3] Kunne definere restnettet til et flytnett med en gitt flyt</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L4] Forst&#xE5; hvordan man kan oppheve (cancel) flyt</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L5] Forst&#xE5; hva en for&#xF8;kende sti (augmenting path) er</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L6] Forst&#xE5; hva snitt, snitt-kapasitet og minimalt snitt er</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L7] Forst&#xE5; maks-flyt/min-snitt-teoremet</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [L8] Forst&#xE5; Ford-Fulkerson-Method og <a href="lib/ford_fulkerson.py">Ford-Fulkerson</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L9] Vite at Ford-Fulkerson med BFS kalles <a href="lib/ford_fulkerson.py">Edmonds-Karp-algoritmen</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L10] Forst&#xE5; hvordan maks-flyt kan finne en maksimum bipartitt matching</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L11] Forst&#xE5; heltallsteoremet (integrality theorem)</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L1] <a href="#l1-kunne-definere-flytnett-flyt-og-maks-flyt-problemet">Kunne definere flytnett, flyt og maks-flyt-problemet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L2] <a href="#l2-kunne-h%C3%A5ndtere-antiparallelle-kanter-og-flere-kilder-og-sluk">Kunne h&#xE5;ndtere antiparallelle kanter og flere kilder og sluk</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L3] <a href="#-l3-kunne-definere-restnettet-til-et-flytnett-med-en-gitt-flyt">Kunne definere restnettet til et flytnett med en gitt flyt</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L4] <a href="#l4-forst%C3%A5-hvordan-man-kan-oppheve-cancel-flyt">Forst&#xE5; hvordan man kan oppheve (cancel) flyt</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L5] <a href="#l5-forst%C3%A5-hva-en-for%C3%B8kende-sti-augmenting-path-er">Forst&#xE5; hva en for&#xF8;kende sti (augmenting path) er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L6] <a href="#l6-forst%C3%A5-hva-snitt-snitt-kapasitet-og-minimalt-snitt-er">Forst&#xE5; hva snitt, snitt-kapasitet og minimalt snitt er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L7] <a href="#-l7-forst%C3%A5-maks-flytmin-snitt-teoremet">Forst&#xE5; maks-flyt/min-snitt-teoremet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [L8] <a href="#l8-forst%C3%A5-ford-fulkerson-method-og-ford-fulkerson">Forst&#xE5; Ford-Fulkerson-Method og Ford-Fulkerson</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L9] <a href="#l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen">Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L10] <a href="#l10-forst%C3%A5-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching">Forst&#xE5; hvordan maks-flyt kan finne en maksimum bipartitt matching</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L11] <a href="#-l11-forst%C3%A5-heltallsteoremet-integrality-theorem">Forst&#xE5; heltallsteoremet (integrality theorem)</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-13-np-kompletthet">Forelesning 13: NP-kompletthet</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M1] Forst&#xE5; sammenhengen mellom optimerings- og beslutnings-problemer</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M2] Forst&#xE5; koding (encoding) av en instans</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M3] Forst&#xE5; hvorfor l&#xF8;sningen p&#xE5; det bin&#xE6;re ryggsekkproblemet ikke er polynomisk</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M4] Forst&#xE5; forskjellen p&#xE5; konkrete og abstrakte problemer</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M5] Forst&#xE5; representasjonen av beslutningsproblemer som formelle spr&#xE5;k</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M6] Forst&#xE5; definisjonen av klassene P, NP og co-NP</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M7] Forst&#xE5; redusibilitets-relasjonen <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&#x2264;</mo><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\leq_p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.922078em;vertical-align:-0.286108em;"></span><span class="mrel"><span class="mrel">&#x2264;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M8] Forst&#xE5; definisjonen av NP-hardhet og NP-kompletthet</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M9] Forst&#xE5; den konvensjonelle hypotesen om forholdet mellom P, NP og NPC</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M10] Forst&#xE5; hvordan NP-kompletthet kan bevises ved &#xE9;n reduksjon</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M11] Kjenne de NP-komplette problemene CIRCUIT-SAT, SAT, 3-CNF-SAT, CLIQUE, VERTEX-COVER, HAM-CYCLE, TSP og SUBSET-SUM</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M12] Forst&#xE5; at det bin&#xE6;re ryggsekkproblemet er NP-hardt</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M13] Forst&#xE5; at lengste enkle-vei-problemet er NP-hardt</li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M14] V&#xE6;re i stand til &#xE5; konstruere enkle NP-kompletthetsbevis</li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M1] <a href="#m1-forst%C3%A5-sammenhengen-mellom-optimerings--og-beslutnings-problemer">Forst&#xE5; sammenhengen mellom optimerings- og beslutnings-problemer</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M2] <a href="#m2-forst%C3%A5-koding-encoding-av-en-instans">Forst&#xE5; koding (encoding) av en instans</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M3] <a href="#m3-forst%C3%A5-hvorfor-l%C3%B8sningen-p%C3%A5-det-bin%C3%A6re-ryggsekkproblemet-ikke-er-polynomisk">Forst&#xE5; hvorfor l&#xF8;sningen p&#xE5; det bin&#xE6;re ryggsekkproblemet ikke er polynomisk</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M4] <a href="#m4-forst%C3%A5-forskjellen-p%C3%A5-konkrete-og-abstrakte-problemer">Forst&#xE5; forskjellen p&#xE5; konkrete og abstrakte problemer</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M5] <a href="#m5-forst%C3%A5-representasjonen-av-beslutningsproblemer-som-formelle-spr%C3%A5k">Forst&#xE5; representasjonen av beslutningsproblemer som formelle spr&#xE5;k</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M6] <a href="#m6-forst%C3%A5-definisjonen-av-klassene-p-np-og-co-np">Forst&#xE5; definisjonen av klassene P, NP og co-NP</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M7] <a href="#m7-forst%C3%A5-redusibilitets-relasjonen-leq_p">Forst&#xE5; redusibilitets-relasjonen <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&#x2264;</mo><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\leq_p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.922078em;vertical-align:-0.286108em;"></span><span class="mrel"><span class="mrel">&#x2264;</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">p</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M8] <a href="#-m8-forst%C3%A5-definisjonen-av-np-hardhet-og-np-kompletthet">Forst&#xE5; definisjonen av NP-hardhet og NP-kompletthet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M9] <a href="#m9-forst%C3%A5-den-konvensjonelle-hypotesen-om-forholdet-mellom-p-np-og-npc">Forst&#xE5; den konvensjonelle hypotesen om forholdet mellom P, NP og NPC</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M10] <a href="#-m10-forst%C3%A5-hvordan-np-kompletthet-kan-bevises-ved-%C3%A9n-reduksjon">Forst&#xE5; hvordan NP-kompletthet kan bevises ved &#xE9;n reduksjon</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [M11] <a href="#-m11-kjenne-de-np-komplette-problemene-circuit-sat-sat-3-cnf-sat-clique-vertex-cover-ham-cycle-tsp-og-subset-sum">Kjenne de NP-komplette problemene CIRCUIT-SAT, SAT, 3-CNF-SAT, CLIQUE, VERTEX-COVER, HAM-CYCLE, TSP og SUBSET-SUM</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M12] <a href="#m12-forst%C3%A5-at-det-bin%C3%A6re-ryggsekkproblemet-er-np-hardt">Forst&#xE5; at det bin&#xE6;re ryggsekkproblemet er NP-hardt</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M13] <a href="#m13-forst%C3%A5-at-lengste-enkle-vei-problemet-er-np-hardt">Forst&#xE5; at lengste enkle-vei-problemet er NP-hardt</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [M14] <a href="#m14-v%C3%A6re-i-stand-til-%C3%A5-konstruere-enkle-np-kompletthetsbevis">V&#xE6;re i stand til &#xE5; konstruere enkle NP-kompletthetsbevis</a></li>
 </ul>
 <h2 class="mume-header" id="realisert">Realisert</h2>
 
@@ -518,36 +510,51 @@ Loop invariant: At the start of each iteration, the subarray <span class="katex"
 </pre><p><a href="lib\insertion_sort.py">Implementasjon av Insertion-Sort</a></p>
 <h3 class="mume-header" id="forelesning-2-datastrukturer-1">Forelesning 2: Datastrukturer</h3>
 
-<h4 class="mume-header" id="b1-forst%C3%A5-hvordan-stakkerlibstructuresstackpy-og-k%C3%B8erlibstructuresqueuepy-fungerer-stack-empty-push-pop-enqueue-dequeue">[B1] Forst&#xE5; hvordan <a href="lib/structures/stack.py">stakker</a> og <a href="lib/structures/queue.py">k&#xF8;er</a> fungerer (Stack-Empty, Push, Pop, Enqueue, Dequeue)</h4>
+<h4 class="mume-header" id="b1-forst%C3%A5-hvordan-stakker-og-k%C3%B8er-fungerer">[B1] Forst&#xE5; hvordan stakker og k&#xF8;er fungerer</h4>
 
-<h4 class="mume-header" id="b2-forst%C3%A5-hvordan-lenkede-listerlibstructureslinked_listpy-fungerer-list-search-list-insert-list-delete-list-delete-list-search-list-insert">[B2] Forst&#xE5; hvordan <a href="lib/structures/linked_list.py">lenkede lister</a> fungerer (List-Search, List-Insert, List-Delete, List-Delete&apos;, List-Search&apos;, List-Insert&apos;)</h4>
+<p>(Stack-Empty, Push, Pop, Enqueue, Dequeue)<br>
+<a href="lib/structures/stack.py">stakker</a><br>
+<a href="lib/structures/queue.py">k&#xF8;er</a></p>
+<h4 class="mume-header" id="b2-forst%C3%A5-hvordan-lenkede-lister-fungerer">[B2] Forst&#xE5; hvordan lenkede lister fungerer</h4>
 
+<p>(List-Search, List-Insert, List-Delete, List-Delete&apos;, List-Search&apos;,<br>
+List-Insert&apos;)<br>
+<a href="lib/structures/linked_list.py">lenkede lister</a></p>
 <h4 class="mume-header" id="b3-forst%C3%A5-hvordan-pekere-og-objekter-kan-implementeres">[B3] Forst&#xE5; hvordan pekere og objekter kan implementeres</h4>
 
 <h4 class="mume-header" id="b4-forst%C3%A5-hvordan-direkte-adressering-og-hashtabeller-fungerer">! [B4] Forst&#xE5; hvordan direkte adressering og hashtabeller fungerer</h4>
 
-<h4 class="mume-header" id="b5-forst%C3%A5-konfliktl%C3%B8sing-ved-kjedinglibstructureshash_table_chainedpy-chaining-chained-hash-insert-chained-hash-search-chained-hash-delete">[B5] Forst&#xE5; konfliktl&#xF8;sing ved <a href="lib/structures/hash_table_chained.py">kjeding</a> (chaining) (Chained-Hash-Insert, Chained-Hash-Search, Chained-Hash-Delete)</h4>
+<h4 class="mume-header" id="b5-forst%C3%A5-konfliktl%C3%B8sing-ved-kjeding-chaining">[B5] Forst&#xE5; konfliktl&#xF8;sing ved kjeding (chaining)</h4>
 
+<p>(Chained-Hash-Insert, Chained-Hash-Search, Chained-Hash-Delete)<br>
+<a href="lib/structures/hash_table_chained.py">kjeding</a></p>
 <h4 class="mume-header" id="b6-kjenne-til-grunnleggende-hashfunksjoner">[B6] Kjenne til grunnleggende hashfunksjoner</h4>
 
 <h4 class="mume-header" id="b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-s%C3%B8k">[B7] Vite at man for statiske datasett kan ha worst-case O(1) for s&#xF8;k</h4>
 
 <h4 class="mume-header" id="b8-kunne-definere-amortisert-analyse">[B8] Kunne definere amortisert analyse</h4>
 
-<h4 class="mume-header" id="b9-forst%C3%A5-hvordan-dynamiske-tabellerlibstructurestablepy-fungerer-table-insert">[B9] Forst&#xE5; hvordan <a href="lib/structures/table.py">dynamiske tabeller</a> fungerer (Table-Insert)</h4>
+<h4 class="mume-header" id="b9-forst%C3%A5-hvordan-dynamiske-tabeller-fungerer">[B9] Forst&#xE5; hvordan dynamiske tabeller fungerer</h4>
 
+<p>(Table-Insert)<br>
+<a href="lib/structures/table.py">dynamiske tabeller</a></p>
 <h3 class="mume-header" id="forelesning-3-splitt-og-hersk-1">Forelesning 3: Splitt og hersk</h3>
 
 <h4 class="mume-header" id="c1-forst%C3%A5-designmetoden-divide-and-conquer-splitt-og-hersk">! [C1] Forst&#xE5; designmetoden divide-and-conquer (splitt og hersk)</h4>
 
-<h4 class="mume-header" id="c2-forst%C3%A5-maximum-subarray-problemetlibfind_maximum_subarraypy-med-l%C3%B8sninger">[C2] Forst&#xE5; <a href="lib/find_maximum_subarray.py">maximum-subarray-problemet</a> med l&#xF8;sninger</h4>
+<h4 class="mume-header" id="c2-forst%C3%A5-maximum-subarray-problemet-med-l%C3%B8sninger">[C2] Forst&#xE5; maximum-subarray-problemet med l&#xF8;sninger</h4>
 
-<h4 class="mume-header" id="c3-forst%C3%A5-bisect-og-bisectlibbisectpy">[C3] Forst&#xE5; <a href="lib/bisect.py">Bisect og Bisect&apos;</a></h4>
+<p><a href="lib/find_maximum_subarray.py">maximum-subarray-problemet</a></p>
+<h4 class="mume-header" id="c3-forst%C3%A5-bisect-og-bisect">[C3] Forst&#xE5; Bisect og Bisect&apos;</h4>
 
-<h4 class="mume-header" id="c4-forst%C3%A5-merge-sortlibmerge_sortpy">[C4] Forst&#xE5; <a href="lib/merge_sort.py">Merge-Sort</a></h4>
+<p><a href="lib/bisect.py">Bisect og Bisect&apos;</a></p>
+<h4 class="mume-header" id="c4-forst%C3%A5-merge-sort">[C4] Forst&#xE5; Merge-Sort</h4>
 
-<h4 class="mume-header" id="c5-forst%C3%A5-quicksortlibquicksortpy-og-randomized-quicksortlibrandomized_selectpy">[C5] Forst&#xE5; <a href="lib/quicksort.py">Quicksort</a> og <a href="lib/randomized_select.py">Randomized-Quicksort</a></h4>
+<p><a href="lib/merge_sort.py">Merge-Sort</a></p>
+<h4 class="mume-header" id="c5-forst%C3%A5-quicksort-og-randomized-quicksort">[C5] Forst&#xE5; Quicksort og Randomized-Quicksort</h4>
 
+<p><a href="lib/quicksort.py">Quicksort</a><br>
+<a href="lib/randomized_select.py">Randomized-Quicksort</a></p>
 <h4 class="mume-header" id="c6-kunne-l%C3%B8se-rekurrenser-med-substitusjon-rekursjonstr%C3%A6r-og-masterteoremet">! [C6] Kunne l&#xF8;se rekurrenser med substitusjon, rekursjonstr&#xE6;r og masterteoremet</h4>
 
 <h4 class="mume-header" id="c7-kunne-l%C3%B8se-rekurrenser-med-iterasjonsmetoden">! [C7] Kunne l&#xF8;se rekurrenser med iterasjonsmetoden</h4>
@@ -560,32 +567,39 @@ Loop invariant: At the start of each iteration, the subarray <span class="katex"
 
 <h4 class="mume-header" id="d2-vite-hva-en-stabil-sorteringsalgoritme-er">[D2] Vite hva en stabil sorteringsalgoritme er</h4>
 
-<h4 class="mume-header" id="d3-forst%C3%A5-counting-sortlibcounting_sortpy-og-hvorfor-den-er-stabil">[D3] Forst&#xE5; <a href="lib/counting_sort.py">Counting-Sort</a>, og hvorfor den er stabil</h4>
+<h4 class="mume-header" id="d3-forst%C3%A5-counting-sort-og-hvorfor-den-er-stabil">[D3] Forst&#xE5; Counting-Sort, og hvorfor den er stabil</h4>
 
-<h4 class="mume-header" id="d4-forst%C3%A5-radix-sortlibradix_sortpy-og-hvorfor-den-trenger-en-stabil-subrutine">! [D4] Forst&#xE5; <a href="lib/radix_sort.py">Radix-Sort</a>, og hvorfor den trenger en stabil subrutine</h4>
+<p><a href="lib/counting_sort.py">Counting-Sort</a></p>
+<h4 class="mume-header" id="d4-forst%C3%A5-radix-sort-og-hvorfor-den-trenger-en-stabil-subrutine">! [D4] Forst&#xE5; Radix-Sort, og hvorfor den trenger en stabil subrutine</h4>
 
-<h4 class="mume-header" id="d5-forst%C3%A5-bucket-sortlibbucket_sortpy">[D5] Forst&#xE5; <a href="lib/bucket_sort.py">Bucket-Sort</a></h4>
+<p><a href="lib/radix_sort.py">Radix-Sort</a></p>
+<h4 class="mume-header" id="d5-forst%C3%A5-bucket-sort">[D5] Forst&#xE5; Bucket-Sort</h4>
 
-<h4 class="mume-header" id="d6-forst%C3%A5-randomized-selectlibrandomized_selectpy">[D6] Forst&#xE5; <a href="lib/randomized_select.py">Randomized-Select</a></h4>
+<p><a href="lib/bucket_sort.py">Bucket-Sort</a></p>
+<h4 class="mume-header" id="d6-forst%C3%A5-randomized-select">[D6] Forst&#xE5; Randomized-Select</h4>
 
+<p><a href="lib/randomized_select.py">Randomized-Select</a></p>
 <h4 class="mume-header" id="d7-kjenne-til-select">[D7] Kjenne til Select</h4>
 
 <p>Merk: Det kreves ikke grundig forst&#xE5;else av virkem&#xE5;ten til Select.</p>
 <h3 class="mume-header" id="forelesning-5-rotfaste-trestrukturer-1">Forelesning 5: Rotfaste trestrukturer</h3>
 
-<h4 class="mume-header" id="e1-forst%C3%A5-hvordan-heapslibstructuresbinary_heappy-fungerer-og-hvordan-de-kan-brukes-som-prioritetsk%C3%B8er">! [E1] Forst&#xE5; hvordan <a href="lib/structures/binary_heap.py">heaps</a> fungerer, og hvordan de kan brukes som prioritetsk&#xF8;er</h4>
+<h4 class="mume-header" id="e1-forst%C3%A5-hvordan-heaps-fungerer-og-hvordan-de-kan-brukes-som-prioritetsk%C3%B8er">! [E1] Forst&#xE5; hvordan heaps fungerer, og hvordan de kan brukes som prioritetsk&#xF8;er</h4>
 
 <p>(Parent, Left, Right, Max-Heapify, Build-Max-Heap, Heapsort,<br>
 Max-Heap-Insert, Heap-Extract-Max, Heap-Increase-Key, Heap-Maximum. Ogs&#xE5;<br>
-tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)</p>
-<h4 class="mume-header" id="e2-forst%C3%A5-heapsortlibheapsortpy">[E2] Forst&#xE5; <a href="lib/heapsort.py">Heapsort</a></h4>
+tilsvarende for min-heaps, f.eks., Build-Min-Heap og Heap-Extract-Min.)<br>
+<a href="lib/structures/binary_heap.py">heaps</a></p>
+<h4 class="mume-header" id="e2-forst%C3%A5-heapsort">[E2] Forst&#xE5; Heapsort</h4>
 
+<p><a href="lib/heapsort.py">Heapsort</a></p>
 <h4 class="mume-header" id="e3-forst%C3%A5-hvordan-rotfaste-tr%C3%A6r-kan-implementeres">[E3] Forst&#xE5; hvordan rotfaste tr&#xE6;r kan implementeres</h4>
 
-<h4 class="mume-header" id="e4-forst%C3%A5-hvordan-bin%C3%A6re-s%C3%B8ketr%C3%A6rlibstructuresbinary_treepy-fungerer">! [E4] Forst&#xE5; hvordan <a href="lib/structures/binary_tree.py">bin&#xE6;re s&#xF8;ketr&#xE6;r</a> fungerer</h4>
+<h4 class="mume-header" id="e4-forst%C3%A5-hvordan-bin%C3%A6re-s%C3%B8ketr%C3%A6r-fungerer">! [E4] Forst&#xE5; hvordan bin&#xE6;re s&#xF8;ketr&#xE6;r fungerer</h4>
 
 <p>(Inorder-Tree-Walk, Tree-Search, Iterative-Tree-Search, Tree-Minimum, Tree-Maximum, Tree-Successor, Tree-Predecessor, Tree-Insert, Transplant, Tree-Delete)<br>
-Merk: Det kreves ikke grundig forst&#xE5;else av Transplant og Tree-Delete.</p>
+Merk: Det kreves ikke grundig forst&#xE5;else av Transplant og Tree-Delete.<br>
+<a href="lib/structures/binary_tree.py">bin&#xE6;re s&#xF8;ketr&#xE6;r</a></p>
 <h4 class="mume-header" id="e5-vite-at-forventet-h%C3%B8yde-for-et-tilfeldig-bin%C3%A6rt-s%C3%B8ketre-er-%CE%B8lg-n">[E5] Vite at forventet h&#xF8;yde for et tilfeldig bin&#xE6;rt s&#xF8;ketre er &#x398;(lg n)</h4>
 
 <h4 class="mume-header" id="e6-vite-at-det-finnes-s%C3%B8ketr%C3%A6r-med-garantert-h%C3%B8yde-p%C3%A5-%CE%B8lg-n">[E6] Vite at det finnes s&#xF8;ketr&#xE6;r med garantert h&#xF8;yde p&#xE5; &#x398;(lg n)</h4>
@@ -606,33 +620,39 @@ Merk: Det kreves ikke grundig forst&#xE5;else av Transplant og Tree-Delete.</p>
 
 <h4 class="mume-header" id="f7-forst%C3%A5-hva-overlappende-delinstanser-er">[F7] Forst&#xE5; hva overlappende delinstanser er</h4>
 
-<h4 class="mume-header" id="f8-forst%C3%A5-eksemplene-stavkuttinglibcut_rodpy-og-lcsliblongest_common_subsequencepy">[F8] Forst&#xE5; eksemplene <a href="lib/cut_rod.py">stavkutting</a> og <a href="lib/longest_common_subsequence.py">LCS</a></h4>
+<h4 class="mume-header" id="f8-forst%C3%A5-eksemplene-stavkutting-og-lcs">[F8] Forst&#xE5; eksemplene stavkutting og LCS</h4>
 
-<h4 class="mume-header" id="f9-forst%C3%A5-l%C3%B8sningen-p%C3%A5-det-bin%C3%A6re-ryggsekkproblemetlibknapsackpy-knapsack-knapsack">[F9] Forst&#xE5; l&#xF8;sningen p&#xE5; <a href="lib/knapsack.py">det bin&#xE6;re ryggsekkproblemet</a> (Knapsack, Knapsack&apos;)</h4>
+<p><a href="lib/cut_rod.py">stavkutting</a><br>
+<a href="lib/longest_common_subsequence.py">LCS</a></p>
+<h4 class="mume-header" id="f9-forst%C3%A5-l%C3%B8sningen-p%C3%A5-det-bin%C3%A6re-ryggsekkproblemet-knapsack-knapsack">[F9] Forst&#xE5; l&#xF8;sningen p&#xE5; det bin&#xE6;re ryggsekkproblemet (Knapsack, Knapsack&apos;)</h4>
 
+<p><a href="lib/knapsack.py">det bin&#xE6;re ryggsekkproblemet</a></p>
 <h3 class="mume-header" id="forelesning-7-gr%C3%A5dige-algoritmer-1">Forelesning 7: Gr&#xE5;dige algoritmer</h3>
 
 <h4 class="mume-header" id="g1-forst%C3%A5-designmetoden-gr%C3%A5dighet">! [G1] Forst&#xE5; designmetoden gr&#xE5;dighet</h4>
 
 <h4 class="mume-header" id="g2-forst%C3%A5-gr%C3%A5dighetsegenskapen-the-greedy-choice-property">! [G2] Forst&#xE5; gr&#xE5;dighetsegenskapen (the greedy-choice property)</h4>
 
-<h4 class="mume-header" id="g3-forst%C3%A5-eksemplene-aktivitet-utvelgelse-og-det-kontinuerlige">[G3] Forst&#xE5; eksemplene aktivitet-utvelgelse og det kontinuerlige</h4>
+<h4 class="mume-header" id="g3-forst%C3%A5-eksemplene-aktivitet-utvelgelse-og-det-kontinuerlige-ryggsekkproblemet">[G3] Forst&#xE5; eksemplene aktivitet-utvelgelse og det kontinuerlige ryggsekkproblemet</h4>
 
-<p>ryggsekkproblemet</p>
-<h4 class="mume-header" id="g4-forst%C3%A5-huffmanlibhuffmanpy-og-huffman-koder">[G4] Forst&#xE5; <a href="lib/huffman.py">Huffman</a> og Huffman-koder</h4>
+<h4 class="mume-header" id="g4-forst%C3%A5-huffman-og-huffman-koder">[G4] Forst&#xE5; Huffman og Huffman-koder</h4>
 
+<p><a href="lib/huffman.py">Huffman</a></p>
 <h3 class="mume-header" id="forelesning-8-traversering-av-grafer-1">Forelesning 8: Traversering av grafer</h3>
 
 <h4 class="mume-header" id="h1-forst%C3%A5-hvordan-grafer-kan-implementeres">[H1] Forst&#xE5; hvordan grafer kan implementeres</h4>
 
-<h4 class="mume-header" id="h2-forst%C3%A5-bfslibbfspy-ogs%C3%A5-for-%C3%A5-finne-korteste-vei-uten-vekter">[H2] Forst&#xE5; <a href="lib/bfs.py">BFS</a>, ogs&#xE5; for &#xE5; finne korteste vei uten vekter</h4>
+<h4 class="mume-header" id="h2-forst%C3%A5-bfs-ogs%C3%A5-for-%C3%A5-finne-korteste-vei-uten-vekter">[H2] Forst&#xE5; BFS, ogs&#xE5; for &#xE5; finne korteste vei uten vekter</h4>
 
-<h4 class="mume-header" id="h3-forst%C3%A5-dfslibdfspy-parentesteoremet-og-hvit-sti-teoremet">[H3] Forst&#xE5; <a href="lib/dfs.py">DFS</a>, parentesteoremet og hvit-sti-teoremet</h4>
+<p><a href="lib/bfs.py">BFS</a></p>
+<h4 class="mume-header" id="h3-forst%C3%A5-dfs-parentesteoremet-og-hvit-sti-teoremet">[H3] Forst&#xE5; DFS, parentesteoremet og hvit-sti-teoremet</h4>
 
+<p><a href="lib/dfs.py">DFS</a></p>
 <h4 class="mume-header" id="h4-forst%C3%A5-hvordan-dfs-klassifiserer-kanter">[H4] Forst&#xE5; hvordan DFS klassifiserer kanter</h4>
 
-<h4 class="mume-header" id="h5-forst%C3%A5-topological-sortlibtopological_sortpy">[H5] Forst&#xE5; <a href="lib/topological_sort.py">Topological-Sort</a></h4>
+<h4 class="mume-header" id="h5-forst%C3%A5-topological-sort">[H5] Forst&#xE5; Topological-Sort</h4>
 
+<p><a href="lib/topological_sort.py">Topological-Sort</a></p>
 <h4 class="mume-header" id="h6-forst%C3%A5-hvordan-dfs-kan-implementeres-med-en-stakk">[H6] Forst&#xE5; hvordan DFS kan implementeres med en stakk</h4>
 
 <h4 class="mume-header" id="h7-forst%C3%A5-hva-traverseringstr%C3%A6r-som-bredde-f%C3%B8rst-og-dybde-f%C3%B8rst-tr%C3%A6r-er">[H7] Forst&#xE5; hva traverseringstr&#xE6;r (som bredde-f&#xF8;rst- og dybde-f&#xF8;rst-tr&#xE6;r) er</h4>
@@ -641,18 +661,23 @@ Merk: Det kreves ikke grundig forst&#xE5;else av Transplant og Tree-Delete.</p>
 
 <h3 class="mume-header" id="forelesning-9-minimale-spenntr%C3%A6r-1">Forelesning 9: Minimale spenntr&#xE6;r</h3>
 
-<h4 class="mume-header" id="i1-forst%C3%A5-skog-implementasjonen-av-disjunkte-mengderlibstructuresdisjunct_setpy-connected-components-same-component-make-set-union-link-find-set">[I1] Forst&#xE5; skog-implementasjonen av <a href="lib/structures/disjunct_set.py">disjunkte mengder</a> (Connected-Components, Same-Component, Make-Set, Union, Link, Find-Set)</h4>
+<h4 class="mume-header" id="i1-forst%C3%A5-skog-implementasjonen-av-disjunkte-mengder">[I1] Forst&#xE5; skog-implementasjonen av disjunkte mengder</h4>
 
+<p>(Connected-Components, Same-Component, Make-Set, Union, Link, Find-Set)<br>
+<a href="lib/structures/disjunct_set.py">disjunkte mengder</a></p>
 <h4 class="mume-header" id="i2-vite-hva-spenntr%C3%A6r-og-minimale-spenntr%C3%A6r-er">[I2] Vite hva spenntr&#xE6;r og minimale spenntr&#xE6;r er</h4>
 
-<h4 class="mume-header" id="i3-forst%C3%A5-generic-mstlibminimal_spanning_treepy">! [I3] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">Generic-MST</a></h4>
+<h4 class="mume-header" id="i3-forst%C3%A5-generic-mst">! [I3] Forst&#xE5; Generic-MST</h4>
 
+<p><a href="lib/minimal_spanning_tree.py">Generic-MST</a></p>
 <h4 class="mume-header" id="i4-forst%C3%A5-hvorfor-lette-kanter-er-trygge-kanter">[I4] Forst&#xE5; hvorfor lette kanter er trygge kanter</h4>
 
-<h4 class="mume-header" id="i5-forst%C3%A5-mst-kruskallibminimal_spanning_treepy">[I5] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">MST-Kruskal</a></h4>
+<h4 class="mume-header" id="i5-forst%C3%A5-mst-kruskal">[I5] Forst&#xE5; MST-Kruskal</h4>
 
-<h4 class="mume-header" id="i6-forst%C3%A5-mst-primlibminimal_spanning_treepy">[I6] Forst&#xE5; <a href="lib/minimal_spanning_tree.py">MST-Prim</a></h4>
+<p><a href="lib/minimal_spanning_tree.py">MST-Kruskal</a></p>
+<h4 class="mume-header" id="i6-forst%C3%A5-mst-prim">[I6] Forst&#xE5; MST-Prim</h4>
 
+<p><a href="lib/minimal_spanning_tree.py">MST-Prim</a></p>
 <h3 class="mume-header" id="forelesning-10-korteste-vei-fra-%C3%A9n-til-alle-1">Forelesning 10: Korteste vei fra &#xE9;n til alle</h3>
 
 <h4 class="mume-header" id="j1-forst%C3%A5-ulike-varianter-av-korteste-vei-eller-korteste-sti-problemet-single-source-single-destination-single-pair-all-pairs">[J1] Forst&#xE5; ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)</h4>
@@ -665,30 +690,38 @@ Merk: Det kreves ikke grundig forst&#xE5;else av Transplant og Tree-Delete.</p>
 
 <h4 class="mume-header" id="j5-forst%C3%A5-hvordan-man-kan-representere-et-korteste-vei-tre">[J5] Forst&#xE5; hvordan man kan representere et korteste-vei-tre</h4>
 
-<h4 class="mume-header" id="j6-forst%C3%A5-kant-slakking-edge-relaxation-og-relaxlibsingle_source_shortest_pathpy">! [J6] Forst&#xE5; kant-slakking (edge relaxation) og <a href="lib/single_source_shortest_path.py">Relax</a></h4>
+<h4 class="mume-header" id="j6-forst%C3%A5-kant-slakking-edge-relaxation-og-relax">! [J6] Forst&#xE5; kant-slakking (edge relaxation) og Relax</h4>
 
+<p><a href="lib/single_source_shortest_path.py">Relax</a></p>
 <h4 class="mume-header" id="j7-forst%C3%A5-ulike-egenskaper-ved-korteste-veier-og-slakking">[J7] Forst&#xE5; ulike egenskaper ved korteste veier og slakking</h4>
 
 <p>(Triangle inequality, upper-bound property, no-path property, convergence property,<br>
 path-relaxation property, predecessor-subgraph property)</p>
-<h4 class="mume-header" id="j8-forst%C3%A5-bellman-fordlibsingle_source_shortest_pathpy">[J8] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Bellman-Ford</a></h4>
+<h4 class="mume-header" id="j8-forst%C3%A5-bellman-ford">[J8] Forst&#xE5; Bellman-Ford</h4>
 
-<h4 class="mume-header" id="j9-forst%C3%A5-dag-shortest-pathslibsingle_source_shortest_pathpy">[J9] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Dag-Shortest-Paths</a></h4>
+<p><a href="lib/single_source_shortest_path.py">Bellman-Ford</a></p>
+<h4 class="mume-header" id="j9-forst%C3%A5-dag-shortest-paths">[J9] Forst&#xE5; Dag-Shortest-Paths</h4>
 
+<p><a href="lib/single_source_shortest_path.py">Dag-Shortest-Paths</a></p>
 <h4 class="mume-header" id="j10-forst%C3%A5-kobling-mellom-dag-shortest-paths-og-dynamisk-programmering">! [J10] Forst&#xE5; kobling mellom Dag-Shortest-Paths og dynamisk programmering</h4>
 
-<h4 class="mume-header" id="j11-forst%C3%A5-dijkstralibsingle_source_shortest_pathpy">[J11] Forst&#xE5; <a href="lib/single_source_shortest_path.py">Dijkstra</a></h4>
+<h4 class="mume-header" id="j11-forst%C3%A5-dijkstra">[J11] Forst&#xE5; Dijkstra</h4>
 
+<p><a href="lib/single_source_shortest_path.py">Dijkstra</a></p>
 <h3 class="mume-header" id="forelesning-11-korteste-vei-fra-alle-til-alle-1">Forelesning 11: Korteste vei fra alle til alle</h3>
 
-<h4 class="mume-header" id="k1-forst%C3%A5-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet-print-all-pairs-shortest-pathliball_pairs_shortest_pathspy">[K1] Forst&#xE5; forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet (<a href="lib/all_pairs_shortest_paths.py">Print-All-Pairs-Shortest-Path</a>)</h4>
+<h4 class="mume-header" id="k1-forst%C3%A5-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet-print-all-pairs-shortest-path">[K1] Forst&#xE5; forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet (Print-All-Pairs-Shortest-Path)</h4>
 
-<h4 class="mume-header" id="k2-forst%C3%A5-floyd-warshallliball_pairs_shortest_pathspy">[K2] Forst&#xE5; <a href="lib/all_pairs_shortest_paths.py">Floyd-Warshall</a></h4>
+<p><a href="lib/all_pairs_shortest_paths.py"></a></p>
+<h4 class="mume-header" id="k2-forst%C3%A5-floyd-warshall">[K2] Forst&#xE5; Floyd-Warshall</h4>
 
-<h4 class="mume-header" id="k3-forst%C3%A5-transitive-closurelibtransitive_closurepy">[K3] Forst&#xE5; <a href="lib/transitive_closure.py">Transitive-Closure</a></h4>
+<p><a href="lib/all_pairs_shortest_paths.py">Floyd-Warshall</a></p>
+<h4 class="mume-header" id="k3-forst%C3%A5-transitive-closure">[K3] Forst&#xE5; Transitive-Closure</h4>
 
-<h4 class="mume-header" id="k4-forst%C3%A5-johnsonliball_pairs_shortest_pathspy">[K4] Forst&#xE5; <a href="lib/all_pairs_shortest_paths.py">Johnson</a></h4>
+<p><a href="lib/transitive_closure.py">Transitive-Closure</a></p>
+<h4 class="mume-header" id="k4-forst%C3%A5-johnson">[K4] Forst&#xE5; Johnson</h4>
 
+<p><a href="lib/all_pairs_shortest_paths.py">Johnson</a></p>
 <h3 class="mume-header" id="forelesning-12-maksimal-flyt-1">Forelesning 12: Maksimal flyt</h3>
 
 <h4 class="mume-header" id="l1-kunne-definere-flytnett-flyt-og-maks-flyt-problemet">[L1] Kunne definere flytnett, flyt og maks-flyt-problemet</h4>
@@ -705,10 +738,12 @@ path-relaxation property, predecessor-subgraph property)</p>
 
 <h4 class="mume-header" id="l7-forst%C3%A5-maks-flytmin-snitt-teoremet">! [L7] Forst&#xE5; maks-flyt/min-snitt-teoremet</h4>
 
-<h4 class="mume-header" id="l8-forst%C3%A5-ford-fulkerson-method-og-ford-fulkersonlibford_fulkersonpy">[L8] Forst&#xE5; Ford-Fulkerson-Method og <a href="lib/ford_fulkerson.py">Ford-Fulkerson</a></h4>
+<h4 class="mume-header" id="l8-forst%C3%A5-ford-fulkerson-method-og-ford-fulkerson">[L8] Forst&#xE5; Ford-Fulkerson-Method og Ford-Fulkerson</h4>
 
-<h4 class="mume-header" id="l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmenlibford_fulkersonpy">[L9] Vite at Ford-Fulkerson med BFS kalles <a href="lib/ford_fulkerson.py">Edmonds-Karp-algoritmen</a></h4>
+<p><a href="lib/ford_fulkerson.py">Ford-Fulkerson</a></p>
+<h4 class="mume-header" id="l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen">[L9] Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen</h4>
 
+<p><a href="lib/ford_fulkerson.py">Edmonds-Karp-algoritmen</a></p>
 <h4 class="mume-header" id="l10-forst%C3%A5-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching">[L10] Forst&#xE5; hvordan maks-flyt kan finne en maksimum bipartitt matching</h4>
 
 <h4 class="mume-header" id="l11-forst%C3%A5-heltallsteoremet-integrality-theorem">! [L11] Forst&#xE5; heltallsteoremet (integrality theorem)</h4>
