@@ -403,9 +403,9 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 
 <ul>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I1] <a href="#i1-forst%C3%A5-skog-implementasjonen-av-disjunkte-mengder">Forst&#xE5; skog-implementasjonen av disjunkte mengder</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [I2] <a href="#i2-vite-hva-spenntr%C3%A6r-og-minimale-spenntr%C3%A6r-er">Vite hva spenntr&#xE6;r og minimale spenntr&#xE6;r er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I2] <a href="#i2-vite-hva-spenntr%C3%A6r-og-minimale-spenntr%C3%A6r-er">Vite hva spenntr&#xE6;r og minimale spenntr&#xE6;r er</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [I3] <a href="#i3-forst%C3%A5-generic-mst">Forst&#xE5; Generic-MST</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [I4] <a href="#i4-forst%C3%A5-hvorfor-lette-kanter-er-trygge-kanter">Forst&#xE5; hvorfor lette kanter er trygge kanter</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I4] <a href="#i4-forst%C3%A5-hvorfor-lette-kanter-er-trygge-kanter">Forst&#xE5; hvorfor lette kanter er trygge kanter</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I5] <a href="#i5-forst%C3%A5-mst-kruskal">Forst&#xE5; MST-Kruskal</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [I6] <a href="#i6-forst%C3%A5-mst-prim">Forst&#xE5; MST-Prim</a></li>
 </ul>
@@ -413,9 +413,9 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 
 <ul>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J1] <a href="#j1-forst%C3%A5-ulike-varianter-av-korteste-vei--eller-korteste-sti-problemet-single-source-single-destination-single-pair-all-pairs">Forst&#xE5; ulike varianter av korteste-vei- eller korteste-sti-problemet</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J2] <a href="#j2-forst%C3%A5-strukturen-til-korteste-vei-problemet">Forst&#xE5; strukturen til korteste-vei-problemet</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J3] <a href="#j3-forst%C3%A5-at-negative-sykler-gir-mening-for-korteste-enkle-vei-simple-path">Forst&#xE5; at negative sykler gir mening for korteste enkle vei (simple path)</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J4] <a href="#j4-forst%C3%A5-at-korteste-enkle-vei-kan-l%C3%B8ses-vha-lengste-enkle-vei-og-omvendt">Forst&#xE5; at korteste enkle vei kan l&#xF8;ses vha. lengste enkle vei og omvendt</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J2] <a href="#j2-forst%C3%A5-strukturen-til-korteste-vei-problemet">Forst&#xE5; strukturen til korteste-vei-problemet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J3] <a href="#j3-forst%C3%A5-at-negative-sykler-gir-mening-for-korteste-enkle-vei-simple-path">Forst&#xE5; at negative sykler gir mening for korteste enkle vei (simple path)</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [J4] <a href="#j4-forst%C3%A5-at-korteste-enkle-vei-kan-l%C3%B8ses-vha-lengste-enkle-vei-og-omvendt">Forst&#xE5; at korteste enkle vei kan l&#xF8;ses vha. lengste enkle vei og omvendt</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J5] <a href="#j5-forst%C3%A5-hvordan-man-kan-representere-et-korteste-vei-tre">Forst&#xE5; hvordan man kan representere et korteste-vei-tre</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [J6] <a href="#j6-forst%C3%A5-kant-slakking-edge-relaxation-og-relax">Forst&#xE5; kant-slakking (edge relaxation) og Relax</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [J7] <a href="#j7-forst%C3%A5-ulike-egenskaper-ved-korteste-veier-og-slakking">Forst&#xE5; ulike egenskaper ved korteste veier og slakking</a></li>
@@ -3186,8 +3186,149 @@ TODO: parentesteoremet og hvit-sti-teoremet</p>
 <p>Se implementasjon av BFS, denne har FIFO-k&#xF8; men virker annerledes ved bruk av annen k&#xF8;.</p>
 <h3 class="mume-header" id="forelesning-9-minimale-spenntr%C3%A6r-1">Forelesning 9: Minimale spenntr&#xE6;r</h3>
 
+<p>The inverse Ackermann function <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3B1;</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\alpha(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> grows extraordinarily slowly, so this factor is 4 or less for any <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">n</span></span></span></span> that can actually be written in the physical universe. This makes disjoint-set operations practically amortized constant time.</p>
 <h4 class="mume-header" id="i1-forst%C3%A5-skog-implementasjonen-av-disjunkte-mengder">[I1] Forst&#xE5; skog-implementasjonen av disjunkte mengder</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Connected-Components</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Forbereder bruk av Same-Component</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mi>E</mi><mi>&#x3B1;</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(E\alpha(n))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">))</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Same-Component</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Avgj&#xF8;r om to noder er i den samme komponenten</td>
+</tr>
+<tr>
+<td>Input</td>
+<td></td>
+</tr>
+<tr>
+<td>Output</td>
+<td>True hvis nodene er i samme komponent, False ellers</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mi>&#x3B1;</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(\alpha(n))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">))</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Make-Set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Lager et nytt sett best&#xE5;ende av den gitte noden</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>x</code>: en node</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Kobler sammen to noder, basert p&#xE5; rank</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>x</code>: en node, <code>y</code>: en node</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Linker settet til <code>x</code> med settet til <code>y</code></td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>x</code>: en node, <code>y</code>: en node</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mi>&#x3B1;</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(\alpha(n))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">))</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Find-Set</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Returner den &#xF8;verste forfederen til noden, og setter den som direkte forelder</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>x</code>: en node</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Den &#xF8;verste forfederen til noden (representerer settet)</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mi>&#x3B1;</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(\alpha(n))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">))</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">connected_components</span><span class="token punctuation">(</span>G<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-for">for</span> v <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V<span class="token punctuation">:</span>
         make_set<span class="token punctuation">(</span>v<span class="token punctuation">)</span>
@@ -3220,6 +3361,7 @@ TODO: parentesteoremet og hvit-sti-teoremet</p>
 </pre><p><a href="lib/structures/disjunct_set.py">Implementasjon av disjunkte mengder</a></p>
 <h4 class="mume-header" id="i2-vite-hva-spenntr%C3%A6r-og-minimale-spenntr%C3%A6r-er">[I2] Vite hva spenntr&#xE6;r og minimale spenntr&#xE6;r er</h4>
 
+<p>Et <strong>tre</strong> er en urettet graf der alle noder er koblet med n&#xF8;yaktig &#xE9;n sti. Dette er ekvivalent med &#xE5; si at den er asyklisk. Et <strong>spenntre</strong> av en urettet graf <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">G</span></span></span></span> er en delgraf som er et tre og inneholder alle nodene i <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal">G</span></span></span></span>. Et <strong>minimalt spenntre</strong> er et spenntre hvor summen av kantvektene er minst mulig.</p>
 <h4 class="mume-header" id="i3-forst%C3%A5-generic-mst">[I3] Forst&#xE5; Generic-MST</h4>
 
 <pre data-role="codeBlock" data-info class="language-"><code>GENERIC-MST(G, w):
@@ -3230,8 +3372,37 @@ TODO: parentesteoremet og hvit-sti-teoremet</p>
     return A
 </code></pre><h4 class="mume-header" id="i4-forst%C3%A5-hvorfor-lette-kanter-er-trygge-kanter">[I4] Forst&#xE5; hvorfor lette kanter er trygge kanter</h4>
 
+<p>Invariant: Kantmengden utgj&#xF8;r en del av et minimalt spenntre.<br>
+En <em>trygg kant</em> er en kant som bevarer invarianten.</p>
+<p>Den letteste kanten (som ikke danner en sykel) er trygg fordi vi m&#xE5; uansett p&#xE5; et tidspunkt koble sammen snittet og det finnes ingen billigere m&#xE5;te &#xE5; gj&#xF8;re det lettere p&#xE5;. Kan illustreres med vei over bro <a href="https://algdat.idi.ntnu.no/lysark/forelesn09_kort.pdf">https://algdat.idi.ntnu.no/lysark/forelesn09_kort.pdf</a></p>
 <h4 class="mume-header" id="i5-forst%C3%A5-mst-kruskal">[I5] Forst&#xE5; MST-Kruskal</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>MST-Kruskal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Bygger et minimalt spenntre ved &#xE5; sortere kantene</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf, <code>w</code>: kantvektene</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Kantene som danner et minimalt spenntre</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>E</mi><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(E \lg V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">mst_kruskal</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">)</span><span class="token punctuation">:</span>
     A <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
     <span class="token keyword keyword-for">for</span> v <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V<span class="token punctuation">:</span>
@@ -3241,15 +3412,42 @@ TODO: parentesteoremet og hvit-sti-teoremet</p>
         <span class="token keyword keyword-if">if</span> find_set<span class="token punctuation">(</span>u<span class="token punctuation">)</span> <span class="token operator">!=</span> find_set<span class="token punctuation">(</span>v<span class="token punctuation">)</span><span class="token punctuation">:</span>
             A<span class="token punctuation">.</span>add<span class="token punctuation">(</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span><span class="token punctuation">)</span>
             union<span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">)</span>
+    <span class="token keyword keyword-return">return</span> A
 </pre><p><a href="lib/minimal_spanning_tree.py">Implementasjon av MST-Kruskal</a></p>
 <h4 class="mume-header" id="i6-forst%C3%A5-mst-prim">[I6] Forst&#xE5; MST-Prim</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>MST-Prim</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Bygger ett tre gradvis; en lett kant over snittet rundt treet er alltid trygg</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf, <code>w</code>: kantvektene, <code>r</code>: rotnode</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Nodene sine forgjengerverdier <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span></span></span></span> danner et minimalt spenntre</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>E</mi><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(E \lg V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span></span></span></span>, eller <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>E</mi><mo>+</mo><mi>V</mi><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(E + V \lg V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span></span></span></span> ved bruk av Fibonacci-haug</td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">mst_prim</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">,</span> r<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-for">for</span> u <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V<span class="token punctuation">:</span>
         u<span class="token punctuation">.</span>key <span class="token operator">=</span> <span class="token builtin">float</span><span class="token punctuation">(</span><span class="token string">&apos;inf&apos;</span><span class="token punctuation">)</span>
         u<span class="token punctuation">.</span>pi <span class="token operator">=</span> <span class="token boolean">None</span>
     r<span class="token punctuation">.</span>key <span class="token operator">=</span> <span class="token number">0</span>
-    Q <span class="token operator">=</span> build_min_heap<span class="token punctuation">(</span>G<span class="token punctuation">.</span>V<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    Q <span class="token operator">=</span> build_min_heap<span class="token punctuation">(</span>G<span class="token punctuation">.</span>V<span class="token punctuation">)</span>
     <span class="token keyword keyword-while">while</span> Q<span class="token punctuation">:</span>
         u <span class="token operator">=</span> heap_extract_min<span class="token punctuation">(</span>Q<span class="token punctuation">)</span>
         <span class="token keyword keyword-for">for</span> v <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>Adj<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">:</span>
@@ -3261,16 +3459,42 @@ TODO: parentesteoremet og hvit-sti-teoremet</p>
 
 <h4 class="mume-header" id="j1-forst%C3%A5-ulike-varianter-av-korteste-vei-eller-korteste-sti-problemet-single-source-single-destination-single-pair-all-pairs">[J1] Forst&#xE5; ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)</h4>
 
+<p>Single Source Shortest Paths (SSSP): en til alle. ?</p>
 <h4 class="mume-header" id="j2-forst%C3%A5-strukturen-til-korteste-vei-problemet">[J2] Forst&#xE5; strukturen til korteste-vei-problemet</h4>
 
+<p>Man skal finne korteste vei.</p>
 <h4 class="mume-header" id="j3-forst%C3%A5-at-negative-sykler-gir-mening-for-korteste-enkle-vei-simple-path">[J3] Forst&#xE5; at negative sykler gir mening for korteste enkle vei (simple path)</h4>
 
+<p>For korteste enkle vei m&#xE5; man unng&#xE5; syklene (for at den skal v&#xE6;re enkel) s&#xE5; det tillatter at de kan eksistere i grafen.</p>
 <h4 class="mume-header" id="j4-forst%C3%A5-at-korteste-enkle-vei-kan-l%C3%B8ses-vha-lengste-enkle-vei-og-omvendt">[J4] Forst&#xE5; at korteste enkle vei kan l&#xF8;ses vha. lengste enkle vei og omvendt</h4>
 
+<p>Kan g&#xE5; fra den ene til den andre ved &#xE5; negere kantvektene.</p>
 <h4 class="mume-header" id="j5-forst%C3%A5-hvordan-man-kan-representere-et-korteste-vei-tre">[J5] Forst&#xE5; hvordan man kan representere et korteste-vei-tre</h4>
 
 <h4 class="mume-header" id="j6-forst%C3%A5-kant-slakking-edge-relaxation-og-relax">[J6] Forst&#xE5; kant-slakking (edge relaxation) og Relax</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Relax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi></mrow><annotation encoding="application/x-tex">v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span></span></span> lar <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi></mrow><annotation encoding="application/x-tex">u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">u</span></span></span></span> v&#xE6;re sin forelder, om det er gunstig</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>u</code>: en node, <code>v</code>: en node, <code>w</code>: kantvektene</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">relax</span><span class="token punctuation">(</span>u<span class="token punctuation">,</span> v<span class="token punctuation">,</span> w<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-if">if</span> v<span class="token punctuation">.</span>d <span class="token operator">&gt;</span> u<span class="token punctuation">.</span>d <span class="token operator">+</span> w<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">[</span>v<span class="token punctuation">]</span><span class="token punctuation">:</span>
         v<span class="token punctuation">.</span>d <span class="token operator">=</span> u<span class="token punctuation">.</span>d <span class="token operator">+</span> w<span class="token punctuation">[</span>u<span class="token punctuation">]</span><span class="token punctuation">[</span>v<span class="token punctuation">]</span>
@@ -3279,11 +3503,36 @@ TODO: parentesteoremet og hvit-sti-teoremet</p>
 <h4 class="mume-header" id="j7-forst%C3%A5-ulike-egenskaper-ved-korteste-veier-og-slakking">[J7] Forst&#xE5; ulike egenskaper ved korteste veier og slakking</h4>
 
 <p>(Triangle inequality, upper-bound property, no-path property, convergence property,<br>
-path-relaxation property, predecessor-subgraph property)</p>
+path-relaxation property, predecessor-subgraph property)<br>
+TODO</p>
 <h4 class="mume-header" id="j8-forst%C3%A5-bellman-ford">[J8] Forst&#xE5; Bellman-Ford</h4>
 
-<details>
-    <summary>Kode</summary>
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Bellman-Ford</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Finner korteste vei fra &#xE9;n til alle</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf, <code>w</code>: kantvektene, <code>s</code>: startnode</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Nodene sine <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">d</span></span></span></span>- og <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span></span></span></span>-verdier antyder lengden fra start og forelder. Algoritmen returnerer False dersom det finnes en negativ sykel og True ellers</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>V</mi><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(VE)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">bellman_ford</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     initialize_single_source<span class="token punctuation">(</span>G<span class="token punctuation">,</span> s<span class="token punctuation">)</span>
     <span class="token keyword keyword-for">for</span> _ <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>G<span class="token punctuation">.</span>V<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -3294,9 +3543,34 @@ path-relaxation property, predecessor-subgraph property)</p>
             <span class="token keyword keyword-return">return</span> <span class="token boolean">False</span>
     <span class="token keyword keyword-return">return</span> <span class="token boolean">True</span>
 </pre><p><a href="lib/single_source_shortest_path.py">Implementasjon av Bellman-Ford</a></p>
-</details>
 <h4 class="mume-header" id="j9-forst%C3%A5-dag-shortest-paths">[J9] Forst&#xE5; Dag-Shortest-Paths</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>DAG-Shortest-Paths</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Finner korteste vei fra &#xE9;n til alle i en rettet asyklisk graf</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf, <code>w</code>: kantvektene, <code>s</code>: startnode</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Nodene sine <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">d</span></span></span></span>- og <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span></span></span></span>-verdier antyder lengden fra start og forelder</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>V</mi><mo>+</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(V + E)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">dag_shortest_paths</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     initialize_single_source<span class="token punctuation">(</span>G<span class="token punctuation">,</span> s<span class="token punctuation">)</span>
     u <span class="token operator">=</span> topological_sort<span class="token punctuation">(</span>G<span class="token punctuation">)</span>
@@ -3309,6 +3583,32 @@ path-relaxation property, predecessor-subgraph property)</p>
 
 <h4 class="mume-header" id="j11-forst%C3%A5-dijkstra">[J11] Forst&#xE5; Dijkstra</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Dijkstra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Finner korteste vei fra &#xE9;n til alle i en graf med ikke-negative kantvekter</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf, <code>w</code>: kantvektene, <code>s</code>: startnode</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Nodene sine <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">d</span></span></span></span>- og <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span></span></span></span>-verdier antyder lengden fra start og forelder</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>E</mi><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(E \lg V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">dijkstra</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
     initialize_single_source<span class="token punctuation">(</span>G<span class="token punctuation">,</span> s<span class="token punctuation">)</span>
     S <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
