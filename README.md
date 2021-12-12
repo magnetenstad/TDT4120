@@ -118,14 +118,14 @@ De overordnede læringsmålene for emnet er som følger.
 
 
 ### Forelesning 8: Traversering av grafer
-- [ ] [H1] [Forstå hvordan grafer kan implementeres](#h1-forstå-hvordan-grafer-kan-implementeres)
+- [x] [H1] [Forstå hvordan grafer kan implementeres](#h1-forstå-hvordan-grafer-kan-implementeres)
 - [x] [H2] [Forstå BFS, også for å finne korteste vei uten vekter](#h2-forstå-bfs-også-for-å-finne-korteste-vei-uten-vekter)
-- [x] [H3] [Forstå DFS, parentesteoremet og hvit-sti-teoremet](#h3-forstå-dfs-parentesteoremet-og-hvit-sti-teoremet)
+- [ ] [H3] [Forstå DFS, parentesteoremet og hvit-sti-teoremet](#h3-forstå-dfs-parentesteoremet-og-hvit-sti-teoremet)
 - [ ] [H4] [Forstå hvordan DFS klassifiserer kanter](#h4-forstå-hvordan-dfs-klassifiserer-kanter)
 - [x] [H5] [Forstå Topological-Sort](#h5-forstå-topological-sort)
-- [ ] [H6] [Forstå hvordan DFS kan implementeres med en stakk](#h6-forstå-hvordan-dfs-kan-implementeres-med-en-stakk)
-- [ ] [H7] [Forstå hva traverseringstrær (som bredde-først- og dybde-først-trær) er](#h7-forstå-hva-traverseringstrær-som-bredde-først--og-dybde-først-trær-er)
-- [ ] ! [H8] [Forstå traversering med vilkårlig prioritetskø](#h8-forstå-traversering-med-vilkårlig-prioritetskø)
+- [x] [H6] [Forstå hvordan DFS kan implementeres med en stakk](#h6-forstå-hvordan-dfs-kan-implementeres-med-en-stakk)
+- [x] [H7] [Forstå hva traverseringstrær (som bredde-først- og dybde-først-trær) er](#h7-forstå-hva-traverseringstrær-som-bredde-først--og-dybde-først-trær-er)
+- [x] ! [H8] [Forstå traversering med vilkårlig prioritetskø](#h8-forstå-traversering-med-vilkårlig-prioritetskø)
 
 
 ### Forelesning 9: Minimale spenntrær
@@ -601,11 +601,11 @@ def find_maximum_subarray(A, low, high):
 Attributt | Bisect
 ---|---
 Beskrivelse | Binærsøk, søker i en sortert liste
-Input | A: sortert liste, p: minste indeks, r: største indeks, v: verdi som søkes etter
+Input | `A`: sortert liste, `p`: minste indeks, `r`: største indeks, `v`: verdi som søkes etter
 Output | Indeksen til verdien det søkes etter
 Worst case | $\Theta(\lg n)$
 Average case | $\Theta(\lg n)$
-Best case | $\Theta(1)$ if v is in the middle
+Best case | $\Theta(1)$, hvis `v` er i midten
 
 ````python
 def bisect(A, p, r, v):
@@ -1543,8 +1543,8 @@ Attributt | BFS
 ---|---
 Beskrivelse | Bredde først søk, kan finne korteste vei uten vekter
 Input | `G`: en graf, `s` startnode
-Output | Roten til Huffman-treet
-Kjøretid| $O(n \lg n)$
+Output | Markerer alle noder med avstand $d$ fra startnoden, og forgjenger $pi$
+Kjøretid| $O(V + E)$
 
 ````python
 def bfs(G, s):
@@ -1570,6 +1570,13 @@ def bfs(G, s):
 [Implementasjon av BFS](lib/bfs.py)
 
 #### [H3] Forstå DFS, parentesteoremet og hvit-sti-teoremet
+Attributt | DFS
+---|---
+Beskrivelse | Dybde først søk, kan brukes til å klassifisere kanter
+Input | `G`: en graf
+Output | Markerer alle noder med tid $time$, og forgjenger $pi$
+Kjøretid| $\Theta(V + E)$
+
 ````python
 def dfs(G):
     global time
@@ -1595,10 +1602,18 @@ def dfs_visit(G, u):
     u.f = time
 ````
 [Implementasjon av DFS](lib/dfs.py)
+TODO: parentesteoremet og hvit-sti-teoremet
 
 #### [H4] Forstå hvordan DFS klassifiserer kanter
 
 #### [H5] Forstå Topological-Sort
+Attributt | Topological-Sort
+---|---
+Beskrivelse | Sorterer en graf topologisk, vha. DFS
+Input | `G`: en graf
+Output | En topologisk sortert lenket liste over nodene
+Kjøretid| $\Theta(V + E)$
+
 ````python
 def topological_sort(G):
     global L
@@ -1633,10 +1648,13 @@ def ts_dfs_visit(G, u):
 [Implementasjon av Topological-Sort](lib/topological_sort.py)
 
 #### [H6] Forstå hvordan DFS kan implementeres med en stakk
+Hvis du bytter ut køen i implementasjonen av BFS med en stakk, vil det bli DFS.
 
 #### [H7] Forstå hva traverseringstrær (som bredde-først- og dybde-først-trær) er
+Trær som er resultater av henholdsvis BFS og DFS.
 
 #### [H8] Forstå traversering med vilkårlig prioritetskø
+Se implementasjon av BFS, denne har FIFO-kø men virker annerledes ved bruk av annen kø.
 
 
 

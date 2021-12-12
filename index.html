@@ -390,14 +390,14 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <h3 class="mume-header" id="forelesning-8-traversering-av-grafer">Forelesning 8: Traversering av grafer</h3>
 
 <ul>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H1] <a href="#h1-forst%C3%A5-hvordan-grafer-kan-implementeres">Forst&#xE5; hvordan grafer kan implementeres</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H1] <a href="#h1-forst%C3%A5-hvordan-grafer-kan-implementeres">Forst&#xE5; hvordan grafer kan implementeres</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H2] <a href="#h2-forst%C3%A5-bfs-ogs%C3%A5-for-%C3%A5-finne-korteste-vei-uten-vekter">Forst&#xE5; BFS, ogs&#xE5; for &#xE5; finne korteste vei uten vekter</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H3] <a href="#h3-forst%C3%A5-dfs-parentesteoremet-og-hvit-sti-teoremet">Forst&#xE5; DFS, parentesteoremet og hvit-sti-teoremet</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H3] <a href="#h3-forst%C3%A5-dfs-parentesteoremet-og-hvit-sti-teoremet">Forst&#xE5; DFS, parentesteoremet og hvit-sti-teoremet</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H4] <a href="#h4-forst%C3%A5-hvordan-dfs-klassifiserer-kanter">Forst&#xE5; hvordan DFS klassifiserer kanter</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H5] <a href="#h5-forst%C3%A5-topological-sort">Forst&#xE5; Topological-Sort</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H6] <a href="#h6-forst%C3%A5-hvordan-dfs-kan-implementeres-med-en-stakk">Forst&#xE5; hvordan DFS kan implementeres med en stakk</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [H7] <a href="#h7-forst%C3%A5-hva-traverseringstr%C3%A6r-som-bredde-f%C3%B8rst--og-dybde-f%C3%B8rst-tr%C3%A6r-er">Forst&#xE5; hva traverseringstr&#xE6;r (som bredde-f&#xF8;rst- og dybde-f&#xF8;rst-tr&#xE6;r) er</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [H8] <a href="#h8-forst%C3%A5-traversering-med-vilk%C3%A5rlig-prioritetsk%C3%B8">Forst&#xE5; traversering med vilk&#xE5;rlig prioritetsk&#xF8;</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H6] <a href="#h6-forst%C3%A5-hvordan-dfs-kan-implementeres-med-en-stakk">Forst&#xE5; hvordan DFS kan implementeres med en stakk</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [H7] <a href="#h7-forst%C3%A5-hva-traverseringstr%C3%A6r-som-bredde-f%C3%B8rst--og-dybde-f%C3%B8rst-tr%C3%A6r-er">Forst&#xE5; hva traverseringstr&#xE6;r (som bredde-f&#xF8;rst- og dybde-f&#xF8;rst-tr&#xE6;r) er</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [H8] <a href="#h8-forst%C3%A5-traversering-med-vilk%C3%A5rlig-prioritetsk%C3%B8">Forst&#xE5; traversering med vilk&#xE5;rlig prioritetsk&#xF8;</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-9-minimale-spenntr%C3%A6r">Forelesning 9: Minimale spenntr&#xE6;r</h3>
 
@@ -1261,7 +1261,7 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 </tr>
 <tr>
 <td>Input</td>
-<td>A: sortert liste, p: minste indeks, r: st&#xF8;rste indeks, v: verdi som s&#xF8;kes etter</td>
+<td><code>A</code>: sortert liste, <code>p</code>: minste indeks, <code>r</code>: st&#xF8;rste indeks, <code>v</code>: verdi som s&#xF8;kes etter</td>
 </tr>
 <tr>
 <td>Output</td>
@@ -1277,7 +1277,7 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 </tr>
 <tr>
 <td>Best case</td>
-<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> if v is in the middle</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span>, hvis <code>v</code> er i midten</td>
 </tr>
 </tbody>
 </table>
@@ -3037,11 +3037,11 @@ For tr&#xE6;r hvor node kan ha flere barn, kan man ogs&#xE5; representere det ve
 </tr>
 <tr>
 <td>Output</td>
-<td>Roten til Huffman-treet</td>
+<td>Markerer alle noder med avstand <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">d</span></span></span></span> fra startnoden, og forgjenger <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span></span></span></span></td>
 </tr>
 <tr>
 <td>Kj&#xF8;retid</td>
-<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>n</mi><mi>lg</mi><mo>&#x2061;</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(n \lg n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>V</mi><mo>+</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(V + E)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span></td>
 </tr>
 </tbody>
 </table>
@@ -3067,6 +3067,32 @@ For tr&#xE6;r hvor node kan ha flere barn, kan man ogs&#xE5; representere det ve
 </pre><p><a href="lib/bfs.py">Implementasjon av BFS</a></p>
 <h4 class="mume-header" id="h3-forst%C3%A5-dfs-parentesteoremet-og-hvit-sti-teoremet">[H3] Forst&#xE5; DFS, parentesteoremet og hvit-sti-teoremet</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>DFS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Dybde f&#xF8;rst s&#xF8;k, kan brukes til &#xE5; klassifisere kanter</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Markerer alle noder med tid <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mi>i</mi><mi>m</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">time</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathnormal">t</span><span class="mord mathnormal">im</span><span class="mord mathnormal">e</span></span></span></span>, og forgjenger <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.85396em;vertical-align:-0.19444em;"></span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span></span></span></span></td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mi>V</mi><mo>+</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(V + E)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">dfs</span><span class="token punctuation">(</span>G<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-global">global</span> time
     <span class="token keyword keyword-for">for</span> u <span class="token keyword keyword-in">in</span> G<span class="token punctuation">.</span>V<span class="token punctuation">:</span>
@@ -3089,11 +3115,38 @@ For tr&#xE6;r hvor node kan ha flere barn, kan man ogs&#xE5; representere det ve
     u<span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">&quot;black&quot;</span>
     time <span class="token operator">+=</span> <span class="token number">1</span>
     u<span class="token punctuation">.</span>f <span class="token operator">=</span> time
-</pre><p><a href="lib/dfs.py">Implementasjon av DFS</a></p>
+</pre><p><a href="lib/dfs.py">Implementasjon av DFS</a><br>
+TODO: parentesteoremet og hvit-sti-teoremet</p>
 <h4 class="mume-header" id="h4-forst%C3%A5-hvordan-dfs-klassifiserer-kanter">[H4] Forst&#xE5; hvordan DFS klassifiserer kanter</h4>
 
 <h4 class="mume-header" id="h5-forst%C3%A5-topological-sort">[H5] Forst&#xE5; Topological-Sort</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Topological-Sort</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Sorterer en graf topologisk, vha. DFS</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>En topologisk sortert lenket liste over nodene</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mi>V</mi><mo>+</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(V + E)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">topological_sort</span><span class="token punctuation">(</span>G<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-global">global</span> L
     L <span class="token operator">=</span> LinkedList<span class="token punctuation">(</span><span class="token punctuation">)</span>
@@ -3126,10 +3179,13 @@ For tr&#xE6;r hvor node kan ha flere barn, kan man ogs&#xE5; representere det ve
 </pre><p><a href="lib/topological_sort.py">Implementasjon av Topological-Sort</a></p>
 <h4 class="mume-header" id="h6-forst%C3%A5-hvordan-dfs-kan-implementeres-med-en-stakk">[H6] Forst&#xE5; hvordan DFS kan implementeres med en stakk</h4>
 
+<p>Hvis du bytter ut k&#xF8;en i implementasjonen av BFS med en stakk, vil det bli DFS.</p>
 <h4 class="mume-header" id="h7-forst%C3%A5-hva-traverseringstr%C3%A6r-som-bredde-f%C3%B8rst-og-dybde-f%C3%B8rst-tr%C3%A6r-er">[H7] Forst&#xE5; hva traverseringstr&#xE6;r (som bredde-f&#xF8;rst- og dybde-f&#xF8;rst-tr&#xE6;r) er</h4>
 
+<p>Tr&#xE6;r som er resultater av henholdsvis BFS og DFS.</p>
 <h4 class="mume-header" id="h8-forst%C3%A5-traversering-med-vilk%C3%A5rlig-prioritetsk%C3%B8">[H8] Forst&#xE5; traversering med vilk&#xE5;rlig prioritetsk&#xF8;</h4>
 
+<p>Se implementasjon av BFS, denne har FIFO-k&#xF8; men virker annerledes ved bruk av annen k&#xF8;.</p>
 <h3 class="mume-header" id="forelesning-9-minimale-spenntr%C3%A6r-1">Forelesning 9: Minimale spenntr&#xE6;r</h3>
 
 <h4 class="mume-header" id="i1-forst%C3%A5-skog-implementasjonen-av-disjunkte-mengder">[I1] Forst&#xE5; skog-implementasjonen av disjunkte mengder</h4>
