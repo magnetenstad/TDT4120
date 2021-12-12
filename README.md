@@ -1,5 +1,5 @@
 
-# Pensumhefte, 2021, realisert.
+# TDT4120 Pensumhefte, 2021
 
 Dette dokumentet ligger ute på https://magne.dev/TDT4120/.
 Dersom du ønsker å kjøre algoritmene, kan du klone prosjektet fra https://github.com/magnetenstad/TDT4120.
@@ -189,9 +189,6 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [M14] [Være i stand til å konstruere enkle NP-kompletthetsbevis](#m14-være-i-stand-til-å-konstruere-enkle-np-kompletthetsbevis)
 
 
-
-
-## Realisert
 
 ### Forelesning 1: Problemer og algoritmer
 #### [A1] Forstå bokas pseudokode-konvensjoner
