@@ -1517,11 +1517,13 @@ Kjøretid | $O(n \lg n)$
 ````python
 def huffman(C):
     n = len(C)
-    Q = build_min_heap(C.copy())
+    Q = build_min_heap(C)
     for _ in range(n - 1):
         z = Node()
         x = heap_extract_min(Q)
         y = heap_extract_min(Q)
+        z.left = x
+        z.right = y
         z.freq = x.freq + y.freq
         min_heap_insert(Q, z)
     return heap_extract_min(Q)

@@ -3001,11 +3001,13 @@ For tr&#xE6;r hvor node kan ha flere barn, kan man ogs&#xE5; representere det ve
 </table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">huffman</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span><span class="token punctuation">:</span>
     n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>C<span class="token punctuation">)</span>
-    Q <span class="token operator">=</span> build_min_heap<span class="token punctuation">(</span>C<span class="token punctuation">.</span>copy<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    Q <span class="token operator">=</span> build_min_heap<span class="token punctuation">(</span>C<span class="token punctuation">)</span>
     <span class="token keyword keyword-for">for</span> _ <span class="token keyword keyword-in">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
         z <span class="token operator">=</span> Node<span class="token punctuation">(</span><span class="token punctuation">)</span>
         x <span class="token operator">=</span> heap_extract_min<span class="token punctuation">(</span>Q<span class="token punctuation">)</span>
         y <span class="token operator">=</span> heap_extract_min<span class="token punctuation">(</span>Q<span class="token punctuation">)</span>
+        z<span class="token punctuation">.</span>left <span class="token operator">=</span> x
+        z<span class="token punctuation">.</span>right <span class="token operator">=</span> y
         z<span class="token punctuation">.</span>freq <span class="token operator">=</span> x<span class="token punctuation">.</span>freq <span class="token operator">+</span> y<span class="token punctuation">.</span>freq
         min_heap_insert<span class="token punctuation">(</span>Q<span class="token punctuation">,</span> z<span class="token punctuation">)</span>
     <span class="token keyword keyword-return">return</span> heap_extract_min<span class="token punctuation">(</span>Q<span class="token punctuation">)</span>
