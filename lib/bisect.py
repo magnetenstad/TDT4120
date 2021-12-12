@@ -25,7 +25,7 @@ def bisect(A, p, r, v):
 
 def iterative_bisect(A, p, r, v):
     """
-    ITERATIVE-BISECT (BINARY-SEARCH)
+    BISECT' (BINARY-SEARCH')
 
     Time Complexity:
         Worst case: Theta(1) if v is in the middle

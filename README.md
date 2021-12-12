@@ -155,7 +155,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] [K1] [Forstå forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet](#k1-forstå-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet-print-all-pairs-shortest-path)
 - [x] [K2] [Forstå Floyd-Warshall](#k2-forstå-floyd-warshall)
 - [x] [K3] [Forstå Transitive-Closure](#k3-forstå-transitive-closure)
-- [ ] [K4] [Forstå Johnson](#k4-forstå-johnson)
+- [x] [K4] [Forstå Johnson](#k4-forstå-johnson)
 
 
 ### Forelesning 12: Maksimal flyt
@@ -167,7 +167,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [ ] [L6] [Forstå hva snitt, snitt-kapasitet og minimalt snitt er](#l6-forstå-hva-snitt-snitt-kapasitet-og-minimalt-snitt-er)
 - [ ] ! [L7] [Forstå maks-flyt/min-snitt-teoremet](#l7-forstå-maks-flytmin-snitt-teoremet)
 - [x] [L8] [Forstå Ford-Fulkerson-Method og Ford-Fulkerson](#l8-forstå-ford-fulkerson-method-og-ford-fulkerson)
-- [ ] [L9] [Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen](#l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen)
+- [x] [L9] [Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen](#l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen)
 - [ ] [L10] [Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching](#l10-forstå-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching)
 - [ ] ! [L11] [Forstå heltallsteoremet (integrality theorem)](#l11-forstå-heltallsteoremet-integrality-theorem)
 
@@ -873,9 +873,8 @@ def randomized_select(A, p, r, i):
 [Implementasjon av Randomized-Select](lib/randomized_select.py)
 
 #### [D7] Kjenne til Select
+Select løser det samme problemet som Randomized-Select, men prøver å velge en god pivot istedenfor å ta en tilfeldig.
 Merk: Det kreves ikke grundig forståelse av virkemåten til Select.
-
-
 
 ### Forelesning 5: Rotfaste trestrukturer
 
@@ -1460,8 +1459,18 @@ def bottom_up_knapsack(n, W, w, v):
 #### [G1] Forstå designmetoden grådighet
 A greedy algorithm always makes the choice that looks best at the moment. That is, it makes a locally optimal choice in the hope that this choice will lead to a globally optimal solution.
 
-#### [G2] Forstå grådighetsegenskapen (the greedy-choice property)
+1. Cast the optimization problem as one in which we make a choice and are left
+with one subproblem to solve.
+2. Prove that there is always an optimal solution to the original problem that makes
+the greedy choice, so that the greedy choice is always safe.
+3. Demonstrate optimal substructure by showing that, having made the greedy
+choice, what remains is a subproblem with the property that if we combine an
+optimal solution to the subproblem with the greedy choice we have made, we
+arrive at an optimal solution to the original problem.
 
+#### [G2] Forstå grådighetsegenskapen (the greedy-choice property)
+**Greedy-choice property**: we can assemble a globally
+optimal solution by making locally optimal (greedy) choices. 
 
 #### [G3] Forstå eksemplene aktivitet-utvelgelse og det kontinuerlige ryggsekkproblemet
 
@@ -1881,7 +1890,7 @@ Attributt | Dijkstra
 Beskrivelse | Finner korteste vei fra én til alle i en graf med ikke-negative kantvekter
 Input | `G`: en graf, `w`: kantvektene, `s`: startnode
 Output | Nodene sine $d$- og $pi$-verdier antyder lengden fra start og forelder 
-Kjøretid | $O(E \lg V)$
+Kjøretid | $O(E \lg V)$, eller $O(V \lg V + E)$ ved bruk av Fibonacci-haug
 ````python
 def dijkstra(G, w, s):
     initialize_single_source(G, s)
@@ -1900,6 +1909,11 @@ def dijkstra(G, w, s):
 ### Forelesning 11: Korteste vei fra alle til alle
 
 #### [K1] Forstå forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet
+Attributt | Print-All-Pairs-Shortest-Path
+---|---
+Beskrivelse | Printer korteste vei fra `i` til `j`
+Input | `Pi` forgjengermatrise, `i`: nodeindeks, `j`; nodeindeks
+Kjøretid | $O(V)$
 ````python
 def print_all_pairs_shortest_path(Pi, i, j):
     if i == j:
@@ -1913,6 +1927,12 @@ def print_all_pairs_shortest_path(Pi, i, j):
 [Implementasjon av Print-All-Pairs-Shortest-Path](lib/all_pairs_shortest_paths.py)
 
 #### [K2] Forstå Floyd-Warshall
+Attributt | Floyd-Warshall
+---|---
+Beskrivelse | Finner korteste vei fra alle til alle
+Input | `W`: nabomatrise
+Output | Avstandsmatrise
+Kjøretid | $\Theta(V^3)$
 ````python
 def floyd_warshall(W):
     n = len(W)
@@ -1929,6 +1949,12 @@ def floyd_warshall(W):
 [Implementasjon av Floyd-Warshall](lib/all_pairs_shortest_paths.py)
 
 #### [K3] Forstå Transitive-Closure
+Attributt | Transitive-Closure
+---|---
+Beskrivelse | Finner transitiv lukning. Dvs. oversikt over hvilke noder som har stier til andre noder
+Input | `W`: nabomatrise
+Output | Matrise som beskriver den transitive lukningen ("binær avstandsmatrise")
+Kjøretid | $\Theta(n^3)$
 ````python
 def transitive_closure(G):
     n = len(G.V)
@@ -1965,13 +1991,30 @@ def transitive_closure_optimized(G):
 [Implementasjon av Transitive-Closure](lib/transitive_closure.py)
 
 #### [K4] Forstå Johnson
-````python
-def johnson(G, w):
-    pass # TODO: implement johnson
+Se boka s. 700.
+Attributt | Johnson
+---|---
+Beskrivelse | Finner korteste vei fra alle til alle ved hjelp av *reweighting*, *Bellman-Ford* og *Dijkstra*.
+Input | `G`: en graf, `w`: kantvektene
+Output | Avstandsmatrise
+Kjøretid | $O(VE \lg V)$, eller $O(V^2 \lg V + VE)$ ved bruk av fibonacci-haug
 ````
-[Implementasjon av Johnson](lib/all_pairs_shortest_paths.py)
-
-
+JOHNSON(G, w)
+    compute G'
+    if Bellman-Ford(G', w, s) == False
+        print "the input graph contains a negative-weight cycle"
+    else
+        for each vertex v in G'.V
+            set h(v) to the value of d(s, v) computed by Bellman-Ford
+        for each edge (u, v) in G'.E
+            w*(u, v) = w(u, v) + h(u) - h(v)
+        let D = (d_uv) be a new n*n matrix
+        for each vertex u in G.V
+            run Dijkstra(G, w*, u) to compute d*(u, v) for all v in G.V
+            for each vertex v in G.V
+                d_uv = d*(u, v) + h(v) - h(u)
+        return D
+````
 
 ### Forelesning 12: Maksimal flyt
 
@@ -1990,6 +2033,12 @@ def johnson(G, w):
 #### [L7] Forstå maks-flyt/min-snitt-teoremet
 
 #### [L8] Forstå Ford-Fulkerson-Method og Ford-Fulkerson
+Attributt | Ford-Fulkerson
+---|---
+Beskrivelse | Implementasjon av Ford-Fulkerson-Method, finner maks flyt
+Input | `G`: en graf, `s`: kilde, `t`: sluk
+Output | Kantene sine $f$-verdier indikerer maks-flyten
+Kjøretid | $O(E \| f^*\|)$
 ````
 FORD-FULKERSON-METHOD(G, s, t)
     initialize flow f to 0
@@ -2009,10 +2058,12 @@ FORD-FULKERSON(G, s, t)
 ````
 
 #### [L9] Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen
-````python
-# TODO: Implement Edmonds-Karp
-````
-[Implementasjon av Edmonds-Karp](lib/ford_fulkerson.py)
+Attributt | Edmonds-Karp
+---|---
+Beskrivelse | Ford-Fulkerson med BFS, finner maks flyt
+Input | `G`: en graf, `s`: kilde, `t`: sluk
+Output | kantene sine $f$-verdier indikerer maks-flyten
+Kjøretid | $O(VE^2)$
 
 #### [L10] Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching
 
@@ -2030,6 +2081,7 @@ Optimeringsproblemer har gjerne tilhørende beslutningsproblemer og omvendt. For
 #### [M3] Forstå hvorfor løsningen på det binære ryggsekkproblemet ikke er polynomisk
 
 #### [M4] Forstå forskjellen på konkrete og abstrakte problemer
+Men hovedpoenget er altså at konkrete problemer er, på sett og vis, konkrete representasjoner av de abstrakte problemene, der instansene er kodet som strenger (f.eks. serier med bits), akkurat som i en datamaskin, mens abstrakte problemer bare er abstrakte, matematiske problemer (relasjoner mellom input/output). Se mer på side 1054-1055.
 
 #### [M5] Forstå representasjonen av beslutningsproblemer som formelle språk
 
