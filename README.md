@@ -1311,7 +1311,7 @@ Beskrivelse | Iterativ (bottom-up) versjon av Cut-Rod
 Input | p: tabell av priser, n: stavlengde
 Output | Beste pris
 Kjøretid | $O(n^2)$
-Minnebruk | $\Theta(1)$
+Minnebruk | $\Theta(n)$
 
 ````python
 def cut_rod(p, n):
