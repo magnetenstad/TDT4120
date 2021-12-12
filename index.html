@@ -430,7 +430,7 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [K1] <a href="#k1-forst%C3%A5-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet-print-all-pairs-shortest-path">Forst&#xE5; forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K2] <a href="#k2-forst%C3%A5-floyd-warshall">Forst&#xE5; Floyd-Warshall</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K3] <a href="#k3-forst%C3%A5-transitive-closure">Forst&#xE5; Transitive-Closure</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [K4] <a href="#k4-forst%C3%A5-johnson">Forst&#xE5; Johnson</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [K4] <a href="#k4-forst%C3%A5-johnson">Forst&#xE5; Johnson</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-12-maksimal-flyt">Forelesning 12: Maksimal flyt</h3>
 
@@ -443,7 +443,7 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L6] <a href="#l6-forst%C3%A5-hva-snitt-snitt-kapasitet-og-minimalt-snitt-er">Forst&#xE5; hva snitt, snitt-kapasitet og minimalt snitt er</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L7] <a href="#l7-forst%C3%A5-maks-flytmin-snitt-teoremet">Forst&#xE5; maks-flyt/min-snitt-teoremet</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [L8] <a href="#l8-forst%C3%A5-ford-fulkerson-method-og-ford-fulkerson">Forst&#xE5; Ford-Fulkerson-Method og Ford-Fulkerson</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L9] <a href="#l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen">Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [L9] <a href="#l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen">Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [L10] <a href="#l10-forst%C3%A5-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching">Forst&#xE5; hvordan maks-flyt kan finne en maksimum bipartitt matching</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> ! [L11] <a href="#l11-forst%C3%A5-heltallsteoremet-integrality-theorem">Forst&#xE5; heltallsteoremet (integrality theorem)</a></li>
 </ul>
@@ -1778,7 +1778,8 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 </pre><p><a href="lib/randomized_select.py">Implementasjon av Randomized-Select</a></p>
 <h4 class="mume-header" id="d7-kjenne-til-select">[D7] Kjenne til Select</h4>
 
-<p>Merk: Det kreves ikke grundig forst&#xE5;else av virkem&#xE5;ten til Select.</p>
+<p>Select l&#xF8;ser det samme problemet som Randomized-Select, men pr&#xF8;ver &#xE5; velge en god pivot istedenfor &#xE5; ta en tilfeldig.<br>
+Merk: Det kreves ikke grundig forst&#xE5;else av virkem&#xE5;ten til Select.</p>
 <h3 class="mume-header" id="forelesning-5-rotfaste-trestrukturer-1">Forelesning 5: Rotfaste trestrukturer</h3>
 
 <h4 class="mume-header" id="e1-forst%C3%A5-hvordan-heaps-fungerer-og-hvordan-de-kan-brukes-som-prioritetsk%C3%B8er">[E1] Forst&#xE5; hvordan heaps fungerer, og hvordan de kan brukes som prioritetsk&#xF8;er</h4>
@@ -2884,8 +2885,20 @@ For tr&#xE6;r hvor node kan ha flere barn, kan man ogs&#xE5; representere det ve
 <h4 class="mume-header" id="g1-forst%C3%A5-designmetoden-gr%C3%A5dighet">[G1] Forst&#xE5; designmetoden gr&#xE5;dighet</h4>
 
 <p>A greedy algorithm always makes the choice that looks best at the moment. That is, it makes a locally optimal choice in the hope that this choice will lead to a globally optimal solution.</p>
+<ol>
+<li>Cast the optimization problem as one in which we make a choice and are left<br>
+with one subproblem to solve.</li>
+<li>Prove that there is always an optimal solution to the original problem that makes<br>
+the greedy choice, so that the greedy choice is always safe.</li>
+<li>Demonstrate optimal substructure by showing that, having made the greedy<br>
+choice, what remains is a subproblem with the property that if we combine an<br>
+optimal solution to the subproblem with the greedy choice we have made, we<br>
+arrive at an optimal solution to the original problem.</li>
+</ol>
 <h4 class="mume-header" id="g2-forst%C3%A5-gr%C3%A5dighetsegenskapen-the-greedy-choice-property">[G2] Forst&#xE5; gr&#xE5;dighetsegenskapen (the greedy-choice property)</h4>
 
+<p><strong>Greedy-choice property</strong>: we can assemble a globally<br>
+optimal solution by making locally optimal (greedy) choices.</p>
 <h4 class="mume-header" id="g3-forst%C3%A5-eksemplene-aktivitet-utvelgelse-og-det-kontinuerlige-ryggsekkproblemet">[G3] Forst&#xE5; eksemplene aktivitet-utvelgelse og det kontinuerlige ryggsekkproblemet</h4>
 
 <h5 class="mume-header" id="aktivitet-utvelgelse">Aktivitet-utvelgelse</h5>
@@ -3607,7 +3620,7 @@ TODO</p>
 </tr>
 <tr>
 <td>Kj&#xF8;retid</td>
-<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>E</mi><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(E \lg V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span></span></span></span></td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>E</mi><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(E \lg V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span></span></span></span>, eller <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>V</mi><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo>+</mo><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(V \lg V + E)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span> ved bruk av Fibonacci-haug</td>
 </tr>
 </tbody>
 </table>
@@ -3625,6 +3638,28 @@ TODO</p>
 
 <h4 class="mume-header" id="k1-forst%C3%A5-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet">[K1] Forst&#xE5; forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Print-All-Pairs-Shortest-Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Printer korteste vei fra <code>i</code> til <code>j</code></td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>Pi</code> forgjengermatrise, <code>i</code>: nodeindeks, <code>j</code>; nodeindeks</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">print_all_pairs_shortest_path</span><span class="token punctuation">(</span>Pi<span class="token punctuation">,</span> i<span class="token punctuation">,</span> j<span class="token punctuation">)</span><span class="token punctuation">:</span>
     <span class="token keyword keyword-if">if</span> i <span class="token operator">==</span> j<span class="token punctuation">:</span>
         <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
@@ -3636,6 +3671,32 @@ TODO</p>
 </pre><p><a href="lib/all_pairs_shortest_paths.py">Implementasjon av Print-All-Pairs-Shortest-Path</a></p>
 <h4 class="mume-header" id="k2-forst%C3%A5-floyd-warshall">[K2] Forst&#xE5; Floyd-Warshall</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Floyd-Warshall</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Finner korteste vei fra alle til alle</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>W</code>: nabomatrise</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Avstandsmatrise</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><msup><mi>V</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(V^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">floyd_warshall</span><span class="token punctuation">(</span>W<span class="token punctuation">)</span><span class="token punctuation">:</span>
     n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>W<span class="token punctuation">)</span>
     D <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
@@ -3650,6 +3711,32 @@ TODO</p>
 </pre><p><a href="lib/all_pairs_shortest_paths.py">Implementasjon av Floyd-Warshall</a></p>
 <h4 class="mume-header" id="k3-forst%C3%A5-transitive-closure">[K3] Forst&#xE5; Transitive-Closure</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Transitive-Closure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Finner transitiv lukning. Dvs. oversikt over hvilke noder som har stier til andre noder</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>W</code>: nabomatrise</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Matrise som beskriver den transitive lukningen (&quot;bin&#xE6;r avstandsmatrise&quot;)</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>3</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(n^3)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">transitive_closure</span><span class="token punctuation">(</span>G<span class="token punctuation">)</span><span class="token punctuation">:</span>
     n <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>G<span class="token punctuation">.</span>V<span class="token punctuation">)</span>
     T <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token boolean">None</span><span class="token punctuation">]</span> <span class="token operator">*</span> <span class="token punctuation">(</span>n <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
@@ -3684,10 +3771,49 @@ TODO</p>
 </pre><p><a href="lib/transitive_closure.py">Implementasjon av Transitive-Closure</a></p>
 <h4 class="mume-header" id="k4-forst%C3%A5-johnson">[K4] Forst&#xE5; Johnson</h4>
 
-<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token keyword keyword-def">def</span> <span class="token function">johnson</span><span class="token punctuation">(</span>G<span class="token punctuation">,</span> w<span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword keyword-pass">pass</span> <span class="token comment"># TODO: implement johnson</span>
-</pre><p><a href="lib/all_pairs_shortest_paths.py">Implementasjon av Johnson</a></p>
-<h3 class="mume-header" id="forelesning-12-maksimal-flyt-1">Forelesning 12: Maksimal flyt</h3>
+<p>Se boka s. 700.</p>
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Johnson</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Finner korteste vei fra alle til alle ved hjelp av <em>reweighting</em>, <em>Bellman-Ford</em> og <em>Dijkstra</em>.</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf, <code>w</code>: kantvektene</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Avstandsmatrise</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>V</mi><mi>E</mi><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(VE \lg V)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mclose">)</span></span></span></span>, eller <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><msup><mi>V</mi><mn>2</mn></msup><mi>lg</mi><mo>&#x2061;</mo><mi>V</mi><mo>+</mo><mi>V</mi><mi>E</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(V^2 \lg V + VE)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">l<span style="margin-right:0.01389em;">g</span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mclose">)</span></span></span></span> ved bruk av fibonacci-haug</td>
+</tr>
+</tbody>
+</table>
+<pre data-role="codeBlock" data-info class="language-"><code>JOHNSON(G, w)
+    compute G&apos;
+    if Bellman-Ford(G&apos;, w, s) == False
+        print &quot;the input graph contains a negative-weight cycle&quot;
+    else
+        for each vertex v in G&apos;.V
+            set h(v) to the value of d(s, v) computed by Bellman-Ford
+        for each edge (u, v) in G&apos;.E
+            w*(u, v) = w(u, v) + h(u) - h(v)
+        let D = (d_uv) be a new n*n matrix
+        for each vertex u in G.V
+            run Dijkstra(G, w*, u) to compute d*(u, v) for all v in G.V
+            for each vertex v in G.V
+                d_uv = d*(u, v) + h(v) - h(u)
+        return D
+</code></pre><h3 class="mume-header" id="forelesning-12-maksimal-flyt-1">Forelesning 12: Maksimal flyt</h3>
 
 <h4 class="mume-header" id="l1-kunne-definere-flytnett-flyt-og-maks-flyt-problemet">[L1] Kunne definere flytnett, flyt og maks-flyt-problemet</h4>
 
@@ -3705,6 +3831,32 @@ TODO</p>
 
 <h4 class="mume-header" id="l8-forst%C3%A5-ford-fulkerson-method-og-ford-fulkerson">[L8] Forst&#xE5; Ford-Fulkerson-Method og Ford-Fulkerson</h4>
 
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Ford-Fulkerson</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Implementasjon av Ford-Fulkerson-Method, finner maks flyt</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf, <code>s</code>: kilde, <code>t</code>: sluk</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Kantene sine <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>-verdier indikerer maks-flyten</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>E</mi><mi mathvariant="normal">&#x2225;</mi><msup><mi>f</mi><mo>&#x2217;</mo></msup><mi mathvariant="normal">&#x2225;</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(E \| f^*\|)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="mord">&#x2225;</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.688696em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">&#x2217;</span></span></span></span></span></span></span></span><span class="mord">&#x2225;</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <pre data-role="codeBlock" data-info class="language-"><code>FORD-FULKERSON-METHOD(G, s, t)
     initialize flow f to 0
     while there exists an augmenting path p in the residual network Gf
@@ -3722,8 +3874,32 @@ FORD-FULKERSON(G, s, t)
             else (u, v).f = (u, v).f - cf(p)
 </code></pre><h4 class="mume-header" id="l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen">[L9] Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen</h4>
 
-<pre data-role="codeBlock" data-info="python" class="language-python"><span class="token comment"># TODO: Implement Edmonds-Karp</span>
-</pre><p><a href="lib/ford_fulkerson.py">Implementasjon av Edmonds-Karp</a></p>
+<table>
+<thead>
+<tr>
+<th>Attributt</th>
+<th>Edmonds-Karp</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Beskrivelse</td>
+<td>Ford-Fulkerson med BFS, finner maks flyt</td>
+</tr>
+<tr>
+<td>Input</td>
+<td><code>G</code>: en graf, <code>s</code>: kilde, <code>t</code>: sluk</td>
+</tr>
+<tr>
+<td>Output</td>
+<td>kantene sine <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span></span></span></span>-verdier indikerer maks-flyten</td>
+</tr>
+<tr>
+<td>Kj&#xF8;retid</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mi>V</mi><msup><mi>E</mi><mn>2</mn></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(VE^2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
 <h4 class="mume-header" id="l10-forst%C3%A5-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching">[L10] Forst&#xE5; hvordan maks-flyt kan finne en maksimum bipartitt matching</h4>
 
 <h4 class="mume-header" id="l11-forst%C3%A5-heltallsteoremet-integrality-theorem">[L11] Forst&#xE5; heltallsteoremet (integrality theorem)</h4>
@@ -3739,6 +3915,7 @@ FORD-FULKERSON(G, s, t)
 
 <h4 class="mume-header" id="m4-forst%C3%A5-forskjellen-p%C3%A5-konkrete-og-abstrakte-problemer">[M4] Forst&#xE5; forskjellen p&#xE5; konkrete og abstrakte problemer</h4>
 
+<p>Men hovedpoenget er alts&#xE5; at konkrete problemer er, p&#xE5; sett og vis, konkrete representasjoner av de abstrakte problemene, der instansene er kodet som strenger (f.eks. serier med bits), akkurat som i en datamaskin, mens abstrakte problemer bare er abstrakte, matematiske problemer (relasjoner mellom input/output). Se mer p&#xE5; side 1054-1055.</p>
 <h4 class="mume-header" id="m5-forst%C3%A5-representasjonen-av-beslutningsproblemer-som-formelle-spr%C3%A5k">[M5] Forst&#xE5; representasjonen av beslutningsproblemer som formelle spr&#xE5;k</h4>
 
 <h4 class="mume-header" id="m6-forst%C3%A5-definisjonen-av-klassene-p-np-og-co-np">[M6] Forst&#xE5; definisjonen av klassene P, NP og co-NP</h4>
