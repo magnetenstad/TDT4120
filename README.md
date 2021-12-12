@@ -130,18 +130,18 @@ De overordnede læringsmålene for emnet er som følger.
 
 ### Forelesning 9: Minimale spenntrær
 - [x] [I1] [Forstå skog-implementasjonen av disjunkte mengder](#i1-forstå-skog-implementasjonen-av-disjunkte-mengder)
-- [ ] [I2] [Vite hva spenntrær og minimale spenntrær er](#i2-vite-hva-spenntrær-og-minimale-spenntrær-er)
+- [x] [I2] [Vite hva spenntrær og minimale spenntrær er](#i2-vite-hva-spenntrær-og-minimale-spenntrær-er)
 - [x] ! [I3] [Forstå Generic-MST](#i3-forstå-generic-mst)
-- [ ] [I4] [Forstå hvorfor lette kanter er trygge kanter](#i4-forstå-hvorfor-lette-kanter-er-trygge-kanter)
+- [x] [I4] [Forstå hvorfor lette kanter er trygge kanter](#i4-forstå-hvorfor-lette-kanter-er-trygge-kanter)
 - [x] [I5] [Forstå MST-Kruskal](#i5-forstå-mst-kruskal)
 - [x] [I6] [Forstå MST-Prim](#i6-forstå-mst-prim)
 
 
 ### Forelesning 10: Korteste vei fra én til alle
 - [ ] [J1] [Forstå ulike varianter av korteste-vei- eller korteste-sti-problemet](#j1-forstå-ulike-varianter-av-korteste-vei--eller-korteste-sti-problemet-single-source-single-destination-single-pair-all-pairs)
-- [ ] [J2] [Forstå strukturen til korteste-vei-problemet](#j2-forstå-strukturen-til-korteste-vei-problemet)
-- [ ] [J3] [Forstå at negative sykler gir mening for korteste enkle vei (simple path)](#j3-forstå-at-negative-sykler-gir-mening-for-korteste-enkle-vei-simple-path)
-- [ ] [J4] [Forstå at korteste enkle vei kan løses vha. lengste enkle vei og omvendt](#j4-forstå-at-korteste-enkle-vei-kan-løses-vha-lengste-enkle-vei-og-omvendt)
+- [x] [J2] [Forstå strukturen til korteste-vei-problemet](#j2-forstå-strukturen-til-korteste-vei-problemet)
+- [x] [J3] [Forstå at negative sykler gir mening for korteste enkle vei (simple path)](#j3-forstå-at-negative-sykler-gir-mening-for-korteste-enkle-vei-simple-path)
+- [x] [J4] [Forstå at korteste enkle vei kan løses vha. lengste enkle vei og omvendt](#j4-forstå-at-korteste-enkle-vei-kan-løses-vha-lengste-enkle-vei-og-omvendt)
 - [ ] [J5] [Forstå hvordan man kan representere et korteste-vei-tre](#j5-forstå-hvordan-man-kan-representere-et-korteste-vei-tre)
 - [x] ! [J6] [Forstå kant-slakking (edge relaxation) og Relax](#j6-forstå-kant-slakking-edge-relaxation-og-relax)
 - [ ] [J7] [Forstå ulike egenskaper ved korteste veier og slakking](#j7-forstå-ulike-egenskaper-ved-korteste-veier-og-slakking)
@@ -1295,7 +1295,7 @@ Attributt | Cut-Rod
 Beskrivelse | Finner beste pris, gitt en stavlengde og priser på ulike lengder
 Input | p: tabell av priser, n: stavlengde
 Output | Beste pris
-Kjøretid| $O(2^n)$
+Kjøretid | $O(2^n)$
 Minnebruk | $\Theta(1)$
 
 Attributt | Memoized-Cut-Rod
@@ -1303,7 +1303,7 @@ Attributt | Memoized-Cut-Rod
 Beskrivelse | Memoisert (top-down) versjon av Cut-Rod
 Input | p: tabell av priser, n: stavlengde
 Output | Beste pris
-Kjøretid| $O(n^2)$
+Kjøretid | $O(n^2)$
 Minnebruk | $\Theta(n)$
 
 Attributt | Bottom-Up-Cut-Rod
@@ -1311,7 +1311,7 @@ Attributt | Bottom-Up-Cut-Rod
 Beskrivelse | Iterativ (bottom-up) versjon av Cut-Rod
 Input | p: tabell av priser, n: stavlengde
 Output | Beste pris
-Kjøretid| $O(n^2)$
+Kjøretid | $O(n^2)$
 Minnebruk | $\Theta(1)$
 
 ````python
@@ -1374,7 +1374,7 @@ Attributt | LCS-Length
 Beskrivelse | Sammenligner liste X og Y og finner lengste felles subsekvens
 Input | X: liste, Y: liste
 Output | To matriser som lengste felles subsekvens kan leses fra (brukes i Print-LCS)
-Kjøretid| $\Theta(mn)$
+Kjøretid | $\Theta(mn)$
 Minnebruk | $\Theta(mn)$
 
 Attributt | Print-LCS
@@ -1382,7 +1382,7 @@ Attributt | Print-LCS
 Beskrivelse | Printer lengste felles subsekvens, gitt b-matrisen fra LCS-Length
 Input | b: matrise fra LCS-Length, X: den tilhørende listen som ble brukt i LCS-Length, i: hvilken rad det skal leses fra, j: hvilken kolonne det skal leses fra
 Output | Lengste felles subsekvens
-Kjøretid| $\Theta(m + n)$
+Kjøretid | $\Theta(m + n)$
 Minnebruk | $\Theta(1)$
 
 ````python
@@ -1471,7 +1471,7 @@ Attributt | Recursive-Activity-Selector
 Beskrivelse | Maksimerer antall aktiviterer
 Input | `s`: starttider, `f`: sluttider, `k`: tid, `n`: antall aktiviteter å velge mellom
 Output | Et sett av de valgte aktivitene
-Kjøretid| $\Theta(n)$
+Kjøretid | $\Theta(n)$
 Ekstra krav | En fake aktivitet $a_0$ med $f_0 = 0$ må legges til s og f. Input må være sortert etter sluttider.
 
 Attributt | Greedy-Activity-Selector
@@ -1479,7 +1479,7 @@ Attributt | Greedy-Activity-Selector
 Beskrivelse | Maksimerer antall aktiviterer
 Input | `s`: starttider, `f`: sluttider
 Output | Et sett av de valgte aktivitene
-Kjøretid| $\Theta(n)$
+Kjøretid | $\Theta(n)$
 Ekstra krav | En fake aktivitet $a_0$ med $f_0 = 0$ må legges til s og f. Input må være sortert etter sluttider.
 
 ````python
@@ -1512,7 +1512,7 @@ Attributt | Huffman
 Beskrivelse | Bygger et Huffman-tre (vha. min-haug)
 Input | `C`: et sett av $n$ karakterer, hver med en bestemt frekvens $c.freq$.
 Output | Roten til Huffman-treet
-Kjøretid| $O(n \lg n)$
+Kjøretid | $O(n \lg n)$
 
 ````python
 def huffman(C):
@@ -1541,7 +1541,7 @@ Attributt | BFS
 Beskrivelse | Bredde først søk, kan finne korteste vei uten vekter
 Input | `G`: en graf, `s` startnode
 Output | Markerer alle noder med avstand $d$ fra startnoden, og forgjenger $pi$
-Kjøretid| $O(V + E)$
+Kjøretid | $O(V + E)$
 
 ````python
 def bfs(G, s):
@@ -1572,7 +1572,7 @@ Attributt | DFS
 Beskrivelse | Dybde først søk, kan brukes til å klassifisere kanter
 Input | `G`: en graf
 Output | Markerer alle noder med tid $time$, og forgjenger $pi$
-Kjøretid| $\Theta(V + E)$
+Kjøretid | $\Theta(V + E)$
 
 ````python
 def dfs(G):
@@ -1609,7 +1609,7 @@ Attributt | Topological-Sort
 Beskrivelse | Sorterer en graf topologisk, vha. DFS
 Input | `G`: en graf
 Output | En topologisk sortert lenket liste over nodene
-Kjøretid| $\Theta(V + E)$
+Kjøretid | $\Theta(V + E)$
 
 ````python
 def topological_sort(G):
@@ -1656,8 +1656,47 @@ Se implementasjon av BFS, denne har FIFO-kø men virker annerledes ved bruk av a
 
 
 ### Forelesning 9: Minimale spenntrær
+The inverse Ackermann function $\alpha(n)$ grows extraordinarily slowly, so this factor is 4 or less for any $n$ that can actually be written in the physical universe. This makes disjoint-set operations practically amortized constant time.
 
 #### [I1] Forstå skog-implementasjonen av disjunkte mengder
+Attributt | Connected-Components
+---|---
+Beskrivelse | Forbereder bruk av Same-Component
+Input | `G`: en graf
+Kjøretid | $\Theta(E\alpha(n))$
+
+Attributt | Same-Component
+---|---
+Beskrivelse | Avgjør om to noder er i den samme komponenten
+Input | 
+Output | True hvis nodene er i samme komponent, False ellers
+Kjøretid | $\Theta(\alpha(n))$
+
+Attributt | Make-Set
+---|---
+Beskrivelse | Lager et nytt sett bestående av den gitte noden
+Input | `x`: en node
+Kjøretid | $\Theta(1)$
+
+Attributt | Link
+---|---
+Beskrivelse | Kobler sammen to noder, basert på rank
+Input | `x`: en node, `y`: en node
+Kjøretid | $\Theta(1)$
+
+Attributt | Link
+---|---
+Beskrivelse | Linker settet til `x` med settet til `y`
+Input | `x`: en node, `y`: en node
+Kjøretid | $\Theta(\alpha(n))$
+
+Attributt | Find-Set
+---|---
+Beskrivelse | Returner den øverste forfederen til noden, og setter den som direkte forelder
+Input | `x`: en node
+Output | Den øverste forfederen til noden (representerer settet)
+Kjøretid | $\Theta(\alpha(n))$
+
 ````python
 def connected_components(G):
     for v in G.V:
@@ -1692,6 +1731,7 @@ def find_set(x):
 [Implementasjon av disjunkte mengder](lib/structures/disjunct_set.py) 
 
 #### [I2] Vite hva spenntrær og minimale spenntrær er
+Et **tre** er en urettet graf der alle noder er koblet med nøyaktig én sti. Dette er ekvivalent med å si at den er asyklisk. Et **spenntre** av en urettet graf $G$ er en delgraf som er et tre og inneholder alle nodene i $G$. Et **minimalt spenntre** er et spenntre hvor summen av kantvektene er minst mulig.
 
 #### [I3] Forstå Generic-MST
 ````
@@ -1704,8 +1744,19 @@ GENERIC-MST(G, w):
 ````
 
 #### [I4] Forstå hvorfor lette kanter er trygge kanter
+Invariant: Kantmengden utgjør en del av et minimalt spenntre.
+En *trygg kant* er en kant som bevarer invarianten.
+
+Den letteste kanten (som ikke danner en sykel) er trygg fordi vi må uansett på et tidspunkt koble sammen snittet og det finnes ingen billigere måte å gjøre det lettere på. Kan illustreres med vei over bro https://algdat.idi.ntnu.no/lysark/forelesn09_kort.pdf
 
 #### [I5] Forstå MST-Kruskal
+Attributt | MST-Kruskal
+---|---
+Beskrivelse | Bygger et minimalt spenntre ved å sortere kantene
+Input | `G`: en graf, `w`: kantvektene
+Output | Kantene som danner et minimalt spenntre
+Kjøretid | $O(E \lg V)$
+
 ````python
 def mst_kruskal(G, w):
     A = set()
@@ -1716,17 +1767,25 @@ def mst_kruskal(G, w):
         if find_set(u) != find_set(v):
             A.add((u, v))
             union(u, v)
+    return A
 ````
 [Implementasjon av MST-Kruskal](lib/minimal_spanning_tree.py)
 
 #### [I6] Forstå MST-Prim
+Attributt | MST-Prim
+---|---
+Beskrivelse | Bygger ett tre gradvis; en lett kant over snittet rundt treet er alltid trygg
+Input | `G`: en graf, `w`: kantvektene, `r`: rotnode
+Output | Nodene sine forgjengerverdier $pi$ danner et minimalt spenntre
+Kjøretid | $O(E \lg V)$, eller $O(E + V \lg V)$ ved bruk av Fibonacci-haug
+
 ````python
 def mst_prim(G, w, r):
     for u in G.V:
         u.key = float('inf')
         u.pi = None
     r.key = 0
-    Q = build_min_heap(G.V.copy())
+    Q = build_min_heap(G.V)
     while Q:
         u = heap_extract_min(Q)
         for v in G.Adj[u]:
@@ -1741,16 +1800,27 @@ def mst_prim(G, w, r):
 ### Forelesning 10: Korteste vei fra én til alle
 
 #### [J1] Forstå ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)
+Single Source Shortest Paths (SSSP): en til alle. ?
 
 #### [J2] Forstå strukturen til korteste-vei-problemet
+Man skal finne korteste vei.
 
 #### [J3] Forstå at negative sykler gir mening for korteste enkle vei (simple path)
+For korteste enkle vei må man unngå syklene (for at den skal være enkel) så det tillatter at de kan eksistere i grafen.
 
 #### [J4] Forstå at korteste enkle vei kan løses vha. lengste enkle vei og omvendt
+Kan gå fra den ene til den andre ved å negere kantvektene.
 
 #### [J5] Forstå hvordan man kan representere et korteste-vei-tre
 
+
 #### [J6] Forstå kant-slakking (edge relaxation) og Relax
+Attributt | Relax
+---|---
+Beskrivelse | $v$ lar $u$ være sin forelder, om det er gunstig
+Input | `u`: en node, `v`: en node, `w`: kantvektene
+Kjøretid | $\Theta(1)$
+
 ````python
 def relax(u, v, w):
     if v.d > u.d + w[u][v]:
@@ -1762,11 +1832,16 @@ def relax(u, v, w):
 #### [J7] Forstå ulike egenskaper ved korteste veier og slakking
 (Triangle inequality, upper-bound property, no-path property, convergence property,
 path-relaxation property, predecessor-subgraph property)
+TODO
 
 #### [J8] Forstå Bellman-Ford
-<details>
-    <summary>Kode</summary>
-    
+Attributt | Bellman-Ford
+---|---
+Beskrivelse | Finner korteste vei fra én til alle
+Input | `G`: en graf, `w`: kantvektene, `s`: startnode
+Output | Nodene sine $d$- og $pi$-verdier antyder lengden fra start og forelder. Algoritmen returnerer False dersom det finnes en negativ sykel og True ellers 
+Kjøretid | $O(VE)$
+
 ````python
 def bellman_ford(G, w, s):
     initialize_single_source(G, s)
@@ -1779,9 +1854,14 @@ def bellman_ford(G, w, s):
     return True
 ````
 [Implementasjon av Bellman-Ford](lib/single_source_shortest_path.py)
-</details>
 
 #### [J9] Forstå Dag-Shortest-Paths
+Attributt | DAG-Shortest-Paths
+---|---
+Beskrivelse | Finner korteste vei fra én til alle i en rettet asyklisk graf
+Input | `G`: en graf, `w`: kantvektene, `s`: startnode
+Output | Nodene sine $d$- og $pi$-verdier antyder lengden fra start og forelder 
+Kjøretid | $O(V + E)$
 ````python
 def dag_shortest_paths(G, w, s):
     initialize_single_source(G, s)
@@ -1796,6 +1876,12 @@ def dag_shortest_paths(G, w, s):
 #### [J10] Forstå kobling mellom Dag-Shortest-Paths og dynamisk programmering
 
 #### [J11] Forstå Dijkstra
+Attributt | Dijkstra
+---|---
+Beskrivelse | Finner korteste vei fra én til alle i en graf med ikke-negative kantvekter
+Input | `G`: en graf, `w`: kantvektene, `s`: startnode
+Output | Nodene sine $d$- og $pi$-verdier antyder lengden fra start og forelder 
+Kjøretid | $O(E \lg V)$
 ````python
 def dijkstra(G, w, s):
     initialize_single_source(G, s)

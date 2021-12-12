@@ -18,7 +18,7 @@ def mst_kruskal(G, w):
         if find_set(u) != find_set(v):
             A.add((u, v))
             union(u, v)
-
+    return A
 
 def mst_prim(G, w, r):
     for u in G.V:
