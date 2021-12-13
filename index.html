@@ -328,7 +328,7 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B3] <a href="#b3-forst%C3%A5-hvordan-pekere-og-objekter-kan-implementeres">Forst&#xE5; hvordan pekere og objekter kan implementeres</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [B4] <a href="#b4-forst%C3%A5-hvordan-direkte-adressering-og-hashtabeller-fungerer">Forst&#xE5; hvordan direkte adressering og hashtabeller fungerer</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B5] <a href="#b5-forst%C3%A5-konfliktl%C3%B8sing-ved-kjeding-chaining">Forst&#xE5; konfliktl&#xF8;sing ved kjeding (chaining)</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [B6] <a href="#b6-kjenne-til-grunnleggende-hashfunksjoner">Kjenne til grunnleggende hashfunksjoner</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B6] <a href="#b6-kjenne-til-grunnleggende-hashfunksjoner">Kjenne til grunnleggende hashfunksjoner</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B7] <a href="#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-s%C3%B8k">Vite at man for statiske datasett kan ha worst-case O(1) for s&#xF8;k</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B8] <a href="#b8-kunne-definere-amortisert-analyse">Kunne definere amortisert analyse</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [B9] <a href="#b8-kunne-definere-amortisert-analyse">Forst&#xE5; hvordan dynamiske tabeller fungerer</a></li>
@@ -354,7 +354,7 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> ! [D4] <a href="#d4-forst%C3%A5-radix-sort-og-hvorfor-den-trenger-en-stabil-subrutine">Forst&#xE5; Radix-Sort, og hvorfor den trenger en stabil subrutine</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D5] <a href="#d5-forst%C3%A5-bucket-sort">Forst&#xE5; Bucket-Sort</a></li>
 <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D6] <a href="#d6-forst%C3%A5-randomized-select">Forst&#xE5; Randomized-Select</a></li>
-<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox"> [D7] <a href="#d7-kjenne-til-select">Kjenne til Select</a></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" checked> [D7] <a href="#d7-kjenne-til-select">Kjenne til Select</a></li>
 </ul>
 <h3 class="mume-header" id="forelesning-5-rotfaste-trestrukturer">Forelesning 5: Rotfaste trestrukturer</h3>
 
@@ -952,8 +952,12 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <td>T: hashtabell, x: element</td>
 </tr>
 <tr>
-<td>Kj&#xF8;retid</td>
-<td>?</td>
+<td>Best case</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td>Average/worst case</td>
+<td>Sp&#xF8;rs p&#xE5; hashfunksjonen</td>
 </tr>
 </tbody>
 </table>
@@ -978,8 +982,12 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <td>Elementet i tabellen med den gitt n&#xF8;kkelen, eller None</td>
 </tr>
 <tr>
-<td>Kj&#xF8;retid</td>
-<td>?</td>
+<td>Best case</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td>Average/worst case</td>
+<td>Sp&#xF8;rs p&#xE5; hashfunksjonen</td>
 </tr>
 </tbody>
 </table>
@@ -1029,8 +1037,12 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <td>T: kjedet hashtabell, x: element</td>
 </tr>
 <tr>
-<td>Kj&#xF8;retid</td>
-<td>?</td>
+<td>Best case</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td>Average/worst case</td>
+<td>Sp&#xF8;rs p&#xE5; hashfunksjonen</td>
 </tr>
 </tbody>
 </table>
@@ -1055,8 +1067,12 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <td>Elementet i tabellen med den gitt n&#xF8;kkelen, eller None</td>
 </tr>
 <tr>
-<td>Kj&#xF8;retid</td>
-<td>?</td>
+<td>Best case</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td>Average/worst case</td>
+<td>Sp&#xF8;rs p&#xE5; hashfunksjonen</td>
 </tr>
 </tbody>
 </table>
@@ -1077,8 +1093,12 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 <td>T: kjedet hashtabell, x: element</td>
 </tr>
 <tr>
-<td>Kj&#xF8;retid</td>
-<td>?</td>
+<td>Best case</td>
+<td><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&#x398;</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\Theta(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">&#x398;</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+<tr>
+<td>Average/worst case</td>
+<td>Sp&#xF8;rs p&#xE5; hashfunksjonen</td>
 </tr>
 </tbody>
 </table>
@@ -1096,7 +1116,11 @@ Dersom du &#xF8;nsker &#xE5; kj&#xF8;re algoritmene, kan du klone prosjektet fra
 </pre><p><a href="lib/structures/hash_table_chained.py">Implementasjon av kjeding</a></p>
 <h4 class="mume-header" id="b6-kjenne-til-grunnleggende-hashfunksjoner">[B6] Kjenne til grunnleggende hashfunksjoner</h4>
 
-<p>TODO</p>
+<p>En god hashfunksjon vil tiln&#xE6;rmet tilfredsstille antagelsen om simpel uniform hashing, alts&#xE5; at hver key er like sannsynlig	&#xE5; hashe til enhver av de <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal">m</span></span></span></span> lukene, uavhengig av hvor andre keys har hashet.</p>
+<ul>
+<li>Divisjonsmetoden, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mi>k</mi><mspace></mspace><mspace width="0.6666666666666666em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mi>m</mi></mrow><annotation encoding="application/x-tex">h(k) = k \mod m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">h</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6666666666666666em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathnormal">m</span></span></span></span></li>
+<li>Multiplikasjonsmetoden <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo><mo>=</mo><mi>f</mi><mi>l</mi><mi>o</mi><mi>o</mi><mi>r</mi><mo stretchy="false">(</mo><mi>m</mi><mo stretchy="false">(</mo><mi>k</mi><mi>a</mi><mspace></mspace><mspace width="0.6666666666666666em"></mspace><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mtext>&#x2009;</mtext><mtext>&#x2009;</mtext><mn>1</mn><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">h(k) = floor(m(ka \mod 1))</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">h</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.02778em;">oor</span><span class="mopen">(</span><span class="mord mathnormal">m</span><span class="mopen">(</span><span class="mord mathnormal">ka</span><span class="mspace allowbreak"></span><span class="mspace" style="margin-right:0.6666666666666666em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord"><span class="mord mathrm">mod</span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">1</span><span class="mclose">))</span></span></span></span></li>
+</ul>
 <h4 class="mume-header" id="b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-s%C3%B8k">[B7] Vite at man for statiske datasett kan ha worst-case <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> for s&#xF8;k</h4>
 
 <p>For statiske datasett kan vi konstruere <em>perfekte</em> hashfunksjoner, og dermed oppn&#xE5; <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span> for s&#xF8;k.</p>

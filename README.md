@@ -62,7 +62,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [B3] [Forstå hvordan pekere og objekter kan implementeres](#b3-forstå-hvordan-pekere-og-objekter-kan-implementeres)
 - [x] ! [B4] [Forstå hvordan direkte adressering og hashtabeller fungerer](#b4-forstå-hvordan-direkte-adressering-og-hashtabeller-fungerer)
 - [x] [B5] [Forstå konfliktløsing ved kjeding (chaining)](#b5-forstå-konfliktløsing-ved-kjeding-chaining)
-- [ ] [B6] [Kjenne til grunnleggende hashfunksjoner](#b6-kjenne-til-grunnleggende-hashfunksjoner)
+- [x] [B6] [Kjenne til grunnleggende hashfunksjoner](#b6-kjenne-til-grunnleggende-hashfunksjoner)
 - [x] [B7] [Vite at man for statiske datasett kan ha worst-case O(1) for søk](#b7-vite-at-man-for-statiske-datasett-kan-ha-worst-case-o1-for-søk)
 - [x] [B8] [Kunne definere amortisert analyse](#b8-kunne-definere-amortisert-analyse)
 - [x] [B9] [Forstå hvordan dynamiske tabeller fungerer](#b8-kunne-definere-amortisert-analyse)
@@ -86,7 +86,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] ! [D4] [Forstå Radix-Sort, og hvorfor den trenger en stabil subrutine](#d4-forstå-radix-sort-og-hvorfor-den-trenger-en-stabil-subrutine)
 - [x] [D5] [Forstå Bucket-Sort](#d5-forstå-bucket-sort)
 - [x] [D6] [Forstå Randomized-Select](#d6-forstå-randomized-select)
-- [ ] [D7] [Kjenne til Select](#d7-kjenne-til-select)
+- [x] [D7] [Kjenne til Select](#d7-kjenne-til-select)
 
 
 ### Forelesning 5: Rotfaste trestrukturer
@@ -414,14 +414,16 @@ Attributt | Hash-Insert
 ---|---
 Beskrivelse | Setter et element inn i en hashtabell
 Input | T: hashtabell, x: element
-Kjøretid | ?
+Best case | $\Theta(1)$
+Average/worst case | Spørs på hashfunksjonen
 
 Attributt | Hash-Search
 ---|---
 Beskrivelse | Henter et element fra en hashtabell
 Input | T: hashtabell, k: nøkkel
 Output | Elementet i tabellen med den gitt nøkkelen, eller None
-Kjøretid | ?
+Best case | $\Theta(1)$
+Average/worst case | Spørs på hashfunksjonen
 
 ````python
 def hash_insert(T, k):
@@ -458,20 +460,23 @@ Attributt | Chained-Hash-Insert
 ---|---
 Beskrivelse | Setter et element inn i en kjedet hashtabell
 Input | T: kjedet hashtabell, x: element
-Kjøretid | ?
+Best case | $\Theta(1)$
+Average/worst case | Spørs på hashfunksjonen
 
 Attributt | Chained-Hash-Search
 ---|---
 Beskrivelse | Henter et element fra en kjedet hashtabell
 Input | T: kjedet hashtabell, k: nøkkel
 Output | Elementet i tabellen med den gitt nøkkelen, eller None
-Kjøretid | ?
+Best case | $\Theta(1)$
+Average/worst case | Spørs på hashfunksjonen
 
 Attributt | Chained-Hash-Delete
 ---|---
 Beskrivelse | Sletter et element i en kjedet hashtabell
 Input | T: kjedet hashtabell, x: element
-Kjøretid | ?
+Best case | $\Theta(1)$
+Average/worst case | Spørs på hashfunksjonen
 
 ````python
 def chained_hash_insert(T, x):
@@ -489,7 +494,9 @@ def chained_hash_delete(T, x):
 [Implementasjon av kjeding](lib/structures/hash_table_chained.py)
 
 #### [B6] Kjenne til grunnleggende hashfunksjoner
-TODO
+En god hashfunksjon vil tilnærmet tilfredsstille antagelsen om simpel uniform hashing, altså at hver key er like sannsynlig	å hashe til enhver av de $m$ lukene, uavhengig av hvor andre keys har hashet.
+- Divisjonsmetoden, $h(k) = k \mod m$
+- Multiplikasjonsmetoden $h(k) = floor(m(ka \mod 1))$
 
 #### [B7] Vite at man for statiske datasett kan ha worst-case $O(1)$ for søk
 For statiske datasett kan vi konstruere *perfekte* hashfunksjoner, og dermed oppnå $O(1)$ for søk.
