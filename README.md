@@ -169,7 +169,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [L8] [Forstå Ford-Fulkerson-Method og Ford-Fulkerson](#l8-forstå-ford-fulkerson-method-og-ford-fulkerson)
 - [x] [L9] [Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen](#l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen)
 - [x] [L10] [Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching](#l10-forstå-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching)
-- [ ] ! [L11] [Forstå heltallsteoremet (integrality theorem)](#l11-forstå-heltallsteoremet-integrality-theorem)
+- [x] ! [L11] [Forstå heltallsteoremet (integrality theorem)](#l11-forstå-heltallsteoremet-integrality-theorem)
 
 
 ### Forelesning 13: NP-kompletthet
