@@ -2,8 +2,9 @@ from math import floor
 
 
 class Heap(list):
-    heap_size = 0
-
+    def __init__(self, l):
+        super().__init__(l)
+        self.heap_size = len(self)
 
 def parent(i):
     return floor(i / 2)
@@ -139,14 +140,18 @@ def min_heap_insert(A, key):
 
 
 if __name__ == '__main__':
-    A = Heap([1, 6, 2, 5, 4, 2, 5, 2, 1, 4, 9, 7, 8])
-    build_max_heap(A)
+    # A = Heap([1, 6, 2, 5, 4, 2, 5, 2, 1, 4, 9, 7, 8])
+    # build_max_heap(A)
+    # print(A)
+    # while A.heap_size:
+    #     print(heap_extract_max(A))
+    # print("# "*12)
+    # A = Heap([1, 6, 2, 5, 4, 2, 5, 2, 1, 4, 9, 7, 8])
+    # build_min_heap(A)
+    # print(A)
+    # while A.heap_size:
+    #     print(heap_extract_min(A))
+
+    A = Heap([7, 3, 8, 6, 5, 9, 4, 2])
+    print(heap_extract_max(A))
     print(A)
-    while A.heap_size:
-        print(heap_extract_max(A))
-    print("# "*12)
-    A = Heap([1, 6, 2, 5, 4, 2, 5, 2, 1, 4, 9, 7, 8])
-    build_min_heap(A)
-    print(A)
-    while A.heap_size:
-        print(heap_extract_min(A))
