@@ -3,7 +3,7 @@
 
 Dette dokumentet ligger ute på https://magne.dev/TDT4120/.
 Dersom du ønsker å kjøre algoritmene, kan du klone prosjektet fra https://github.com/magnetenstad/TDT4120.
-
+Med referansen *kompendium* menes det skrevet av Mathilde Haukø Haugum (2018).
 
 
 ## Læringsmål
@@ -74,9 +74,9 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [C3] [Forstå Bisect og Bisect'](#c3-forstå-bisect-og-bisect)
 - [x] [C4] [Forstå Merge-Sort](#c4-forstå-merge-sort)
 - [x] [C5] [Forstå Quicksortog Randomized-Quicksort](#c5-forstå-quicksort-og-randomized-quicksort)
-- [ ] ! [C6] [Kunne løse rekurrenser med substitusjon, rekursjonstrær og masterteoremet](#c6-kunne-løse-rekurrenser-med-substitusjon-rekursjonstrær-og-masterteoremet)
-- [ ] ! [C7] [Kunne løse rekurrenser med iterasjonsmetoden](#c7-kunne-løse-rekurrenser-med-iterasjonsmetoden)
-- [ ] [C8] [Forstå hvordan variabelskifte fungerer](#c8-forstå-hvordan-variabelskifte-fungerer)
+- [x] ! [C6] [Kunne løse rekurrenser med substitusjon, rekursjonstrær og masterteoremet](#c6-kunne-løse-rekurrenser-med-substitusjon-rekursjonstrær-og-masterteoremet)
+- [x] ! [C7] [Kunne løse rekurrenser med iterasjonsmetoden](#c7-kunne-løse-rekurrenser-med-iterasjonsmetoden)
+- [x] [C8] [Forstå hvordan variabelskifte fungerer](#c8-forstå-hvordan-variabelskifte-fungerer)
 
 
 ### Forelesning 4: Rangering i lineær tid
@@ -107,7 +107,7 @@ De overordnede læringsmålene for emnet er som følger.
 - [x] [F6] [Forstå hva optimal delstruktur er](#f6-forstå-hva-optimal-delstruktur-er)
 - [x] [F7] [Forstå hva overlappende delinstanser er](#f7-forstå-hva-overlappende-delinstanser-er)
 - [x] [F8] [Forstå eksemplene stavkutting og LCS](#f8-forstå-eksemplene-stavkutting-og-lcs)
-- [ ] [F9] [Forstå løsningen på det binære ryggsekkproblemet](#f9-forstå-løsningen-på-det-binære-ryggsekkproblemet)
+- [x] [F9] [Forstå løsningen på det binære ryggsekkproblemet](#f9-forstå-løsningen-på-det-binære-ryggsekkproblemet)
 
 
 ### Forelesning 7: Grådige algoritmer
@@ -120,8 +120,8 @@ De overordnede læringsmålene for emnet er som følger.
 ### Forelesning 8: Traversering av grafer
 - [x] [H1] [Forstå hvordan grafer kan implementeres](#h1-forstå-hvordan-grafer-kan-implementeres)
 - [x] [H2] [Forstå BFS, også for å finne korteste vei uten vekter](#h2-forstå-bfs-også-for-å-finne-korteste-vei-uten-vekter)
-- [ ] [H3] [Forstå DFS, parentesteoremet og hvit-sti-teoremet](#h3-forstå-dfs-parentesteoremet-og-hvit-sti-teoremet)
-- [ ] [H4] [Forstå hvordan DFS klassifiserer kanter](#h4-forstå-hvordan-dfs-klassifiserer-kanter)
+- [x] [H3] [Forstå DFS, parentesteoremet og hvit-sti-teoremet](#h3-forstå-dfs-parentesteoremet-og-hvit-sti-teoremet)
+- [x] [H4] [Forstå hvordan DFS klassifiserer kanter](#h4-forstå-hvordan-dfs-klassifiserer-kanter)
 - [x] [H5] [Forstå Topological-Sort](#h5-forstå-topological-sort)
 - [x] [H6] [Forstå hvordan DFS kan implementeres med en stakk](#h6-forstå-hvordan-dfs-kan-implementeres-med-en-stakk)
 - [x] [H7] [Forstå hva traverseringstrær (som bredde-først- og dybde-først-trær) er](#h7-forstå-hva-traverseringstrær-som-bredde-først--og-dybde-først-trær-er)
@@ -138,53 +138,53 @@ De overordnede læringsmålene for emnet er som følger.
 
 
 ### Forelesning 10: Korteste vei fra én til alle
-- [ ] [J1] [Forstå ulike varianter av korteste-vei- eller korteste-sti-problemet](#j1-forstå-ulike-varianter-av-korteste-vei--eller-korteste-sti-problemet-single-source-single-destination-single-pair-all-pairs)
+- [x] [J1] [Forstå ulike varianter av korteste-vei- eller korteste-sti-problemet](#j1-forstå-ulike-varianter-av-korteste-vei--eller-korteste-sti-problemet)
 - [x] [J2] [Forstå strukturen til korteste-vei-problemet](#j2-forstå-strukturen-til-korteste-vei-problemet)
 - [x] [J3] [Forstå at negative sykler gir mening for korteste enkle vei (simple path)](#j3-forstå-at-negative-sykler-gir-mening-for-korteste-enkle-vei-simple-path)
 - [x] [J4] [Forstå at korteste enkle vei kan løses vha. lengste enkle vei og omvendt](#j4-forstå-at-korteste-enkle-vei-kan-løses-vha-lengste-enkle-vei-og-omvendt)
-- [ ] [J5] [Forstå hvordan man kan representere et korteste-vei-tre](#j5-forstå-hvordan-man-kan-representere-et-korteste-vei-tre)
+- [x] [J5] [Forstå hvordan man kan representere et korteste-vei-tre](#j5-forstå-hvordan-man-kan-representere-et-korteste-vei-tre)
 - [x] ! [J6] [Forstå kant-slakking (edge relaxation) og Relax](#j6-forstå-kant-slakking-edge-relaxation-og-relax)
-- [ ] [J7] [Forstå ulike egenskaper ved korteste veier og slakking](#j7-forstå-ulike-egenskaper-ved-korteste-veier-og-slakking)
+- [x] [J7] [Forstå ulike egenskaper ved korteste veier og slakking](#j7-forstå-ulike-egenskaper-ved-korteste-veier-og-slakking)
 - [x] [J8] [Forstå Bellman-Ford](#j8-forstå-bellman-ford)
 - [x] [J9] [Forstå Dag-Shortest-Paths](#j9-forstå-dag-shortest-paths)
-- [ ] ! [J10] [Forstå kobling mellom Dag-Shortest-Paths og dynamisk programmering](#j10-forstå-kobling-mellom-dag-shortest-paths-og-dynamisk-programmering)
+- [x] ! [J10] [Forstå kobling mellom Dag-Shortest-Paths og dynamisk programmering](#j10-forstå-kobling-mellom-dag-shortest-paths-og-dynamisk-programmering)
 - [x] [J11] [Forstå Dijkstra](#j11-forstå-dijkstra)
 
 
 ### Forelesning 11: Korteste vei fra alle til alle
-- [ ] [K1] [Forstå forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet](#k1-forstå-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet-print-all-pairs-shortest-path)
+- [x] [K1] [Forstå forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet](#k1-forstå-forgjengerstrukturen-for-alle-til-alle-varianten-av-korteste-vei-problemet)
 - [x] [K2] [Forstå Floyd-Warshall](#k2-forstå-floyd-warshall)
 - [x] [K3] [Forstå Transitive-Closure](#k3-forstå-transitive-closure)
 - [x] [K4] [Forstå Johnson](#k4-forstå-johnson)
 
 
 ### Forelesning 12: Maksimal flyt
-- [ ] [L1] [Kunne definere flytnett, flyt og maks-flyt-problemet](#l1-kunne-definere-flytnett-flyt-og-maks-flyt-problemet)
-- [ ] [L2] [Kunne håndtere antiparallelle kanter og flere kilder og sluk](#l2-kunne-håndtere-antiparallelle-kanter-og-flere-kilder-og-sluk)
-- [ ] ! [L3] [Kunne definere restnettet til et flytnett med en gitt flyt](#l3-kunne-definere-restnettet-til-et-flytnett-med-en-gitt-flyt)
-- [ ] [L4] [Forstå hvordan man kan oppheve (cancel) flyt](#l4-forstå-hvordan-man-kan-oppheve-cancel-flyt)
-- [ ] [L5] [Forstå hva en forøkende sti (augmenting path) er](#l5-forstå-hva-en-forøkende-sti-augmenting-path-er)
-- [ ] [L6] [Forstå hva snitt, snitt-kapasitet og minimalt snitt er](#l6-forstå-hva-snitt-snitt-kapasitet-og-minimalt-snitt-er)
-- [ ] ! [L7] [Forstå maks-flyt/min-snitt-teoremet](#l7-forstå-maks-flytmin-snitt-teoremet)
+- [x] [L1] [Kunne definere flytnett, flyt og maks-flyt-problemet](#l1-kunne-definere-flytnett-flyt-og-maks-flyt-problemet)
+- [x] [L2] [Kunne håndtere antiparallelle kanter og flere kilder og sluk](#l2-kunne-håndtere-antiparallelle-kanter-og-flere-kilder-og-sluk)
+- [x] ! [L3] [Kunne definere restnettet til et flytnett med en gitt flyt](#l3-kunne-definere-restnettet-til-et-flytnett-med-en-gitt-flyt)
+- [x] [L4] [Forstå hvordan man kan oppheve (cancel) flyt](#l4-forstå-hvordan-man-kan-oppheve-cancel-flyt)
+- [x] [L5] [Forstå hva en forøkende sti (augmenting path) er](#l5-forstå-hva-en-forøkende-sti-augmenting-path-er)
+- [x] [L6] [Forstå hva snitt, snitt-kapasitet og minimalt snitt er](#l6-forstå-hva-snitt-snitt-kapasitet-og-minimalt-snitt-er)
+- [x] ! [L7] [Forstå maks-flyt/min-snitt-teoremet](#l7-forstå-maks-flytmin-snitt-teoremet)
 - [x] [L8] [Forstå Ford-Fulkerson-Method og Ford-Fulkerson](#l8-forstå-ford-fulkerson-method-og-ford-fulkerson)
 - [x] [L9] [Vite at Ford-Fulkerson med BFS kalles Edmonds-Karp-algoritmen](#l9-vite-at-ford-fulkerson-med-bfs-kalles-edmonds-karp-algoritmen)
-- [ ] [L10] [Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching](#l10-forstå-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching)
+- [x] [L10] [Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching](#l10-forstå-hvordan-maks-flyt-kan-finne-en-maksimum-bipartitt-matching)
 - [ ] ! [L11] [Forstå heltallsteoremet (integrality theorem)](#l11-forstå-heltallsteoremet-integrality-theorem)
 
 
 ### Forelesning 13: NP-kompletthet
 - [x] [M1] [Forstå sammenhengen mellom optimerings- og beslutnings-problemer](#m1-forstå-sammenhengen-mellom-optimerings--og-beslutnings-problemer)
-- [ ] [M2] [Forstå koding (encoding) av en instans](#m2-forstå-koding-encoding-av-en-instans)
-- [ ] [M3] [Forstå hvorfor løsningen på det binære ryggsekkproblemet ikke er polynomisk](#m3-forstå-hvorfor-løsningen-på-det-binære-ryggsekkproblemet-ikke-er-polynomisk)
-- [ ] [M4] [Forstå forskjellen på konkrete og abstrakte problemer](#m4-forstå-forskjellen-på-konkrete-og-abstrakte-problemer)
-- [ ] [M5] [Forstå representasjonen av beslutningsproblemer som formelle språk](#m5-forstå-representasjonen-av-beslutningsproblemer-som-formelle-språk)
+- [x] [M2] [Forstå koding (encoding) av en instans](#m2-forstå-koding-encoding-av-en-instans)
+- [x] [M3] [Forstå hvorfor løsningen på det binære ryggsekkproblemet ikke er polynomisk](#m3-forstå-hvorfor-løsningen-på-det-binære-ryggsekkproblemet-ikke-er-polynomisk)
+- [x] [M4] [Forstå forskjellen på konkrete og abstrakte problemer](#m4-forstå-forskjellen-på-konkrete-og-abstrakte-problemer)
+- [x] [M5] [Forstå representasjonen av beslutningsproblemer som formelle språk](#m5-forstå-representasjonen-av-beslutningsproblemer-som-formelle-språk)
 - [x] [M6] [Forstå definisjonen av klassene P, NP og co-NP](#m6-forstå-definisjonen-av-klassene-p-np-og-co-np)
 - [x] [M7] [Forstå redusibilitets-relasjonen $\leq_p$](#m7-forstå-redusibilitets-relasjonen-leq_p)
 - [x] ! [M8] [Forstå definisjonen av NP-hardhet og NP-kompletthet](#m8-forstå-definisjonen-av-np-hardhet-og-np-kompletthet)
 - [x] [M9] [Forstå den konvensjonelle hypotesen om forholdet mellom P, NP og NPC](#m9-forstå-den-konvensjonelle-hypotesen-om-forholdet-mellom-p-np-og-npc)
 - [x] ! [M10] [Forstå hvordan NP-kompletthet kan bevises ved én reduksjon](#m10-forstå-hvordan-np-kompletthet-kan-bevises-ved-én-reduksjon)
-- [ ] ! [M11] [Kjenne de NP-komplette problemene CIRCUIT-SAT, SAT, 3-CNF-SAT, CLIQUE, VERTEX-COVER, HAM-CYCLE, TSP og SUBSET-SUM](#m11-kjenne-de-np-komplette-problemene-circuit-sat-sat-3-cnf-sat-clique-vertex-cover-ham-cycle-tsp-og-subset-sum)
-- [ ] [M12] [Forstå at det binære ryggsekkproblemet er NP-hardt](#m12-forstå-at-det-binære-ryggsekkproblemet-er-np-hardt)
+- [x] ! [M11] [Kjenne de NP-komplette problemene CIRCUIT-SAT, SAT, 3-CNF-SAT, CLIQUE, VERTEX-COVER, HAM-CYCLE, TSP og SUBSET-SUM](#m11-kjenne-de-np-komplette-problemene-circuit-sat-sat-3-cnf-sat-clique-vertex-cover-ham-cycle-tsp-og-subset-sum)
+- [x] [M12] [Forstå at det binære ryggsekkproblemet er NP-hardt](#m12-forstå-at-det-binære-ryggsekkproblemet-er-np-hardt)
 - [x] [M13] [Forstå at lengste enkle-vei-problemet er NP-hardt](#m13-forstå-at-lengste-enkle-vei-problemet-er-np-hardt)
 - [x] [M14] [Være i stand til å konstruere enkle NP-kompletthetsbevis](#m14-være-i-stand-til-å-konstruere-enkle-np-kompletthetsbevis)
 
@@ -753,12 +753,13 @@ def randomized_quicksort(A, p, r):
 [Implementasjon av Randomized-Quicksort](lib/randomized_select.py)
 
 #### [C6] Kunne løse rekurrenser med substitusjon, rekursjonstrær og masterteoremet
+Se kompendium s. 37.
 
 #### [C7] Kunne løse rekurrenser med iterasjonsmetoden
+Se kompendium s. 54.
 
 #### [C8] Forstå hvordan variabelskifte fungerer
-
-
+Se kompendium s. 42.
 
 ### Forelesning 4: Rangering i lineær tid
 
@@ -1425,6 +1426,8 @@ def print_lcs(b, X, i, j):
 [Implementasjon av LCS](lib/longest_common_subsequence.py)
 
 #### [F9] Forstå løsningen på det binære ryggsekkproblemet
+Se kompendium s. 93.
+
 ````python
 def knapsack(n, W, w, v):
     """
@@ -1617,9 +1620,10 @@ def dfs_visit(G, u):
     u.f = time
 ````
 [Implementasjon av DFS](lib/dfs.py)
-TODO: parentesteoremet og hvit-sti-teoremet
+Se kompendium s. 109.
 
 #### [H4] Forstå hvordan DFS klassifiserer kanter
+Se kompendium s. 110.
 
 #### [H5] Forstå Topological-Sort
 Attributt | Topological-Sort
@@ -1817,11 +1821,11 @@ def mst_prim(G, w, r):
 
 ### Forelesning 10: Korteste vei fra én til alle
 
-#### [J1] Forstå ulike varianter av korteste-vei- eller korteste-sti-problemet (Single-source, single-destination, single-pair, all-pairs)
-Single Source Shortest Paths (SSSP): en til alle. ?
+#### [J1] Forstå ulike varianter av korteste-vei-problemet
+Se kompendium s. 122.
 
 #### [J2] Forstå strukturen til korteste-vei-problemet
-Man skal finne korteste vei.
+Optimal delstruktur.
 
 #### [J3] Forstå at negative sykler gir mening for korteste enkle vei (simple path)
 For korteste enkle vei må man unngå syklene (for at den skal være enkel) så det tillatter at de kan eksistere i grafen.
@@ -1830,7 +1834,7 @@ For korteste enkle vei må man unngå syklene (for at den skal være enkel) så 
 Kan gå fra den ene til den andre ved å negere kantvektene.
 
 #### [J5] Forstå hvordan man kan representere et korteste-vei-tre
-
+Se kompendium s. 124.
 
 #### [J6] Forstå kant-slakking (edge relaxation) og Relax
 Attributt | Relax
@@ -1848,9 +1852,7 @@ def relax(u, v, w):
 [Implementasjon av Relax](lib/single_source_shortest_path.py)
 
 #### [J7] Forstå ulike egenskaper ved korteste veier og slakking
-(Triangle inequality, upper-bound property, no-path property, convergence property,
-path-relaxation property, predecessor-subgraph property)
-TODO
+Se kompendium s. 125.
 
 #### [J8] Forstå Bellman-Ford
 Attributt | Bellman-Ford
@@ -1892,6 +1894,7 @@ def dag_shortest_paths(G, w, s):
 [Implementasjon av Dag-Shortest-Paths](lib/single_source_shortest_path.py)
 
 #### [J10] Forstå kobling mellom Dag-Shortest-Paths og dynamisk programmering
+Dag-Shortest-Paths er en bottom-up løsning.
 
 #### [J11] Forstå Dijkstra
 Attributt | Dijkstra
@@ -1918,6 +1921,8 @@ def dijkstra(G, w, s):
 ### Forelesning 11: Korteste vei fra alle til alle
 
 #### [K1] Forstå forgjengerstrukturen for alle-til-alle-varianten av korteste vei-problemet
+$\pi_{ij}$ er forgjengeren til $j$ i korteste vei fra $i$ til $j$.
+
 Attributt | Print-All-Pairs-Shortest-Path
 ---|---
 Beskrivelse | Printer korteste vei fra `i` til `j`
@@ -2028,18 +2033,25 @@ JOHNSON(G, w)
 ### Forelesning 12: Maksimal flyt
 
 #### [L1] Kunne definere flytnett, flyt og maks-flyt-problemet
+Se kompendium s. 138.
 
 #### [L2] Kunne håndtere antiparallelle kanter og flere kilder og sluk
+Se kompendium s. 139.
 
 #### [L3] Kunne definere restnettet til et flytnett med en gitt flyt
+Se kompendium s. 140.
 
 #### [L4] Forstå hvordan man kan oppheve (cancel) flyt
+Se kompendium s. 140.
 
 #### [L5] Forstå hva en forøkende sti (augmenting path) er
+Se kompendium s. 141.
 
 #### [L6] Forstå hva snitt, snitt-kapasitet og minimalt snitt er
+Se kompendium s. 142.
 
 #### [L7] Forstå maks-flyt/min-snitt-teoremet
+Se kompendium s. 143.
 
 #### [L8] Forstå Ford-Fulkerson-Method og Ford-Fulkerson
 Attributt | Ford-Fulkerson
@@ -2075,8 +2087,10 @@ Output | kantene sine $f$-verdier indikerer maks-flyten
 Kjøretid | $O(VE^2)$
 
 #### [L10] Forstå hvordan maks-flyt kan finne en maksimum bipartitt matching
+Se kompendium s. 147.
 
 #### [L11] Forstå heltallsteoremet (integrality theorem)
+Se kompendium s. 148.
 
 
 
@@ -2086,13 +2100,16 @@ Kjøretid | $O(VE^2)$
 Optimeringsproblemer har gjerne tilhørende beslutningsproblemer og omvendt. For eksempel kan optimeringsproblemet *å finne korteste vei* knyttes til beslutningsproblemet *finnes det en vei med avstand $\leq k$?*.
 
 #### [M2] Forstå koding (encoding) av en instans
+Se kompendium s. 152.
 
 #### [M3] Forstå hvorfor løsningen på det binære ryggsekkproblemet ikke er polynomisk
+Se kompendium s. 93 og 162.
 
 #### [M4] Forstå forskjellen på konkrete og abstrakte problemer
 Men hovedpoenget er altså at konkrete problemer er, på sett og vis, konkrete representasjoner av de abstrakte problemene, der instansene er kodet som strenger (f.eks. serier med bits), akkurat som i en datamaskin, mens abstrakte problemer bare er abstrakte, matematiske problemer (relasjoner mellom input/output). Se mer på side 1054-1055.
 
 #### [M5] Forstå representasjonen av beslutningsproblemer som formelle språk
+Se kompendium s. 153.
 
 #### [M6] Forstå definisjonen av klassene P, NP og co-NP
 NP er beslutningsproblemer der ja-svar kan verifiseres i polynomisk tid. co-NP er beslutninger der nei-svar kan verifiseres i polynomisk tid. P er problemene i NP som kan løses i polynomisk tid. 
@@ -2104,17 +2121,16 @@ Dersom vi reduserer $A$ til $B$ skriver vi $A \leq_p B$. Det vil si at $B$ er mi
 At et problem er NP-hardt vil si at det er minst like vanskelig som de vanskeligste problemene i NP. Hvis et problem er i NP og er NP-hardt, så er det NP-komplett.
 
 #### [M9] Forstå den konvensjonelle hypotesen om forholdet mellom P, NP og NPC
-Den konvensjonelle hypotesen går ut på at
-- P $\subset$ NP
-- P $\neq$ NP
-- P $\cap$ NPC $= \emptyset$
+Se kompendium s. 155.
 
 #### [M10] Forstå hvordan NP-kompletthet kan bevises ved én reduksjon
 Dersom vi reduserer et problem som er bevist NP-komplett $A$, til et problem $B$ i NP, $A \leq_p B$, vet vi at $B$ er minst like vanskelig som $A$ og derfor også NP-komplett. 
 
 #### [M11] Kjenne de NP-komplette problemene CIRCUIT-SAT, SAT, 3-CNF-SAT, CLIQUE, VERTEX-COVER, HAM-CYCLE, TSP og SUBSET-SUM
+Se kompendium s. 159.
 
 #### [M12] Forstå at det binære ryggsekkproblemet er NP-hardt
+Se kompendium s. 93 og 162.
 
 #### [M13] Forstå at lengste enkle-vei-problemet er NP-hardt
 Hamiltonvei-problemet kan reduseres til lengste enkle-vei-problemet, derfor er lengste enkle-vei-problemet NP-hardt.
