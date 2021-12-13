@@ -1311,7 +1311,7 @@ Beskrivelse | Iterativ (bottom-up) versjon av Cut-Rod
 Input | p: tabell av priser, n: stavlengde
 Output | Beste pris
 Kjøretid | $O(n^2)$
-Minnebruk | $\Theta(1)$
+Minnebruk | $\Theta(n)$
 
 ````python
 def cut_rod(p, n):
@@ -1526,11 +1526,13 @@ Kjøretid | $O(n \lg n)$
 ````python
 def huffman(C):
     n = len(C)
-    Q = build_min_heap(C.copy())
+    Q = build_min_heap(C)
     for _ in range(n - 1):
         z = Node()
         x = heap_extract_min(Q)
         y = heap_extract_min(Q)
+        z.left = x
+        z.right = y
         z.freq = x.freq + y.freq
         min_heap_insert(Q, z)
     return heap_extract_min(Q)
