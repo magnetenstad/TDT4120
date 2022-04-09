@@ -1,8 +1,8 @@
 
 # TDT4120 Pensumhefte, 2021
 
-Dette dokumentet ligger ute på https://magne.dev/TDT4120/.
-Dersom du ønsker å kjøre algoritmene, kan du klone prosjektet fra https://github.com/magnetenstad/TDT4120.
+Dette dokumentet ligger ute på https://magne.dev/TDT4120-notes/.
+Dersom du ønsker å kjøre algoritmene, kan du klone prosjektet fra https://github.com/magnetenstad/TDT4120-notes.
 Med referansen *kompendium* menes det skrevet av Mathilde Haukø Haugum (2018).
 
 
